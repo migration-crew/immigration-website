@@ -1,20 +1,9 @@
-import { NextIntlClientProvider } from 'next-intl';
-import { getLocale, getMessages } from 'next-intl/server';
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
+import LanguageSwitcher from "./_components/LocaleSwitcher";
 import "./globals.css";
-import LanguageSwitcher from './_components/LocaleSwitcher';
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import { poppins } from "./ui/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -31,9 +20,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${poppins.className}  antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <LanguageSwitcher />
           {children}
