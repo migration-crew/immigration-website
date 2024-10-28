@@ -3,6 +3,7 @@ import { getLocale, getMessages } from 'next-intl/server';
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import LanguageSwitcher from './_components/LocaleSwitcher';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,6 +35,7 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
+          <LanguageSwitcher />
           {children}
         </NextIntlClientProvider>
       </body>

@@ -1,5 +1,10 @@
 {
     "products": {
         "cart": "Adicionar ao carrinho"
+    },
+    "LocaleSwitcher": {
+        "en": "Inglês",
+        "pt": "Português",
+        "es": "Espanhol"
     }
 }
