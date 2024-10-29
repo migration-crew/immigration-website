@@ -19,7 +19,7 @@ export function WorkInCanada() {
         transition to your new life in Canada. Contact us today to start your
         journey to Canada with confidence.
       </p>
-      <Button asChild className="bg-primary-red">
+      <Button asChild>
         <Link href="/book-consultation">Book a free consultation</Link>
       </Button>
     </div>

@@ -10,6 +10,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        "primary-red": "var(--primary-red)",
+        "primary-black": "var(--primary-black)",
+        "primary-gray": "var(--primary-gray)",
+        "primary-white": "var(--primary-white)",
+        "dark-gray": "var(--dark-gray)",
+        "medium-gray": "var(--medium-gray)",
+        "original-gray": "var(--gray)",
+        "light-gray": "var(--light-gray)",
+        "original-green": "var(--green)",
+        "original-blue": "var(--blue)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

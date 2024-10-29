@@ -10,80 +10,21 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-  .bg-primary-red {
-    background: var(--primary-red);
-  }
-  .text-primary-red {
-    color: var(--primary-red);
-  }
-  .bg-primary-black {
-    background: var(--primary-black);
-  }
-  .text-primary-black {
-    color: var(--primary-black);
-  }
-  .bg-primary-gray {
-    background: var(--primary-gray);
-  }
-  .text-primary-gray {
-    color: var(--primary-gray);
-  }
-  .bg-primary-white {
-    background: var(--primary-white);
-  }
-  .text-primary-white {
-    color: var(--primary-white);
-  }
-  .bg-dark-gray {
-    background: var(--dark-gray);
-  }
-  .text-dark-gray {
-    color: var(--dark-gray);
-  }
-  .bg-medium-gray {
-    background: var(--medium-gray);
-  }
-  .text-medium-gray {
-    color: var(--medium-gray);
-  }
-  .bg-gray {
-    background: var(--gray);
-  }
-  .text-gray {
-    color: var(--gray);
-  }
-  .bg-light-gray {
-    background: var(--light-gray);
-  }
-  .text-light-gray {
-    color: var(--light-gray);
-  }
-  .bg-green {
-    background: var(--green);
-  }
-  .text-green {
-    color: var(--green);
-  }
-  .bg-blue {
-    background: var(--blue);
-  }
-  .text-blue {
-    color: var(--blue);
-  }
 }
 
 @layer base {
   :root {
-    --primary-red: #ad2320;
-    --primary-black: #000000;
-    --primary-gray: #f3f3f3;
-    --primary-white: #fff;
-    --dark-gray: #373737;
-    --medium-gray: #5e5e5e;
-    --gray: #cbcbcb;
-    --light-gray: #f5f6fa;
-    --green: #0c9986;
-    --blue: #4880ff;
+    --primary-red: #b8001c;
+    --primary-hover-red: #7f0014;
+    --primary-hover-pink: rgba(184, 0, 28 0.2);
+    --secondary-blue: #2274a5;
+    --secondary-hover-blue: #6b91a8;
+    --text-primary-black: #090909;
+    --text-secondary-black: #5f5f5f;
+    --text-disabled-black: rgba(95, 95, 95, 0.6);
+    --text-primary-white: #fffdfd;
+    --text-secondary-white: rgba(255, 255, 255, 0.75);
+    --text-disabled-white: rgba(255, 255, 255, 0.6);
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
