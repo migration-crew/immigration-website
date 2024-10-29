@@ -1,7 +1,10 @@
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 export function WorkInCanada() {
   return (
     <div className="flex flex-col gap-4 p-4">
-      <h2 className="font-bold">How to work in Canada?</h2>
+      <h2 className="text-xl font-bold ">How to work in Canada?</h2>
       <p>
         Over 400,000 international workers come to Canada each year, playing a
         crucial role in the country&apos;s economy and diversity. Canada offers
@@ -16,6 +19,9 @@ export function WorkInCanada() {
         transition to your new life in Canada. Contact us today to start your
         journey to Canada with confidence.
       </p>
+      <Button asChild className="bg-primary-red">
+        <Link href="/book-consultation">Book a free consultation</Link>
+      </Button>
     </div>
   );
 }

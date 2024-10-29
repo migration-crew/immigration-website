@@ -9,6 +9,7 @@ export function WorkBackground() {
         alt="Background image of work page"
         quality={100}
         priority
+        className="w-full"
       />
     </div>
   );
