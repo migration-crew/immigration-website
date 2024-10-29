@@ -1,9 +1,9 @@
 "use client";
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "../../components/ui/select";
-import { useLocale, useTranslations } from 'next-intl';
-import { setUserLocale } from "@/services/locale";
 import { Locale } from "@/i18n/config";
+import { setUserLocale } from "@/services/locale";
+import { useLocale, useTranslations } from 'next-intl';
 import { useTransition } from "react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select";
 
 export default function LanguageSwitcher() {
     const t = useTranslations('LocaleSwitcher');
