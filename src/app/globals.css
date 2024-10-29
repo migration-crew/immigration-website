@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  height: 100vh;
 }
 
 @layer base {
