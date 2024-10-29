@@ -4,7 +4,7 @@ export type QAItem = {
   answer: string
 }
 
-export const qaData: QAItem[] = [
+export const qaGeneralData: QAItem[] = [
   {
     id: "q1",
     question: "What is the Ideal PNP Candidate?",
