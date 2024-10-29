@@ -1,5 +1,5 @@
-import { WorkBackground } from "../_components/WorkBackground";
-import { WorkInCanada } from "../_components/WorkInCanada";
+import { WorkBackground } from "./_components/WorkBackground";
+import { WorkInCanada } from "./_components/WorkInCanada";
 
 export default function WorkPage() {
   return (
