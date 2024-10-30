@@ -18,6 +18,7 @@ body {
     --primary-hover-red: #7f0014;
     --primary-hover-pink: rgba(184, 0, 28 0.2);
     --secondary-blue: #2274a5;
+    --secondary-blue-op-20: rgba(34, 116, 165, 0.2);
     --secondary-hover-blue: #6b91a8;
     --text-primary-black: #090909;
     --text-secondary-black: #5f5f5f;

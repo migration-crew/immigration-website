@@ -14,6 +14,7 @@ const config: Config = {
         "primary-hover-red": "var(--primary-hover-red)",
         "primary-hover-pink": "var(--primary-hover-pink)",
         "secondary-blue": "var(--secondary-blue)",
+				"secondary-blue-op-20": "var(--secondary-blue-op-20)",
         "secondary-hover-blue": "var(--secondary-hover-blue)",
         "primary-black": "var(--text-primary-black)",
         "secondary-black": "var(--text-secondary-black)",
