@@ -19,9 +19,9 @@ const FAQ = ({ data }: Props) => {
       </CardHeader>
       <CardContent>
         <Accordion type="multiple">
-          {data.map((item) => (
+          {data.map((item, index) => (
             <AccordionItem key={item.id} value={item.id}>
-              <AccordionTrigger>{item.question}</AccordionTrigger>
+              <AccordionTrigger>{`${index + 1}. ${item.question}`}</AccordionTrigger>
               <AccordionContent>{item.answer}</AccordionContent>
             </AccordionItem>
           ))}
