@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { BookFreeConsultation } from "@/components/common/BookFreeConsultation";
 
 export function WorkInCanada() {
   return (
@@ -19,9 +18,7 @@ export function WorkInCanada() {
         transition to your new life in Canada. Contact us today to start your
         journey to Canada with confidence.
       </p>
-      <Button asChild className="text-primary-white">
-        <Link href="/book-consultation">Book a free consultation</Link>
-      </Button>
+      <BookFreeConsultation />
     </div>
   );
 }
