@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl'
 import LogoButton from './_components/LogoButton'
 import UpImmigrationNavigationMenu from './_components/UpImmigrationNavigationMenu'
+import { BookFreeConsultation } from '../BookFreeConsultation'
 
 export type HeaderComponent = {
     title: string
@@ -28,10 +29,11 @@ export default function Header() {
     ]
 
     return (
-        <header>
-            <div className='flex space-x-10 ml-6 mt-2.5'>
+        <header className='ml-6 mt-2.5 mr-6 bg-primary-white'>
+            <div className='flex items-center justify-between'>
                 <LogoButton />
                 <UpImmigrationNavigationMenu immigrateComponents={immigrateComponents} workComponents={workComponents}/>
+                <BookFreeConsultation />
             </div>
         </header>
     )

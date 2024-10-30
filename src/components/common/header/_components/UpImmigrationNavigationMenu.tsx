@@ -22,7 +22,7 @@ export default function UpImmigrationNavigationMenu({immigrateComponents, workCo
 
     return (
         <NavigationMenu>
-            <NavigationMenuList className='space-x-6'>
+            <NavigationMenuList className='space-x-9'>
                 {/* Immigrate */}
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>{t("immigrate")}</NavigationMenuTrigger>
