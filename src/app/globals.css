@@ -50,6 +50,34 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+
+    /* Font Size and Weight */
+    /* For Desktop */
+    --font-hero-section: 700 36px;
+    --font-page-titles: 700 48px;
+    --font-heading: 700 36px;
+    --font-subheading: 700 24px;
+    --font-paragraph-text: 400 18px;
+    --font-small-captions: 400 14px;
+    --font-cta-buttons: 700 20px;
+    --font-other-buttons: 400 20px;
+    --font-menu: 700 16px;
+    --font-inputs: 400 18px;
+    --font-text-heavy-sub-header: 700 20px;
+    --font-text-heavy-body: 400 16px;
+    /* For Mobile */
+    --font-hero-section-for-mobile: 700 36px;
+    --font-page-titles-for-mobile: 700 32px;
+    --font-heading-for-mobile: 700 24px;
+    --font-subheading-for-mobile: 700 20px;
+    --font-paragraph-text-for-mobile: 400 14px;
+    --font-small-captions-for-mobile: 400 12px;
+    --font-cta-buttons-for-mobile: 700 16px;
+    --font-other-buttons-for-mobile: 400 16px;
+    --font-menu-for-mobile: 700 14px;
+    --font-inputs-for-mobile: 400 16px;
+    --font-text-heavy-sub-header-for-mobile: 400 16px;
+    --font-text-heavy-body-for-mobile: 400 12px;
   }
   .dark {
     --background: 0 0% 3.9%;
