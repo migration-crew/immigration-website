@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
-import LanguageSwitcher from "../components/common/LocaleSwitcher";
 import "./globals.css";
 import { poppins } from "./ui/fonts";
+import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,8 +23,9 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={`${poppins.className}  antialiased`}>
         <NextIntlClientProvider messages={messages}>
-          <LanguageSwitcher />
+          <Header />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
