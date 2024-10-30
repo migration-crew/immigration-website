@@ -15,7 +15,7 @@ const FAQ = ({ data }: Props) => {
   return (
     <section className="container mx-auto py-8">
       <CardHeader>
-        <CardTitle className="text-2xl font-bold">FAQ</CardTitle>
+        <CardTitle className="text-heading-mobile lg:text-heading test">FAQ</CardTitle>
       </CardHeader>
       <CardContent>
         <Accordion type="multiple">
