@@ -3,7 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import "./globals.css";
 import { poppins } from "./ui/fonts";
-import Header from "@/components/common/Header";
+import Header from "@/components/common/header/Header";
 import Footer from "@/components/common/Footer";
 
 export const metadata: Metadata = {
