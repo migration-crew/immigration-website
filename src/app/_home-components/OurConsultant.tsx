@@ -1,4 +1,5 @@
 import { SectionContainer } from "@/components/common/SectionContainer";
+import { Paragraph } from "@/components/common/text/Paragraph";
 import { SubHeading } from "@/components/common/text/SubHeading";
 import CICCLogo from "@/public/CICCLogo.png";
 import Larissa from "@/public/Larissa.png";
@@ -19,14 +20,14 @@ export const OurConsultant = () => {
             className="rounded-3xl"
           />
         </div>
-        <p className="text-paragraph-text-mobile lg:text-paragraph-text py-4 pb-8 lg:py-8">
+        <Paragraph className="py-4 pb-8 lg:py-8">
           I&apos;m committed to helping you realize your Canadian dream. I
           understand the complexities of the immigration process and am here to
           offer the support and guidance you need. Together, we can ensure your
           journey to Canada is successful and fulfilling. Proudly regulated and
           in good standing with the College of Immigration and Citizenship
           Consultants, Larissa Castelluber, registration R710678
-        </p>
+        </Paragraph>
         <div className="flex justify-between items-end">
           <div>
             <p>Registration: R710678</p>
