@@ -1,5 +1,5 @@
+import Footer from "@/app/_footer/Footer";
 import Header from "@/app/_header/Header";
-import Footer from "@/components/common/Footer";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";

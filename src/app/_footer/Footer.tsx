@@ -1,4 +1,4 @@
-import LanguageSwitcher from "./LocaleSwitcher";
+import LanguageSwitcher from "../../components/common/LocaleSwitcher";
 
 export default function Footer() {
     return (
