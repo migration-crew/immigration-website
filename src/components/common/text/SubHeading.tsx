@@ -1,7 +1,17 @@
 import React from 'react'
 import { cn } from "@/lib/utils";
 
-// 24_700 / 20_700
+/**
+ * Sub heading Text
+ * @remarks
+ * Desktop: 24px, 700 w, Mobile: 20px, 700 w
+ * @param className - pass custom classes
+ * @param children - text content
+ * @example
+ * ```tsx
+ * <SubHeading className='pb-4'>Take the Quiz</SubHeading>
+ * ```
+ */
 
 export const SubHeading = ({
   className,
