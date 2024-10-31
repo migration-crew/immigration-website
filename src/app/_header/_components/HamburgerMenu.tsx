@@ -9,12 +9,19 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/components/ui/SheetForHeader"
+import { HeaderComponent } from '../Header'
 
-export default function HamburgerMenu() {
+type Props = {
+    className: string | undefined
+    immigrateComponents: HeaderComponent[]
+    workComponents: HeaderComponent[]
+}
+
+export default function HamburgerMenu({className, immigrateComponents, workComponents}: Props) {
     return (
         <Sheet>
             <SheetTrigger asChild>
-                <Menu className="h-10 w-10" />
+                <Menu className={`"h-10 w-10" ${className}`} />
             </SheetTrigger>
             <SheetContent>
                 <SheetHeader>
