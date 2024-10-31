@@ -1,10 +1,10 @@
+import Header from "@/app/_header/Header";
+import Footer from "@/components/common/Footer";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import "./globals.css";
 import { poppins } from "./ui/fonts";
-import Header from "@/components/common/header/Header";
-import Footer from "@/components/common/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
