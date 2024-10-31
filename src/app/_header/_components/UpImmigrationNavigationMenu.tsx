@@ -1,14 +1,11 @@
 import {
     NavigationMenu,
     NavigationMenuContent,
-    NavigationMenuIndicator,
     NavigationMenuItem,
     NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger,
-    NavigationMenuViewport,
 } from "@/components/ui/HeaderNavigationMenu"
-import Link from "next/link"
 import { useTranslations } from "next-intl"
 import { HeaderComponent } from "../Header"
 import SubMenu from "./SubMenu"
