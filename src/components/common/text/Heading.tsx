@@ -11,6 +11,6 @@ export const Heading = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h2 className={cn("text-heading-mobile lg:text-heading", className)}>{children}</h2>
+    <h3 className={cn("text-heading-mobile lg:text-heading", className)}>{children}</h3>
   )
 }
