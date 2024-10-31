@@ -35,16 +35,11 @@ export default function HamburgerMenu({className, immigrateComponents, workCompo
                         <p>content</p>
                     </div>
                     <div className="grid grid-cols-4 items-center gap-4">
-                        {/* <Label htmlFor="username" className="text-right">
-                            Username
-                        </Label>
-                        <Input id="username" value="@peduarte" className="col-span-3" /> */}
                         <p>content</p>
                     </div>
                 </div>
                 <SheetFooter>
                     <SheetClose asChild>
-                        {/* <Button type="submit">Save changes</Button> */}
                         <button>footer</button>
                     </SheetClose>
                 </SheetFooter>
