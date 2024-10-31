@@ -1,7 +1,7 @@
 import React from 'react'
 import { cn } from "@/lib/utils";
 
-export const TextHeading = ({
+export const Heading = ({
   className,
   children,
 }: {
