@@ -7,10 +7,11 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
     NavigationMenuViewport,
-} from "@/components/ui/navigation-menu"
+} from "@/components/ui/HeaderNavigationMenu"
 import Link from "next/link"
 import { useTranslations } from "next-intl"
 import { HeaderComponent } from "../Header"
+import SubMenu from "./SubMenu"
 
 type Props = {
     immigrateComponents: HeaderComponent[]
@@ -27,55 +28,43 @@ export default function UpImmigrationNavigationMenu({immigrateComponents, workCo
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>{t("immigrate")}</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="w-[300px] lg:w-[300px]">
-                            {immigrateComponents.map((component, index) => (
-                                <Link key={index} href={component.href}>
-                                    {component.title}
-                                </Link>
-                            ))}
-                        </ul>
+                        <SubMenu components={immigrateComponents}/>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 {/* Work */}
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>{t("work")}</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                            {workComponents.map((component, index) => (
-                                <Link key={index} href={component.href}>
-                                    {component.title}
-                                </Link>
-                            ))}
-                        </ul>
+                        <SubMenu components={workComponents}/>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 {/* Study */}
                 <NavigationMenuItem>
-                    <NavigationMenuLink href="/study">
+                    <NavigationMenuLink href="/study"  className="text-menu">
                         {t("study")}
                     </NavigationMenuLink>
                 </NavigationMenuItem>
                 {/* About us */}
                 <NavigationMenuItem>
-                    <NavigationMenuLink href="/about">
+                    <NavigationMenuLink href="/about" className="text-menu">
                         {t("aboutUs")}
                     </NavigationMenuLink>
                 </NavigationMenuItem>
                 {/* Contact */}
                 <NavigationMenuItem>
-                    <NavigationMenuLink href="/contact">
+                    <NavigationMenuLink href="/contact" className="text-menu">
                         {t("contact")}
                     </NavigationMenuLink>
                 </NavigationMenuItem>
                 {/* Blog */}
                 <NavigationMenuItem>
-                    <NavigationMenuLink href="/blog">
+                    <NavigationMenuLink href="/blog" className="text-menu">
                         {t("blog")}
                     </NavigationMenuLink>
                 </NavigationMenuItem>
                 {/* FAQ */}
                 <NavigationMenuItem>
-                    <NavigationMenuLink href="/faq">
+                    <NavigationMenuLink href="/faq" className="text-menu">
                         {t("faq")}
                     </NavigationMenuLink>
                 </NavigationMenuItem>
