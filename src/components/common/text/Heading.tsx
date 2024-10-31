@@ -1,6 +1,8 @@
 import React from 'react'
 import { cn } from "@/lib/utils";
 
+// 36_700_24_700
+
 export const Heading = ({
   className,
   children,
