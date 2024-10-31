@@ -1,7 +1,7 @@
 import React from 'react'
 import { cn } from "@/lib/utils";
 
-// 24_700_20_700
+// 24_700 / 20_700
 
 export const SubHeading = ({
   className,
