@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BookConsultationImage from "../../../public/book-consultation.png";
+import BookConsultationImage from "../../../public/book-consultation.jpeg";
 
 export function BookConsultationBackground() {
   return (
