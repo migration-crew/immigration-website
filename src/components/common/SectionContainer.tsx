@@ -1,11 +1,18 @@
-import React from 'react'
+import { cn } from "@/lib/utils";
+import React from "react";
 
-export const SectionContainer = ({children}:{children: React.ReactNode}) => {
+export const SectionContainer = ({
+  className,
+  children,
+}: {
+  className?: string | undefined;
+  children: React.ReactNode;
+}) => {
   return (
-    <section className='grid place-content-center w-full'>
-      <div className='max-w-[398px] lg:max-w-[1080px]'>
+    <section className="grid place-content-center w-full">
+      <div className={cn("max-w-[398px] lg:max-w-[1080px]", className)}>
         {children}
       </div>
     </section>
-  )
-}
+  );
+};

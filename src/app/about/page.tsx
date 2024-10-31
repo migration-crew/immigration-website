@@ -24,9 +24,9 @@ export default function AboutPage() {
           navigate the complexities of immigration with confidence.
         </p>
       </SectionContainer>
-      <SectionContainer>
-        <div>picture section</div>
-        <div>
+      <SectionContainer className="lg:flex py-[50px] lg:py-[40px]">
+        <div className="w-1/2">picture section</div>
+        <div className="w-1/2">
           <h3>Larissa Castelluber</h3>
           <p>
             Meet Larissa, a highly qualified and dedicated Regulated Canadian
