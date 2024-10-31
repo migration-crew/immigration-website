@@ -5,10 +5,15 @@ import { cva } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
 
+const navigationMenuListStyles = {
+  desktop: "group flex flex-1 list-none items-center justify-center space-x-1",
+  mobile: "group flex flex-col list-none justify-center space-y-1"
+}
+
 const NavigationMenu = React.forwardRef<
   React.ElementRef<typeof NavigationMenuPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Root>
->(({ className, children, ...props }, ref) => (
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Root> & { type?: keyof typeof navigationMenuListStyles }
+>(({ className, type="desktop", children, ...props }, ref) => (
   <NavigationMenuPrimitive.Root
     ref={ref}
     className={cn(
@@ -25,12 +30,12 @@ NavigationMenu.displayName = NavigationMenuPrimitive.Root.displayName
 
 const NavigationMenuList = React.forwardRef<
   React.ElementRef<typeof NavigationMenuPrimitive.List>,
-  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.List>
->(({ className, ...props }, ref) => (
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.List> & { type?: keyof typeof navigationMenuListStyles }
+>(({ className, type="desktop", ...props }, ref) => (
   <NavigationMenuPrimitive.List
     ref={ref}
     className={cn(
-      "group flex flex-1 list-none items-center justify-center space-x-1",
+      navigationMenuListStyles[type] || navigationMenuListStyles.desktop,
       className
     )}
     {...props}

@@ -3,13 +3,11 @@ import {
     Sheet,
     SheetClose,
     SheetContent,
-    SheetDescription,
     SheetFooter,
-    SheetHeader,
-    SheetTitle,
     SheetTrigger,
 } from "@/components/ui/SheetForHeader"
 import { HeaderComponent } from '../Header'
+import NavigationMenuForMobile from './NavigationMenuForMobile'
 
 type Props = {
     className: string | undefined
@@ -24,20 +22,7 @@ export default function HamburgerMenu({className, immigrateComponents, workCompo
                 <Menu className={`"h-10 w-10" ${className}`} />
             </SheetTrigger>
             <SheetContent>
-                <SheetHeader>
-                    <SheetTitle>sheet title</SheetTitle>
-                    <SheetDescription>
-                        sheet header
-                    </SheetDescription>
-                </SheetHeader>
-                <div className="grid gap-4 py-4">
-                    <div className="grid grid-cols-4 items-center gap-4">
-                        <p>content</p>
-                    </div>
-                    <div className="grid grid-cols-4 items-center gap-4">
-                        <p>content</p>
-                    </div>
-                </div>
+                <NavigationMenuForMobile />
                 <SheetFooter>
                     <SheetClose asChild>
                         <button>footer</button>

@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
 import { BookFreeConsultation } from '../../components/common/BookFreeConsultation'
 import LogoButton from './_components/LogoButton'
-import UpImmigrationNavigationMenu from './_components/UpImmigrationNavigationMenu'
+import UpImmigrationNavigationMenu from './_components/NavigationMenuForDesktop'
 import HamburgerMenu from './_components/HamburgerMenu'
 import { cn } from "@/lib/utils";
 
