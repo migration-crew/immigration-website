@@ -29,7 +29,7 @@ export default function Header() {
     ]
 
     return (
-        <header className='ml-6 mt-2.5 mr-6 bg-primary-white'>
+        <header className='pl-6 pt-2.5 pr-6 bg-primary-white'>
             <div className='flex items-center justify-between'>
                 <LogoButton />
                 <UpImmigrationNavigationMenu immigrateComponents={immigrateComponents} workComponents={workComponents}/>
