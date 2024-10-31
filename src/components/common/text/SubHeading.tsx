@@ -11,8 +11,8 @@ export const SubHeading = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h3 className={cn("text-subheading-mobile lg:text-subheading", className)}>
+    <h4 className={cn("text-subheading-mobile lg:text-subheading", className)}>
       {children}
-    </h3>
+    </h4>
   );
 };
