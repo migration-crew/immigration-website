@@ -11,7 +11,7 @@ export const OurConsultant = () => {
       <div className="max-w-[640px]">
         <h2 className="text-heading-mobile lg:text-heading">Our consultant</h2>
         <SubHeading className="py-4 lg:pb-0">Larissa Castelluber</SubHeading>
-        <div className="relative w-[398px] h-[316px] lg:hidden">
+        <div className="relative max-w-[398px] h-[316px] lg:hidden">
           <Image
             alt="Larissa"
             src={Larissa}

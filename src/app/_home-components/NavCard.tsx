@@ -14,7 +14,7 @@ type Props = {
 export const NavCard = ({ alt, src, title, text, href }: Props) => {
   return (
     <Link href={href}>
-    <Card className="w-[398px] h-[260px] lg:w-[344px] lg:h-[360px] flex flex-col">
+    <Card className="max-w-[398px] h-[260px] lg:max-w-[344px] lg:h-[360px] flex flex-col">
       <CardHeader className="flex-grow p-0 pb-6">
         <div className="relative h-full">
         <Image
