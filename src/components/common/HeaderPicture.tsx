@@ -1,5 +1,12 @@
 import Image, { StaticImageData } from "next/image";
 
+
+type Props = {
+  alt: string;
+  src: StaticImageData;
+  title: string;
+};
+
 /**
  * Header Picture
  * @param alt - explanation of picture
@@ -12,13 +19,6 @@ import Image, { StaticImageData } from "next/image";
  *  <HeaderPicture alt="about us" src={about} title="About us" />
  * ```
  */
-
-type Props = {
-  alt: string;
-  src: StaticImageData;
-  title: string;
-};
-
 export const HeaderPicture = ({ alt, src, title }: Props) => {
   return (
     <section className="relative min-h-[218px] md:min-h-[360px]">

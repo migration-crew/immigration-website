@@ -1,6 +1,15 @@
 import { cn } from "@/lib/utils";
 import Image, { StaticImageData } from "next/image";
 
+
+type Props = {
+  alt: string;
+  src: StaticImageData;
+  divClassName?: string | undefined;
+  imgClassName?: string | undefined;
+  children?: React.ReactNode;
+};
+
 /**
  * Common Section Container
  * @param alt - explanation of picture
@@ -15,15 +24,6 @@ import Image, { StaticImageData } from "next/image";
     </SectionContainer>
  * ```
  */
-
-type Props = {
-  alt: string;
-  src: StaticImageData;
-  divClassName?: string | undefined;
-  imgClassName?: string | undefined;
-  children?: React.ReactNode;
-};
-
 export const ResponsiveImage = ({
   alt,
   src,

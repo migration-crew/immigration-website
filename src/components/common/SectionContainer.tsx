@@ -12,7 +12,6 @@ import React from "react";
     </SectionContainer>
  * ```
  */
-
 export const SectionContainer = ({
   className,
   children,
