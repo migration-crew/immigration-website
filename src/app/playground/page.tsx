@@ -19,12 +19,6 @@ import about from "@/public/about.jpeg";
 export default function AboutPage() {
   const t = useTranslations("products");
 
-  // return (
-  //     <>
-  //         <div>{t("cart")}</div>
-  //     </>
-  // )
-
   return (
     <>
       <HeaderPicture alt="about us" src={about} title={t("cart")} />
