@@ -3,7 +3,6 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
 } from "@/components/ui/BookConsultationForm";
 import { Textarea } from "@/components/ui/BookConsultationTextarea";
 import { Control } from "react-hook-form";
@@ -27,7 +26,6 @@ export function MessageField({ control }: Props) {
               className={`rounded-[8px] py-3 px-4 bg-white`}
             />
           </FormControl>
-          <FormMessage />
         </FormItem>
       )}
     />

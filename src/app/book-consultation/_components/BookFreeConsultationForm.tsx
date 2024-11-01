@@ -12,10 +12,10 @@ import { MessageField } from "./MessageField";
 import { SendButton } from "./SendButton";
 
 const formSchema = z.object({
-  firstname: z.string().min(5, "First name must be at least 5 characters"),
-  lastname: z.string().min(5, "Last name must be at least 5 characters"),
-  email: z.string().email("Invalid email format"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
+  firstname: z.string().trim(),
+  lastname: z.string().trim(),
+  email: z.string().trim(),
+  message: z.string().trim(),
 });
 
 export type FormValues = z.infer<typeof formSchema>;

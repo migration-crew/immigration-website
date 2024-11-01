@@ -3,7 +3,6 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
 } from "@/components/ui/BookConsultationForm";
 import { Input } from "@/components/ui/BookConsultationInput";
 import { Control } from "react-hook-form";
@@ -22,9 +21,12 @@ export function EmailField({ control }: Props) {
         <FormItem>
           <FormLabel>Email</FormLabel>
           <FormControl>
-            <Input {...field} className={`rounded-[8px] py-3 px-4 bg-white`} />
+            <Input
+              {...field}
+              className={`rounded-[8px] py-3 px-4 bg-white`}
+              required
+            />
           </FormControl>
-          <FormMessage />
         </FormItem>
       )}
     />
