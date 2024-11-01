@@ -1,8 +1,9 @@
+import Footer from "@/app/_footer/Footer";
+import Header from "@/app/_header/Header";
 import { Toaster } from "@/components/ui/toaster";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
-import LanguageSwitcher from "../components/common/LocaleSwitcher";
 import "./globals.css";
 import { poppins } from "./ui/fonts";
 
@@ -23,8 +24,9 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={`${poppins.className}  antialiased`}>
         <NextIntlClientProvider messages={messages}>
-          <LanguageSwitcher />
+          <Header />
           {children}
+          <Footer />
         </NextIntlClientProvider>
         <Toaster />
       </body>
