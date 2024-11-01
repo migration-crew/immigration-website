@@ -45,14 +45,14 @@ export default function ImmigratePage() {
         <h2 className="text-3xl font-bold mb-6">
           Do you want to immigrate to Canada?
         </h2>
-        <p className="text-gray-600 mb-6">
+        <p className="text-gray-600 mb-6 text-justify">
           Canada is a top destination for individuals and families seeking new
           opportunities. With over 80 immigration programs available, including
           options for skilled workers, Labour Market Impact Assessments (LMIA),
           Provincial Nominee Programs (PNP), and family reunification, there are
           numerous pathways to becoming a permanent resident.
         </p>
-        <p className="text-gray-600 mb-6">
+        <p className="text-gray-600 mb-6 text-justify">
           Our team at Up Immigration is here to guide you through the process,
           helping you find the program that best suits your needs for a
           successful transition to your new life in Canada. Contact us today to
@@ -104,9 +104,13 @@ export default function ImmigratePage() {
                     </button>
                   </div>
                   {expandedProgram === program.title ? (
-                    <div className="mt-4 text-gray-600">{program.details}</div>
+                    <div className="mt-4 text-gray-600 text-justify">
+                      {program.details}
+                    </div>
                   ) : (
-                    <p className="text-gray-600">{program.description}</p>
+                    <p className="text-gray-600 text-justify">
+                      {program.description}
+                    </p>
                   )}
                   <Image
                     src={program.image}
