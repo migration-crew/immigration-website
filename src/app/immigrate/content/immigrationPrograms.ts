@@ -60,7 +60,7 @@ export const ImmigrationPrograms = [
     image: "/placeholder.svg?height=200&width=300",
     details:
       "The Humanitarian and Compassionate (H&C) considerations provide a unique pathway for individuals facing exceptional circumstances to obtain permanent residency in Canada. This program is designed to assist those who may not qualify through other immigration streams but have compelling reasons to stay in Canada, such as strong family ties, established roots in the community, or adverse conditions in their home country.",
-    endpoint: "h&c",
+    endpoint: "humanitarian",
   },
   {
     title: "Atlantic Immigration Program -AIP",
