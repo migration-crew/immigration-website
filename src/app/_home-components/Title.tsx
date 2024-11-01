@@ -1,0 +1,27 @@
+import { BookFreeConsultation } from "@/components/common/BookFreeConsultation";
+import home from "@/public/home.jpeg";
+import Image from "next/image";
+
+export const Title = () => {
+  return (
+    <section className="relative min-h-[508px] md:min-h-[624px]">
+      <Image alt="home" src={home} layout={"fill"} objectFit={"cover"} />
+      <div className="absolute w-full h-full grid place-content-center bg-secondary-blue-op-20">
+        <div className="max-w-[430px] md:max-w-[1440px] justify-start">
+          <div className="max-w-[358px] md:max-w-[650px]">
+            <h1 className="text-[36px] md:text-[55px] font-bold text-primary-white">
+              Start your Journey to Canada with us
+            </h1>
+            <p className="text-[14px] md:text-[22px] text-primary-white">
+              We bring expertise, compassion, and care to support you in
+              navigating the complexities of immigration with confidence.
+            </p>
+            <div className="mt-[30px]">
+              <BookFreeConsultation />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
