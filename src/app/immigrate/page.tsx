@@ -70,59 +70,64 @@ export default function ImmigratePage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-6">Discover all your options</h2>
           <div className="grid grid-cols-3 gap-4 mb-8">
-            {[
-              "Express Entry",
-              "Provincial Nominee",
-              "Family Sponsor",
-              "Caregiver",
-              "Start-Up Visa",
-              "Self-Employed",
-              "Humanitarian & Compassionate",
-              "Atlantic Immigration",
-              "Northern Immigration",
-            ].map((option) => (
-              <button
-                key={option}
-                className="bg-white text-gray-600 py-2 px-4 rounded hover:bg-gray-200"
+            {ImmigrationPrograms.map((program) => (
+              <a
+                href={`#${program.title}`}
+                key={program.title}
+                className="bg-white text-gray-600 py-2 px-4 rounded hover:bg-gray-200 text-center"
               >
-                {option}
-              </button>
+                {program.title}
+              </a>
             ))}
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {ImmigrationPrograms.map((program) => (
               <div
+                id={program.title}
                 key={program.title}
                 className="bg-white rounded-lg overflow-hidden shadow-md"
               >
-                <Image
-                  src={program.image}
-                  alt={program.title}
-                  width={300}
-                  height={200}
-                  className="w-full"
-                />
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">
-                    {program.title}
-                  </h3>
-                  <p className="text-gray-600">{program.description}</p>
-                  <button
-                    className="mt-4 text-red-600 flex items-center"
-                    onClick={() => toggleProgram(program.title)}
-                  >
-                    {expandedProgram === program.title
-                      ? "Show less"
-                      : "Learn more"}
+                  <div className="flex items-start ">
+                    <button
+                      className="text-xl font-semibold mb-2"
+                      onClick={() => toggleProgram(program.title)}
+                    >
+                      <h3>{program.title}</h3>
+                      <div className="mt-4 text-red-600">
+                        {expandedProgram === program.title ? (
+                          <ChevronUp className="ml-2" />
+                        ) : (
+                          <ChevronDown className="ml-2" />
+                        )}
+                      </div>
+                    </button>
+                  </div>
+                  {expandedProgram === program.title ? (
+                    <div className="mt-4 text-gray-600">{program.details}</div>
+                  ) : (
+                    <p className="text-gray-600">{program.description}</p>
+                  )}
+                  <Image
+                    src={program.image}
+                    alt={program.title}
+                    width={300}
+                    height={200}
+                    className="w-full"
+                  />
+
+                  <button className="mt-4 text-red-600 flex items-center">
                     {expandedProgram === program.title ? (
-                      <ChevronUp className="ml-2" />
+                      <Link
+                        href={`/immigrate/${program.endpoint}`}
+                        className="bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-700 inline-block"
+                      >
+                        Read more
+                      </Link>
                     ) : (
-                      <ChevronDown className="ml-2" />
+                      <p className="hidden"></p>
                     )}
                   </button>
-                  {expandedProgram === program.title && (
-                    <div className="mt-4 text-gray-600">{program.details}</div>
-                  )}
                 </div>
               </div>
             ))}
