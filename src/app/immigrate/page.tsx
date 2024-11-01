@@ -1,6 +1,7 @@
 "use client";
 
 import { SectionContainer } from "@/components/common/SectionContainer";
+import googleReview from "@/public/googleReview.png";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -201,7 +202,7 @@ export default function ImmigratePage() {
           </div>
           <div className="text-center mt-8">
             <Image
-              src="/placeholder.svg?height=50&width=150"
+              src={googleReview}
               alt="Google Reviews"
               width={150}
               height={50}
@@ -210,7 +211,7 @@ export default function ImmigratePage() {
               Explore our Google Reviews for top-rated immigration services.
             </p>
             <Link
-              href="#"
+              href="https://www.google.com/search?q=Up+immigration&client=opera-gx&hs=dC0&sca_esv=db3f177c98a4bf7a&sxsrf=ADLYWIKchpWGpCthIu-52xqY_0D914VxfQ%3A1730482678099&ei=9hElZ9LcBbrTp84PlLH0oAQ&ved=0ahUKEwjSr8Wq1ruJAxW66ckDHZQYHUQQ4dUDCBA&uact=5&oq=Up+immigration&gs_lp=Egxnd3Mtd2l6LXNlcnAiDlVwIGltbWlncmF0aW9uMgQQIxgnMgwQIxiABBgTGCcYigUyDBAjGIAEGBMYJxiKBTIOEC4YgAQYxwEYywEYrwEyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IuAlQ6wVYiwdwAHgCkAEAmAHOAaABlgOqAQMyLTK4AQPIAQD4AQGYAgKgAtABwgIEEAAYR5gDAOIDBRIBMSBAiAYBkAYIkgcFMS4wLjGgB8gW&sclient=gws-wiz-serp#"
               className="text-red-600 hover:underline mt-2 inline-block"
             >
               Read more

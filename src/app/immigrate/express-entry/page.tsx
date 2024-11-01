@@ -14,12 +14,12 @@ export default function ExpressEntry() {
           objectFit="cover"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-white text-6xl font-bold">Immigrate</h1>
+          <h1 className="text-white text-6xl font-bold">Express Entry</h1>
         </div>
       </section>
 
       <SectionContainer>
-        <h1 className="text-3xl font-bold mb-6 pt-2">
+        <h1 className="text-3xl font-bold mb-6 pt-10 pb-10">
           Overview of Express Entry System
         </h1>
       </SectionContainer>
@@ -102,6 +102,7 @@ export default function ExpressEntry() {
 
       <SectionContainer>
         <Image
+          className="pt-10 pb-10"
           src="/placeholder.svg?height=400&width=1200"
           alt="Express Entry"
           width={1200}
@@ -110,10 +111,10 @@ export default function ExpressEntry() {
       </SectionContainer>
 
       <SectionContainer>
-        <h2 className="text-3xl font-bold mb-6">
+        <h2 className="text-3xl font-bold mb-6 pb-7">
           Federal Immigration Programs Managed by Express Entry
         </h2>
-        <p className="text-gray-600 mb-6 text-justify">
+        <p className="text-gray-600 mb-6 pb-7 text-justify">
           Express Entry operates through an online system that manages
           applications for three federal immigration programs:
         </p>
@@ -123,7 +124,7 @@ export default function ExpressEntry() {
         <h2 className="text-3xl font-bold mb-6">
           1. Federal Skilled Worker Program
         </h2>
-        <p className="text-gray-600 mb-6 text-justify">
+        <p className="text-gray-600 mb-6 pb-7 text-justify">
           The Federal Skilled Worker Program is for skilled workers who have
           work experience and want to become permanent residents.
         </p>
@@ -132,7 +133,7 @@ export default function ExpressEntry() {
         <h2 className="text-3xl font-bold mb-6">
           2. Federal Skilled Trades Program
         </h2>
-        <p className="text-gray-600 mb-6 text-justify">
+        <p className="text-gray-600 mb-6 pb-7 text-justify">
           The Federal Skilled Trades Program targets skilled tradespeople with
           qualifications in specific trades. This program emphasizes practical
           skills and work experience in trades such as electricians, plumbers,
@@ -140,7 +141,7 @@ export default function ExpressEntry() {
         </p>
       </SectionContainer>
       <SectionContainer>
-        <h2 className="text-3xl font-bold mb-6 text-justify">
+        <h2 className="text-3xl font-bold mb-6 pb-7 text-justify">
           3. Canadian Experience Class
         </h2>
         <p className="text-gray-600 mb-6">
@@ -152,7 +153,7 @@ export default function ExpressEntry() {
         </p>
       </SectionContainer>
       <SectionContainer>
-        <h2 className="text-3xl font-bold mb-6 text-justify">
+        <h2 className="text-3xl font-bold mb-6 pb-7 text-justify">
           Who is Eligible for Express Entry?
         </h2>
         <p className="text-gray-600 mb-6">

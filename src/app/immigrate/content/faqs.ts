@@ -33,3 +33,36 @@ export const FAQs = [
       "The minimum language requirement varies depending on the immigration program. For most skilled worker programs, you need to demonstrate language proficiency equivalent to Canadian Language Benchmark (CLB) 7, which is considered 'adequate intermediate proficiency'. This can be demonstrated through approved language tests like IELTS or CELPIP for English, or TEF for French.",
   },
 ];
+
+export const PNPFAQs = [
+  {
+    question: "How Many PNPs are there in Canada?",
+    answer:
+      "Canada has 11 PNPs, one for each province and territory except Quebec and Nunavut. Each program has multiple streams targeting different types of immigrants. ",
+  },
+  {
+    question: "Provincial Nominee Program requirements",
+    answer:
+      "All Provincial Nominee Program requirements vary by province but generally include criteria such as education, work experience, language proficiency, and a valid job offer in the province.",
+  },
+  {
+    question: "Can I Immigrate through a PNP without a Job Offer?",
+    answer:
+      "Some PNP streams do not require a job offer and instead focus on factors such as education, work experience, and the ability to establish economically in the province.",
+  },
+  {
+    question: "Am I Eligible for a Canadian PNP?",
+    answer:
+      "Eligibility criteria differ by province and stream but typically include factors like education, work experience, language skills, and ties to the province.",
+  },
+  {
+    question: "How are Provincial Nominee Program Points Calculated?",
+    answer:
+      "Points are calculated based on factors such as age, education, work experience, language proficiency, and connections to the province",
+  },
+  {
+    question: "How to Calculate Your PNP Points",
+    answer:
+      "Each province has its own points system. Check the specific provincial website for detailed information on how points are awarded.",
+  },
+];
