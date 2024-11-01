@@ -4,8 +4,8 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Textarea } from "@/components/ui/textarea";
+} from "@/components/ui/BookConsultationForm";
+import { Textarea } from "@/components/ui/BookConsultationTextarea";
 import { Control } from "react-hook-form";
 import { FormValues } from "./BookFreeConsultationForm";
 
