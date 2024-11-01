@@ -1,6 +1,18 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 
+/**
+ * Common Section Container
+ * @param className - pass custom classes
+ * @param children - our own components or html elements
+ * @example
+ * ```tsx
+ *  <SectionContainer className="py-[40px] lg:py-[50px]">
+      <p>By taking this quiz, you will discover xxx.</p>
+    </SectionContainer>
+ * ```
+ */
+
 export const SectionContainer = ({
   className,
   children,
