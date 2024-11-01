@@ -1,3 +1,4 @@
+import { DiscoverOptions } from "./_components/DiscoverOptions";
 import { WorkBackground } from "./_components/WorkBackground";
 import { WorkInCanada } from "./_components/WorkInCanada";
 
@@ -7,6 +8,7 @@ export default function WorkPage() {
       <WorkBackground />
       {/* <HeaderPicture alt="Image of work page" src={workImage} title={"Work"} />; */}
       <WorkInCanada />
+      <DiscoverOptions />
     </div>
   );
 }
