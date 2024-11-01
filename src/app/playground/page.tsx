@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 
 import { HeaderPicture } from "@/components/common/HeaderPicture";
+import { ResponsiveImage } from "@/components/common/ResponsiveImage";
 import { SectionContainer } from "@/components/common/SectionContainer";
 import { Caption } from "@/components/common/text/Caption";
 import { CtaButton } from "@/components/common/text/CtaButton";
@@ -16,14 +17,12 @@ import { SubHeading } from "@/components/common/text/SubHeading";
 import { Title } from "@/components/common/text/Title";
 import about from "@/public/about.jpeg";
 
+import Larissa from "@/public/Larissa.png";
+
+import Image from "next/image";
+
 export default function AboutPage() {
   const t = useTranslations("products");
-
-  // return (
-  //     <>
-  //         <div>{t("cart")}</div>
-  //     </>
-  // )
 
   return (
     <>
@@ -69,6 +68,20 @@ export default function AboutPage() {
         <Input>Input</Input>
         <HeavySubHeader>HeavySubHeader</HeavySubHeader>
         <HeavyBody>HeavyBody</HeavyBody>
+      </SectionContainer>
+      <SectionContainer>
+        <ResponsiveImage
+          alt="Larissa"
+          src={Larissa}
+          divClassName="w-[398px] h-[316px]"
+          imgClassName="rounded-3xl"
+        >
+          <div className="absolute w-full h-full grid place-content-center bg-secondary-blue-op-20 rounded-t-xl">
+            <h1 className="text-page-titles-mobile lg:text-heading-mobile font-bold text-primary-white">
+              Larissa
+            </h1>
+          </div>
+        </ResponsiveImage>
       </SectionContainer>
     </>
   );

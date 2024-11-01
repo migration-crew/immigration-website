@@ -1,7 +1,18 @@
 import { cn } from '@/lib/utils';
 import React from 'react'
 
-// 18_400 / 14_400
+
+/**
+ * Paragraph Text
+ * @remarks
+ * Desktop: 18px, 400 w, Mobile: 14px, 400 w
+ * @param className - pass custom classes
+ * @param children - text content
+ * @example
+ * ```tsx
+ * <Paragraph className='pb-4'>Take the Quiz</Paragraph>
+ * ```
+ */
 
 export const Paragraph = ({
   className,

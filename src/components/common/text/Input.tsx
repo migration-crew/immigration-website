@@ -1,19 +1,19 @@
-import React from 'react'
 import { cn } from "@/lib/utils";
+import React from "react";
 
 /**
- * Sub heading Text
+ * Input Text
  * @remarks
- * Desktop: 24px, 700 w, Mobile: 20px, 700 w
+ * Desktop: 18px, 400 w, Mobile: 16px, 400 w
  * @param className - pass custom classes
  * @param children - text content
  * @example
  * ```tsx
- * <SubHeading className='pb-4'>Take the Quiz</SubHeading>
+ * <Input className='pb-4'>Take the Quiz</Input>
  * ```
  */
 
-export const SubHeading = ({
+export const Input = ({
   className,
   children,
 }: {
@@ -21,8 +21,8 @@ export const SubHeading = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-subheading-mobile lg:text-subheading", className)}>
+    <p className={cn("text-inputs-mobile lg:text-inputs", className)}>
       {children}
-    </h4>
+    </p>
   );
 };
