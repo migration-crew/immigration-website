@@ -1,30 +1,43 @@
-import larissa from "@/public/Larissa.png";
+import brazil from "@/public/brazil.png";
+import colombia from "@/public/colombia.png";
+import juan from "@/public/juan.jpg";
+import laura from "@/public/laura.jpg";
+import maria from "@/public/maria.jpg";
+import mexico from "@/public/mexico.png";
 import { StaticImageData } from "next/image";
 
 type TestimonialsType = {
-  name: string
-  country: string
-  text: string
-  image: StaticImageData
-}
+  name: string;
+  country: string;
+  status: string;
+  text: string;
+  image: StaticImageData;
+  countryImage: StaticImageData;
+};
 
 export const Testimonials: TestimonialsType[] = [
   {
     name: "Laura Ribeiro",
     country: "Brazil",
+    status: "Express Entry",
     text: "I had an amazing experience with my visa application. They made the entire process easy and stress-free. The staff's expertise and attention to detail were impressive.",
-    image: larissa,
+    image: laura,
+    countryImage: brazil,
   },
   {
     name: "Maria Torres",
     country: "Mexico",
+    status: "Express Entry",
     text: "I had an amazing experience with my visa application. They made the entire process easy and stress-free. The staff's expertise and attention to detail were impressive.",
-    image: larissa,
+    image: maria,
+    countryImage: mexico,
   },
   {
     name: "Juan Sanchez",
     country: "Colombia",
+    status: "Permanent Resident",
     text: "I had an amazing experience with my visa application. They made the entire process easy and stress-free. The staff's expertise and attention to detail were impressive.",
-    image: larissa,
+    image: juan,
+    countryImage: colombia,
   },
 ];

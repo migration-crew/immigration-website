@@ -176,14 +176,19 @@ export default function ImmigratePage() {
                   <Image
                     src={testimonial.image}
                     alt={testimonial.name}
+                    width={343}
+                    height={236}
+                  />
+                </div>
+                <div>
+                  <h3 className="font-semibold">{testimonial.name}</h3>
+                  <Image
+                    src={testimonial.countryImage}
+                    alt={testimonial.country}
                     width={50}
                     height={50}
-                    className="rounded-full mr-4"
                   />
-                  <div>
-                    <h3 className="font-semibold">{testimonial.name}</h3>
-                    <p className="text-gray-600">{testimonial.country}</p>
-                  </div>
+                  <p className="text-gray-600">{testimonial.status}</p>
                 </div>
                 <p className="text-gray-600">{testimonial.text}</p>
                 <div className="mt-4 flex">
@@ -202,6 +207,7 @@ export default function ImmigratePage() {
           </div>
           <div className="text-center mt-8">
             <Image
+              className="justify-"
               src={googleReview}
               alt="Google Reviews"
               width={150}
