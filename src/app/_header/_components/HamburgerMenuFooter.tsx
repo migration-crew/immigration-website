@@ -1,7 +1,5 @@
 import { ContactItem } from "@/data/ContactData"
 import { useTranslations } from "next-intl"
-import { OtherButton } from "@/components/common/text/OtherButton"
-import LanguageSwitcher from "@/components/common/LocaleSwitcher"
 
 type Props = {
     components: ContactItem[]
