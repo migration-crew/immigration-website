@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import Image, { StaticImageData } from "next/image";
 
+
 type Props = {
   alt: string;
   src: StaticImageData;
@@ -9,6 +10,20 @@ type Props = {
   children?: React.ReactNode;
 };
 
+/**
+ * Common Section Container
+ * @param alt - explanation of picture
+ * @param src - link of picture
+ * @param divClassName - pass custom classes to dev (set size of picture)
+ * @param imgClassName - pass custom classes to Image (edit Image)
+ * @param children - our own components or html elements
+ * @example
+ * ```tsx
+ *  <SectionContainer className="py-[40px] lg:py-[50px]">
+      <p>By taking this quiz, you will discover xxx.</p>
+    </SectionContainer>
+ * ```
+ */
 export const ResponsiveImage = ({
   alt,
   src,

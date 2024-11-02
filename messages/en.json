@@ -6,5 +6,25 @@
         "en": "English",
         "pt": "Portuguese",
         "es": "Spanish"
+    },
+    "NavigationMenu": {
+        "immigrate": "Immigrate",
+        "work": "Work",
+        "study": "Study",
+        "aboutUs": "About Us",
+        "contact": "Contact",
+        "blog": "Blog",
+        "faq": "FAQ",
+        "immigrateToCanada": "Immigrate to Canada",
+        "expressEntry": "Express Entry",
+        "provincialNomineeProgram": "Provincial Nominee Program - PNP",
+        "familySponsorship": "Family Sponsorship",
+        "caregiversPrograms": "Caregivers Programs",
+        "investorsEntrepreneurs": "For Investors & Entrepreneurs",
+        "otherPrograms": "Other Programs",
+        "workInCanada": "Work in Canada",
+        "labourMarketImpactAssessment": "Labour Market Impact Assessment (LMIA)",
+        "postGraduationWorkPermit": "Post-Graduation Work Permit",
+        "otherPermits": "Other Permits"
     }
 }
