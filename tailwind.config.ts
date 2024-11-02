@@ -10,11 +10,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        "neutral-primary-white": "var(--primary-white)",
+        "neutral-secondary-white": "var(--secondary-white)",
         "primary-red": "var(--primary-red)",
         "primary-hover-red": "var(--primary-hover-red)",
         "primary-hover-pink": "var(--primary-hover-pink)",
         "secondary-blue": "var(--secondary-blue)",
-				"secondary-blue-op-20": "var(--secondary-blue-op-20)",
+        "secondary-blue-op-20": "var(--secondary-blue-op-20)",
         "secondary-hover-blue": "var(--secondary-hover-blue)",
         "primary-black": "var(--text-primary-black)",
         "secondary-black": "var(--text-secondary-black)",
@@ -64,31 +66,103 @@ const config: Config = {
         },
       },
       fontSize: {
-        "hero-section": ["var(--font-size-hero-section)", { fontWeight: "var(--font-weight-hero-section)" }],
-        "page-titles": ["var(--font-size-page-titles)", { fontWeight: "var(--font-weight-page-titles)" }],
-        "heading": ["var(--font-size-heading)", { fontWeight: "var(--font-weight-heading)" }],
-        "subheading": ["var(--font-size-subheading)", { fontWeight: "var(--font-weight-subheading)" }],
-        "paragraph-text": ["var(--font-size-paragraph-text)", { fontWeight: "var(--font-weight-paragraph-text)" }],
-        "small-captions": ["var(--font-size-small-captions)", { fontWeight: "var(--font-weight-small-captions)" }],
-        "cta-buttons": ["var(--font-size-cta-buttons)", { fontWeight: "var(--font-weight-cta-buttons)" }],
-        "other-buttons": ["var(--font-size-other-buttons)", { fontWeight: "var(--font-weight-other-buttons)" }],
-        "menu": ["var(--font-size-menu)", { fontWeight: "var(--font-weight-menu)" }],
-        "inputs": ["var(--font-size-inputs)", { fontWeight: "var(--font-weight-inputs)" }],
-        "text-heavy-sub-header": ["var(--font-size-text-heavy-sub-header)", { fontWeight: "var(--font-weight-text-heavy-sub-header)" }],
-        "text-heavy-body": ["var(--font-size-text-heavy-body)", { fontWeight: "var(--font-weight-text-heavy-body)" }],
+        "hero-section": [
+          "var(--font-size-hero-section)",
+          { fontWeight: "var(--font-weight-hero-section)" },
+        ],
+        "page-titles": [
+          "var(--font-size-page-titles)",
+          { fontWeight: "var(--font-weight-page-titles)" },
+        ],
+        heading: [
+          "var(--font-size-heading)",
+          { fontWeight: "var(--font-weight-heading)" },
+        ],
+        subheading: [
+          "var(--font-size-subheading)",
+          { fontWeight: "var(--font-weight-subheading)" },
+        ],
+        "paragraph-text": [
+          "var(--font-size-paragraph-text)",
+          { fontWeight: "var(--font-weight-paragraph-text)" },
+        ],
+        "small-captions": [
+          "var(--font-size-small-captions)",
+          { fontWeight: "var(--font-weight-small-captions)" },
+        ],
+        "cta-buttons": [
+          "var(--font-size-cta-buttons)",
+          { fontWeight: "var(--font-weight-cta-buttons)" },
+        ],
+        "other-buttons": [
+          "var(--font-size-other-buttons)",
+          { fontWeight: "var(--font-weight-other-buttons)" },
+        ],
+        menu: [
+          "var(--font-size-menu)",
+          { fontWeight: "var(--font-weight-menu)" },
+        ],
+        inputs: [
+          "var(--font-size-inputs)",
+          { fontWeight: "var(--font-weight-inputs)" },
+        ],
+        "text-heavy-sub-header": [
+          "var(--font-size-text-heavy-sub-header)",
+          { fontWeight: "var(--font-weight-text-heavy-sub-header)" },
+        ],
+        "text-heavy-body": [
+          "var(--font-size-text-heavy-body)",
+          { fontWeight: "var(--font-weight-text-heavy-body)" },
+        ],
         // Mobile variants
-        "hero-section-mobile": ["var(--font-size-hero-section-for-mobile)", { fontWeight: "var(--font-weight-hero-section-for-mobile)" }],
-        "page-titles-mobile": ["var(--font-size-page-titles-for-mobile)", { fontWeight: "var(--font-weight-page-titles-for-mobile)" }],
-        "heading-mobile": ["var(--font-size-heading-for-mobile)", { fontWeight: "var(--font-weight-heading-for-mobile)" }],
-        "subheading-mobile": ["var(--font-size-subheading-for-mobile)", { fontWeight: "var(--font-weight-subheading-for-mobile)" }],
-        "paragraph-text-mobile": ["var(--font-size-paragraph-text-for-mobile)", { fontWeight: "var(--font-weight-paragraph-text-for-mobile)" }],
-        "small-captions-mobile": ["var(--font-size-small-captions-for-mobile)", { fontWeight: "var(--font-weight-small-captions-for-mobile)" }],
-        "cta-buttons-mobile": ["var(--font-size-cta-buttons-for-mobile)", { fontWeight: "var(--font-weight-cta-buttons-for-mobile)" }],
-        "other-buttons-mobile": ["var(--font-size-other-buttons-for-mobile)", { fontWeight: "var(--font-weight-other-buttons-for-mobile)" }],
-        "menu-mobile": ["var(--font-size-menu-for-mobile)", { fontWeight: "var(--font-weight-menu-for-mobile)" }],
-        "inputs-mobile": ["var(--font-size-inputs-for-mobile)", { fontWeight: "var(--font-weight-inputs-for-mobile)" }],
-        "text-heavy-sub-header-mobile": ["var(--font-size-text-heavy-sub-header-for-mobile)", { fontWeight: "var(--font-weight-text-heavy-sub-header-for-mobile)" }],
-        "text-heavy-body-mobile": ["var(--font-size-text-heavy-body-for-mobile)", { fontWeight: "var(--font-weight-text-heavy-body-for-mobile)" }],
+        "hero-section-mobile": [
+          "var(--font-size-hero-section-for-mobile)",
+          { fontWeight: "var(--font-weight-hero-section-for-mobile)" },
+        ],
+        "page-titles-mobile": [
+          "var(--font-size-page-titles-for-mobile)",
+          { fontWeight: "var(--font-weight-page-titles-for-mobile)" },
+        ],
+        "heading-mobile": [
+          "var(--font-size-heading-for-mobile)",
+          { fontWeight: "var(--font-weight-heading-for-mobile)" },
+        ],
+        "subheading-mobile": [
+          "var(--font-size-subheading-for-mobile)",
+          { fontWeight: "var(--font-weight-subheading-for-mobile)" },
+        ],
+        "paragraph-text-mobile": [
+          "var(--font-size-paragraph-text-for-mobile)",
+          { fontWeight: "var(--font-weight-paragraph-text-for-mobile)" },
+        ],
+        "small-captions-mobile": [
+          "var(--font-size-small-captions-for-mobile)",
+          { fontWeight: "var(--font-weight-small-captions-for-mobile)" },
+        ],
+        "cta-buttons-mobile": [
+          "var(--font-size-cta-buttons-for-mobile)",
+          { fontWeight: "var(--font-weight-cta-buttons-for-mobile)" },
+        ],
+        "other-buttons-mobile": [
+          "var(--font-size-other-buttons-for-mobile)",
+          { fontWeight: "var(--font-weight-other-buttons-for-mobile)" },
+        ],
+        "menu-mobile": [
+          "var(--font-size-menu-for-mobile)",
+          { fontWeight: "var(--font-weight-menu-for-mobile)" },
+        ],
+        "inputs-mobile": [
+          "var(--font-size-inputs-for-mobile)",
+          { fontWeight: "var(--font-weight-inputs-for-mobile)" },
+        ],
+        "text-heavy-sub-header-mobile": [
+          "var(--font-size-text-heavy-sub-header-for-mobile)",
+          { fontWeight: "var(--font-weight-text-heavy-sub-header-for-mobile)" },
+        ],
+        "text-heavy-body-mobile": [
+          "var(--font-size-text-heavy-body-for-mobile)",
+          { fontWeight: "var(--font-weight-text-heavy-body-for-mobile)" },
+        ],
       },
       borderRadius: {
         lg: "var(--radius)",

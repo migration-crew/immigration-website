@@ -1,5 +1,5 @@
 import Image from "next/image";
-import workImage from "../../../public/work.png";
+import workImage from "../../../public/work.jpeg";
 
 export function WorkBackground() {
   return (

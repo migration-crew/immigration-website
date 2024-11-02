@@ -14,6 +14,8 @@ body {
 
 @layer base {
   :root {
+    --primary-white: #fffdfd;
+    --secondary-white: #f3f3f3;
     --primary-red: #b8001c;
     --primary-hover-red: #7f0014;
     --primary-hover-pink: rgba(184, 0, 28 0.2);
@@ -67,7 +69,7 @@ body {
     --font-size-text-heavy-sub-header: 20px;
     --font-size-text-heavy-body: 16px;
     /* Weight for Desktop */
-    --font-weight-hero-section: 700; 
+    --font-weight-hero-section: 700;
     --font-weight-page-titles: 700;
     --font-weight-heading: 700;
     --font-weight-subheading: 700;
@@ -81,7 +83,7 @@ body {
     --font-weight-text-heavy-body: 400;
 
     /* Size for Mobile */
-    --font-size-hero-section-for-mobile: 36px; 
+    --font-size-hero-section-for-mobile: 36px;
     --font-size-page-titles-for-mobile: 32px;
     --font-size-heading-for-mobile: 24px;
     --font-size-subheading-for-mobile: 20px;
@@ -94,7 +96,7 @@ body {
     --font-size-text-heavy-sub-header-for-mobile: 16px;
     --font-size-text-heavy-body-for-mobile: 12px;
     /* Weight for Mobile */
-    --font-weight-hero-section-for-mobile: 700; 
+    --font-weight-hero-section-for-mobile: 700;
     --font-weight-page-titles-for-mobile: 700;
     --font-weight-heading-for-mobile: 700;
     --font-weight-subheading-for-mobile: 700;
