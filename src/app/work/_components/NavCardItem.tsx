@@ -3,7 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import CloseIcon from "@/public/close-icon.svg";
 import Image, { StaticImageData } from "next/image";
-import { ForwardedRef, forwardRef } from "react";
+import { ForwardedRef, forwardRef, useState } from "react";
 
 interface Props {
   title: string;
@@ -18,6 +18,12 @@ export const NavCardItem = forwardRef<HTMLDivElement, Props>(
     { id, title, alt, description, image }: Props,
     ref: ForwardedRef<HTMLDivElement>
   ) {
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const toggleExpand = () => {
+      setIsExpanded(!isExpanded);
+    };
+
     return (
       <Card
         id={id}
@@ -29,10 +35,21 @@ export const NavCardItem = forwardRef<HTMLDivElement, Props>(
             <CardHeader className="p-0">
               <CardTitle className="text-xl">{title}</CardTitle>
             </CardHeader>
-            <Image src={CloseIcon} alt="Close icon" />
+            <Image
+              src={CloseIcon}
+              alt="Close icon"
+              onClick={toggleExpand}
+              className={`cursor-pointer transform transition-transform duration-300 ease-in-out ${
+                isExpanded ? "rotate-180" : ""
+              }`}
+            />
           </div>
           <div>
-            <CardContent className="text-xs p-0 overflow-hidden text-ellipsis">
+            <CardContent
+              className={`text-xs p-0 overflow-hidden text-ellipsis ${
+                isExpanded ? "line-clamp-none" : "line-clamp-2"
+              }`}
+            >
               {description}
             </CardContent>
           </div>
