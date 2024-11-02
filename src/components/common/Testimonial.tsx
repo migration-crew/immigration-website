@@ -10,7 +10,7 @@ import { HeavySubHeader } from "./text/HeavySubHeader";
 
 export const Testimonial = () => {
   return (
-    <SectionContainer>
+    <SectionContainer className="hidden lg:block">
       <div>
         <h2 className="text-3xl font-bold mb-6">Testimonials</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -52,13 +52,15 @@ export const Testimonial = () => {
                   </svg>
                 ))}
               </div>
-              <HeavyBody>{testimonial.text}</HeavyBody>
+              <HeavyBody className="text-justify">
+                &quot;{testimonial.text}&quot;
+              </HeavyBody>
             </div>
           ))}
         </div>
         <div className="flex flex-col items-center pt-4">
           <Image
-            className="fex justify-center"
+            className="flex justify-center"
             src={googleReview}
             alt="Google Reviews"
             width={150}
