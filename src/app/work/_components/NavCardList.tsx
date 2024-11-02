@@ -68,7 +68,7 @@ export const NavCardList = forwardRef<HTMLDivElement, Props>(
   function NavCardList({ refs }: Props, ref) {
     return (
       <div className="flex flex-col flex-shrink-0" ref={ref}>
-        {navCardItems.map((item) => (
+        {navCardItems.map((item, index) => (
           <NavCardItem
             key={item.id}
             ref={refs[item.ref as keyof typeof refs]}
@@ -77,6 +77,7 @@ export const NavCardList = forwardRef<HTMLDivElement, Props>(
             alt={item.alt}
             description={item.description}
             image={item.image}
+            isLast={index === navCardItems.length - 1}
           />
         ))}
       </div>

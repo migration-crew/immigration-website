@@ -11,11 +11,12 @@ interface Props {
   description: string;
   image: StaticImageData;
   id: string;
+  isLast: boolean;
 }
 
 export const NavCardItem = forwardRef<HTMLDivElement, Props>(
   function WorkNavCard(
-    { id, title, alt, description, image }: Props,
+    { id, title, alt, description, image, isLast }: Props,
     ref: ForwardedRef<HTMLDivElement>
   ) {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -27,7 +28,9 @@ export const NavCardItem = forwardRef<HTMLDivElement, Props>(
     return (
       <Card
         id={id}
-        className="flex flex-col p-6 rounded-[20px] gap-4 self-stretch shadow-[0px_-8px_10px_-1px_rgba(0,0,0,0.10)] mb-[-51px]"
+        className={`flex flex-col p-6 rounded-[20px] gap-4 self-stretch shadow-[0px_-8px_10px_-1px_rgba(0,0,0,0.10)] ${
+          isLast ? "" : "mb-[-51px]"
+        }`}
         ref={ref}
       >
         <div className="flex flex-col gap-2">
