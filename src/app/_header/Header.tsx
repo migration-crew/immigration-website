@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
 import { BookFreeConsultation } from '../../components/common/BookFreeConsultation'
 import LogoButton from './_components/LogoButton'
-import UpImmigrationNavigationMenu from './_components/NavigationMenuForDesktop'
+import NavigationMenuForDesktop from './_components/NavigationMenuForDesktop'
 import HamburgerMenu from './_components/HamburgerMenu'
 import { cn } from "@/lib/utils";
 
@@ -38,7 +38,7 @@ export default function Header() {
             <div className='flex items-center justify-between'>
                 <LogoButton />
                 {/* For Desktop */}
-                <UpImmigrationNavigationMenu
+                <NavigationMenuForDesktop
                     className={classNameForDesktop}
                     immigrateComponents={immigrateComponents}
                     workComponents={workComponents} 

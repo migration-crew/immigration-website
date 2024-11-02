@@ -22,7 +22,10 @@ export default function HamburgerMenu({className, immigrateComponents, workCompo
                 <Menu className={`"h-10 w-10" ${className}`} />
             </SheetTrigger>
             <SheetContent>
-                <NavigationMenuForMobile />
+                <NavigationMenuForMobile 
+                    immigrateComponents={immigrateComponents}
+                    workComponents={workComponents}
+                />
                 <SheetFooter>
                     <SheetClose asChild>
                         <button>footer</button>

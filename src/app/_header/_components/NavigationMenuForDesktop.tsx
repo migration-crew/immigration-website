@@ -16,7 +16,7 @@ type Props = {
     workComponents: HeaderComponent[]
 }
 
-export default function UpImmigrationNavigationMenu({className, immigrateComponents, workComponents}: Props) {
+export default function NavigationMenuForDesktop({className, immigrateComponents, workComponents}: Props) {
     const t = useTranslations("NavigationMenu")
 
     return (
