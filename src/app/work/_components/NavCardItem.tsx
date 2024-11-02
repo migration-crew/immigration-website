@@ -33,7 +33,7 @@ export const NavCardItem = forwardRef<HTMLDivElement, Props>(
         <div className="flex flex-col gap-2">
           <div className="flex justify-between items-center">
             <CardHeader className="p-0">
-              <CardTitle className="text-xl">{title}</CardTitle>
+              <CardTitle className="text-xl font-bold">{title}</CardTitle>
             </CardHeader>
             <Image
               src={CloseIcon}
@@ -46,7 +46,7 @@ export const NavCardItem = forwardRef<HTMLDivElement, Props>(
           </div>
           <div>
             <CardContent
-              className={`text-xs p-0 overflow-hidden text-ellipsis ${
+              className={`text-base p-0 overflow-hidden text-ellipsis ${
                 isExpanded ? "line-clamp-none" : "line-clamp-2"
               }`}
             >

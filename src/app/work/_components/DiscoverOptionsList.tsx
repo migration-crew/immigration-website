@@ -41,7 +41,7 @@ const discoverItems = [
 
 export function DiscoverOptionsList({ scrollToRef, refs }: Props) {
   return (
-    <div className="flex flex-wrap gap-3">
+    <div className="flex flex-wrap gap-3 mb-7">
       {discoverItems.map((item) => (
         <DiscoverOptionsItem
           key={item.href}
