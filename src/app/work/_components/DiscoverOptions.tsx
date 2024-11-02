@@ -1,25 +1,36 @@
+"use client";
+
 import { SectionContainer } from "@/components/common/SectionContainer";
-import { DiscoverOptionsButton } from "./DiscoverOptionsButton";
+import { useRef } from "react";
+import { DiscoverOptionsList } from "./DiscoverOptionsList";
+import { NavCardList } from "./NavCardList";
 
 export function DiscoverOptions() {
+  const workPermitRef = useRef<HTMLDivElement>(null);
+  const openWorkPermitRef = useRef<HTMLDivElement>(null);
+  const pgwpRef = useRef<HTMLDivElement>(null);
+  const lmiaRef = useRef<HTMLDivElement>(null);
+  const sowpRef = useRef<HTMLDivElement>(null);
+
+  const scrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const refs = {
+    workPermitRef,
+    openWorkPermitRef,
+    pgwpRef,
+    lmiaRef,
+    sowpRef,
+  };
+
   return (
     <SectionContainer className="flex flex-col gap-4 p-4">
-      <h2 className="text-xl font-bold ">Discover all your options</h2>
-      <div className="flex flex-wrap gap-3 ">
-        <DiscoverOptionsButton href="/work-permit-extensions">
-          Work Permit/ Extensions
-        </DiscoverOptionsButton>
-        <DiscoverOptionsButton href="">Open Work Permit</DiscoverOptionsButton>
-        <DiscoverOptionsButton href="">
-          Post-Graduation Work Permit (PGWP)
-        </DiscoverOptionsButton>
-        <DiscoverOptionsButton href="">
-          Labour Market Impact Assessment (LMIA)
-        </DiscoverOptionsButton>
-        <DiscoverOptionsButton href="">
-          Spousal/ Common-Law Partner Open Work Permit (SOWP)
-        </DiscoverOptionsButton>
-      </div>
+      <h2 className="text-xl font-bold">Discover all your options</h2>
+      <DiscoverOptionsList scrollToRef={scrollToRef} refs={refs} />
+      <NavCardList refs={refs} />
     </SectionContainer>
   );
 }
