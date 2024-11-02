@@ -21,9 +21,7 @@ export const SectionContainer = ({
 }) => {
   return (
     <section className="grid place-content-center w-full">
-      <div className={cn("max-w-[398px] lg:max-w-[1080px]", className)}>
-        {children}
-      </div>
+      <div className={cn("w-[398px] lg:w-[1080px]", className)}>{children}</div>
     </section>
   );
 };

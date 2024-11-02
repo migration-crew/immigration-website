@@ -1,4 +1,9 @@
-export const Steps = [
+type StepsType = {
+  title: string;
+  description: string;
+};
+
+export const Steps: StepsType[] = [
   {
     title: "Book a 20 min Free Consultation",
     description: "Tell us about your goals in Canada and your profile.",
@@ -22,7 +27,7 @@ export const Steps = [
   },
 ];
 
-export const EPSteps = [
+export const EPSteps: StepsType[] = [
   {
     title: "Create an Express Entry Profile",
     description:
