@@ -4,18 +4,19 @@ import Image from "next/image";
 import { ConsultantInfo } from "./_components/ConsultantInfo";
 import { ContactForm } from "./_components/ContactForm";
 import { GetInTouch } from "./_components/GetInTouch";
+import Larissa from "@/public/Larissa.png";
 
 export default function ContactPage() {
   return (
     <>
-      <HeaderPicture alt="contact us" src={} title="Contact Us" />
+      <HeaderPicture alt="contact us" src={Larissa} title="Contact Us" />
       <SectionContainer className="flex">
         <GetInTouch />
         <ContactForm />
       </SectionContainer>
 
       <SectionContainer>
-        <Image alt="contact us" src={} />
+        <Image alt="contact us" src={Larissa} />
         <ConsultantInfo />
       </SectionContainer>
     </>
