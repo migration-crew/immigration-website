@@ -4,7 +4,7 @@ import Pgwp from "@/public/pgwp.png";
 import Sowp from "@/public/sowp.png";
 import WorkPermitExtensions from "@/public/work-permit-extensions.png";
 import { forwardRef } from "react";
-import { NavCardItem } from "./NavCardItem";
+import { NavCardItem } from "../../app/work/_components/NavCardItem";
 
 interface Props {
   refs: {

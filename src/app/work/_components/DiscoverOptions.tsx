@@ -2,8 +2,8 @@
 
 import { SectionContainer } from "@/components/common/SectionContainer";
 import { useRef } from "react";
+import { NavCardList } from "../../../components/common/NavCardList";
 import { DiscoverOptionsList } from "./DiscoverOptionsList";
-import { NavCardList } from "./NavCardList";
 
 export function DiscoverOptions() {
   const workPermitRef = useRef<HTMLDivElement>(null);
