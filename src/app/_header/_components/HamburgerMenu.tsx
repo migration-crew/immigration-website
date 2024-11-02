@@ -8,6 +8,8 @@ import {
 } from "@/components/ui/SheetForHeader"
 import { HeaderComponent } from '../Header'
 import NavigationMenuForMobile from './NavigationMenuForMobile'
+import { contactData } from '@/data/ContactData'
+import HamburgerMenuFooter from './HamburgerMenuFooter'
 
 type Props = {
     className: string | undefined
@@ -28,7 +30,7 @@ export default function HamburgerMenu({className, immigrateComponents, workCompo
                 />
                 <SheetFooter>
                     <SheetClose asChild>
-                        <button>footer</button>
+                        <HamburgerMenuFooter components={contactData}/>
                     </SheetClose>
                 </SheetFooter>
             </SheetContent>
