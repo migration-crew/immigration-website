@@ -1,3 +1,4 @@
+import { ApplicationGuide } from "@/components/common/ApplicationGuide";
 import { HeaderPicture } from "@/components/common/HeaderPicture";
 import workImage from "@/public/work.jpeg";
 import { DiscoverOptions } from "./_components/DiscoverOptions";
@@ -9,6 +10,7 @@ export default function WorkPage() {
       <HeaderPicture alt="Image of work page" src={workImage} title={"Work"} />
       <WorkInCanada />
       <DiscoverOptions />
+      <ApplicationGuide />
     </div>
   );
 }
