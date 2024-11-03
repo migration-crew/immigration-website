@@ -39,7 +39,7 @@ export const ResponsiveImage = ({
         layout={"fill"}
         objectFit={"cover"}
         quality={100}
-        className={imgClassName}
+        className={cn(imgClassName)}
       />
       {children}
     </div>
