@@ -3,18 +3,22 @@ import { Button } from "@/components/ui/UpImmigrationButton";
 import googleReview from "@/public/googleReview.png";
 import Image from "next/image";
 import Link from "next/link";
-import { Testimonials } from "../../app/immigrate/content/testimonials";
 import { Caption } from "./text/Caption";
 import { HeavyBody } from "./text/HeavyBody";
 import { HeavySubHeader } from "./text/HeavySubHeader";
+import { TestimonialsType } from "@/types/TestimonialsType";
 
-export const Testimonial = () => {
+type Props = {
+  testimonials: TestimonialsType[]
+}
+
+export const Testimonial = ({ testimonials }: Props) => {
   return (
     <SectionContainer className="hidden lg:block">
       <div>
         <h2 className="text-3xl font-bold mb-6">Testimonials</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {Testimonials.map((testimonial) => (
+          {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
               className="bg-white p-6 rounded-lg shadow-md"

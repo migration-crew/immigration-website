@@ -1,6 +1,5 @@
 "use client";
 
-import { Testimonials } from "@/app/immigrate/content/testimonials";
 import { Card } from "@/components/ui/card";
 import {
   Carousel,
@@ -16,8 +15,13 @@ import { Caption } from "./text/Caption";
 import { Heading } from "./text/Heading";
 import { HeavyBody } from "./text/HeavyBody";
 import { HeavySubHeader } from "./text/HeavySubHeader";
+import { TestimonialsType } from "@/types/TestimonialsType";
 
-export default function TestimonialMobile() {
+type Props = {
+  testimonials: TestimonialsType[]
+}
+
+export default function TestimonialMobile({ testimonials }: Props) {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
@@ -53,7 +57,7 @@ export default function TestimonialMobile() {
       <div className="w-full max-w-4xl mx-auto px-4">
         <Carousel setApi={setApi} className="w-full">
           <CarouselContent>
-            {Testimonials.map((testimonial, index) => (
+            {testimonials.map((testimonial, index) => (
               <CarouselItem key={index}>
                 <Card className="border-none shadow-lg rounded-3xl overflow-hidden">
                   <div className="flex gap-3">
