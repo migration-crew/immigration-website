@@ -26,7 +26,7 @@ export default function ImmigratePage() {
       <StepsComponent />
 
       <Testimonial testimonials={testimonialData}/>
-      <TestimonialMobile />
+      <TestimonialMobile testimonials={testimonialData}/>
 
       <SectionContainer>
         <FAQ data={FAQs} />
