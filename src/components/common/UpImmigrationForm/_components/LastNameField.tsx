@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/BookConsultationForm";
 import { Input } from "@/components/ui/BookConsultationInput";
 import { Control } from "react-hook-form";
-import { FormValues } from "./BookFreeConsultationForm";
+import { FormValues } from "../UpImmigrationForm";
 
 interface Props {
   control: Control<FormValues>;

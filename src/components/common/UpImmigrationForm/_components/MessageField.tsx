@@ -4,27 +4,26 @@ import {
   FormItem,
   FormLabel,
 } from "@/components/ui/BookConsultationForm";
-import { Input } from "@/components/ui/BookConsultationInput";
+import { Textarea } from "@/components/ui/BookConsultationTextarea";
 import { Control } from "react-hook-form";
-import { FormValues } from "./BookFreeConsultationForm";
+import { FormValues } from "../UpImmigrationForm";
 
 interface Props {
   control: Control<FormValues>;
 }
 
-export function FirstNameField({ control }: Props) {
+export function MessageField({ control }: Props) {
   return (
     <FormField
       control={control}
-      name="firstname"
+      name="message"
       render={({ field }) => (
         <FormItem>
-          <FormLabel>First Name</FormLabel>
+          <FormLabel>Message</FormLabel>
           <FormControl>
-            <Input
+            <Textarea
               {...field}
               className={`rounded-[8px] py-3 px-4 bg-white`}
-              required
             />
           </FormControl>
         </FormItem>

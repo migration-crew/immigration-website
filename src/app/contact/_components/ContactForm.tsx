@@ -1,16 +1,13 @@
-import Image from "next/image";
-import workImage from "../../../public/work.jpeg";
+"use client";
+import { UpImmigrationForm } from "@/components/common/UpImmigrationForm/UpImmigrationForm";
 
 export function ContactForm() {
+  const handleOnSubmit = () => {
+    // When we wanna do something when the form is submitted, we can do it here
+    console.log("Form submitted");
+  }
+
   return (
-    <div className="">
-      <Image
-        src={workImage}
-        alt="Background image of work page"
-        quality={100}
-        priority
-        className="w-full"
-      />
-    </div>
+      <UpImmigrationForm title="Send us a message" onSubmitCallback={handleOnSubmit}/>
   );
 }
