@@ -3,6 +3,7 @@
         "cart": "Add to Cart"
     },
     "LocaleSwitcher": {
+        "language": "Language",
         "en": "English",
         "pt": "Portuguese",
         "es": "Spanish"
