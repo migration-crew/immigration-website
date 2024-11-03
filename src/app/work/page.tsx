@@ -1,4 +1,4 @@
-import { ApplicationGuide } from "@/components/common/ApplicationGuide";
+import { ApplicationGuide } from "@/components/common/ApplicationSteps";
 import { HeaderPicture } from "@/components/common/HeaderPicture";
 import workImage from "@/public/work.jpeg";
 import { DiscoverOptions } from "./_components/DiscoverOptions";
