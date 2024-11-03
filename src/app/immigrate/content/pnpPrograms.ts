@@ -1,4 +1,9 @@
-export const PNPPrograms = [
+type ProgramsType = {
+  title: string;
+  description: string;
+};
+
+export const PNPPrograms: ProgramsType[] = [
   {
     title: "Ontario PNP",
     description:
