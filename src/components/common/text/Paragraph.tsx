@@ -22,6 +22,6 @@ export const Paragraph = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p className={cn("text-paragraph-text-mobile lg:text-paragraph-text", className)}>{children}</p>
+    <p className={cn("text-paragraph-text-mobile md:text-paragraph-text", className)}>{children}</p>
   )
 }

@@ -20,5 +20,5 @@ export const OtherButton = ({
   className?: string | undefined;
   children: React.ReactNode;
 }) => {
-  return <p className={cn("text-other-buttons-mobile lg:text-other-buttons", className)}>{children}</p>;
+  return <p className={cn("text-other-buttons-mobile md:text-other-buttons", className)}>{children}</p>;
 };

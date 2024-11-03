@@ -23,7 +23,7 @@ export const HeavyBody = ({
   return (
     <p
       className={cn(
-        "text-text-heavy-body-mobile lg:text-text-heavy-body",
+        "text-text-heavy-body-mobile md:text-text-heavy-body",
         className
       )}
     >

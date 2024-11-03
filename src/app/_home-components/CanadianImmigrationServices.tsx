@@ -4,13 +4,14 @@ import { NavCard } from "./NavCard";
 import immigrate from "@/public/immigrateLink.png";
 import work from "@/public/workLink.png";
 import study from "@/public/studyLink.png";
+import { Heading } from "@/components/common/text/Heading";
 
 
 export const CanadianImmigrationServices = () => {
   return (
-    <SectionContainer className="py-[40px] lg:py-[50px]">
-      <h2 className="pb-6 text-heading-mobile lg:text-heading">Canadian immigration services</h2>
-      <div className="flex flex-col lg:flex-row gap-4 lg:gap-6">
+    <SectionContainer className="py-[40px] md:py-[50px]">
+      <Heading className="pb-6">Canadian immigration services</Heading>
+      <div className="flex flex-col md:flex-row gap-4 md:gap-6">
         <NavCard
           alt="immigrate"
           src={immigrate}
