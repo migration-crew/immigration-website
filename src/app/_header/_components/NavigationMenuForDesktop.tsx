@@ -11,15 +11,16 @@ import { HeaderComponent } from "../Header"
 import SubMenu from "./SubMenu"
 
 type Props = {
+    className: string | undefined
     immigrateComponents: HeaderComponent[]
     workComponents: HeaderComponent[]
 }
 
-export default function UpImmigrationNavigationMenu({immigrateComponents, workComponents}: Props) {
+export default function NavigationMenuForDesktop({className, immigrateComponents, workComponents}: Props) {
     const t = useTranslations("NavigationMenu")
 
     return (
-        <NavigationMenu>
+        <NavigationMenu className={className}>
             <NavigationMenuList className='space-x-9'>
                 {/* Immigrate */}
                 <NavigationMenuItem>

@@ -3,6 +3,7 @@
         "cart": "Adicionar ao carrinho"
     },
     "LocaleSwitcher": {
+        "language": "Idioma",
         "en": "Inglês",
         "pt": "Português",
         "es": "Espanhol"

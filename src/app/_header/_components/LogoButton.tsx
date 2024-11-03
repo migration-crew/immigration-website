@@ -10,7 +10,7 @@ export default function LogoButton() {
                 alt="logo image"
                 quality={100}
                 priority
-                className="w-40 lg:w-48"
+                className="w-32 lg:w-48"
             />
         </Link>
     )
