@@ -4,18 +4,9 @@ import juan from "@/public/juan.jpg";
 import laura from "@/public/laura.jpg";
 import maria from "@/public/maria.jpg";
 import mexico from "@/public/mexico.png";
-import { StaticImageData } from "next/image";
+import { TestimonialsType } from "@/types/TestimonialsType";
 
-type TestimonialsType = {
-  name: string;
-  country: string;
-  status: string;
-  text: string;
-  image: StaticImageData;
-  countryImage: StaticImageData;
-};
-
-export const Testimonials: TestimonialsType[] = [
+export const testimonialData: TestimonialsType[] = [
   {
     name: "Laura Ribeiro",
     country: "Brazil",
