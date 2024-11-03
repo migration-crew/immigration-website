@@ -20,5 +20,5 @@ export const Caption = ({
   className?: string | undefined;
   children: React.ReactNode;
 }) => {
-  return <p className={cn("text-small-captions-mobile md:text-small-captions", className)}>{children}</p>;
+  return <p className={cn("text-small-captions-mobile lg:text-small-captions", className)}>{children}</p>;
 };

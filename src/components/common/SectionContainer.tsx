@@ -7,7 +7,7 @@ import React from "react";
  * @param children - our own components or html elements
  * @example
  * ```tsx
- *  <SectionContainer className="py-[40px] md:py-[50px]">
+ *  <SectionContainer className="py-[40px] lg:py-[50px]">
       <p>By taking this quiz, you will discover xxx.</p>
     </SectionContainer>
  * ```
@@ -21,7 +21,7 @@ export const SectionContainer = ({
 }) => {
   return (
     <section className="grid place-content-center w-full">
-      <div className={cn("w-[398px] md:w-[1080px]", className)}>{children}</div>
+      <div className={cn("w-[398px] lg:w-[1080px]", className)}>{children}</div>
     </section>
   );
 };
