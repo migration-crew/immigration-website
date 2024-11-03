@@ -3,8 +3,8 @@ import {
   FormField,
   FormItem,
   FormLabel,
-} from "@/components/ui/BookConsultationForm";
-import { Input } from "@/components/ui/BookConsultationInput";
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
 import { Control } from "react-hook-form";
 import { FormValues } from "./BookFreeConsultationForm";
 
