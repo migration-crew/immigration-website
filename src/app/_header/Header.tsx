@@ -4,6 +4,7 @@ import LogoButton from './_components/LogoButton'
 import NavigationMenuForDesktop from './_components/NavigationMenuForDesktop'
 import HamburgerMenu from './_components/HamburgerMenu'
 import { cn } from "@/lib/utils";
+import LanguageSwitcher from '@/components/common/LocaleSwitcher'
 
 export type HeaderComponent = {
     title: string
@@ -39,7 +40,7 @@ export default function Header() {
     const classNameForMobile = cn("flex lg:hidden")
 
     return (
-        <header className='pl-6 pt-2.5 pr-6 bg-primary-white'>
+        <header className='pl-6 pt-2.5 pr-6 bg-primary-white overflow-x-hidden'>
             <div className='flex items-center justify-between'>
                 <LogoButton />
                 {/* For Desktop */}
@@ -48,6 +49,7 @@ export default function Header() {
                     immigrateComponents={immigrateComponents}
                     workComponents={workComponents} 
                 />
+                <LanguageSwitcher />
                 <BookFreeConsultation
                     className={classNameForDesktop}
                 />

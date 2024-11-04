@@ -8,7 +8,6 @@ export default function Footer() {
             <Logo />
             <PageLinks />
             <ContactAndCopyRight />
-            {/* <LanguageSwitcher /> */}
         </footer>
     )
 }
