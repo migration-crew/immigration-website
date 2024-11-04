@@ -1,19 +1,19 @@
 import { HeaderPicture } from "@/components/common/HeaderPicture";
-import startUP from "@/public/startUp.png";
+import familySP from "@/public/familySP.jpg";
 import { EEPrograms } from "../_components/EEPrograms";
-import { IntroductionStartUp } from "../_components/IntroductionStartUp";
+import { IntroductionFamily } from "../_components/IntroductionFamily";
 import { StepsEEComponent } from "../_components/StepsEE";
 
-export default function StartUp() {
+export default function ExpressEntry() {
   return (
     <>
       <HeaderPicture
-        alt="Start-Up Visa Image"
-        src={startUP}
-        title="Start-Up Visa Program"
+        alt="Family Sponsorship Image"
+        src={familySP}
+        title="Family Sponsorship"
       />
 
-      <IntroductionStartUp />
+      <IntroductionFamily />
 
       <StepsEEComponent />
 

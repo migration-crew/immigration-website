@@ -5,11 +5,11 @@ import { SubHeading } from "@/components/common/text/SubHeading";
 import howEEworks from "@/public/howEEworks.jpg";
 import Image from "next/image";
 
-export const IntroductionEE = () => {
+export const IntroductionFamily = () => {
   return (
     <>
       <SectionContainer>
-        <Heading className="py-10">Overview of Express Entry System</Heading>
+        <Heading className="py-10">Overview of Family Sponsorship</Heading>
 
         <SectionContainer className="pb-10">
           <SubHeading className="pb-3">How does Express Entry work?</SubHeading>

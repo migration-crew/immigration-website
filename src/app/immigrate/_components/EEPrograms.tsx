@@ -9,7 +9,7 @@ import Image from "next/image";
 export const EEPrograms = () => {
   return (
     <>
-      <SectionContainer>
+      <SectionContainer className="py-10">
         <Image
           className="pt-10 pb-10"
           src={EEProgramsImage}
@@ -19,34 +19,36 @@ export const EEPrograms = () => {
         />
       </SectionContainer>
 
-      <SectionContainer>
-        <Heading>Federal Immigration Programs Managed by Express Entry</Heading>
+      <SectionContainer className="pb-[26px]">
+        <Heading className="pb-3">
+          Federal Immigration Programs Managed by Express Entry
+        </Heading>
 
-        <Paragraph>
+        <Paragraph className="pt-4">
           Express Entry operates through an online system that manages
           applications for three federal immigration programs:
         </Paragraph>
       </SectionContainer>
 
-      <SectionContainer>
+      <SectionContainer className="pb-[26px]">
         <SubHeading>1. Federal Skilled Worker Program</SubHeading>
-        <Paragraph>
+        <Paragraph className="pt-4">
           The Federal Skilled Worker Program is for skilled workers who have
           work experience and want to become permanent residents.
         </Paragraph>
       </SectionContainer>
-      <SectionContainer>
+      <SectionContainer className="pb-[26px]">
         <SubHeading>2. Federal Skilled Trades Program</SubHeading>
-        <Paragraph>
+        <Paragraph className="pt-4">
           The Federal Skilled Trades Program targets skilled tradespeople with
           qualifications in specific trades. This program emphasizes practical
           skills and work experience in trades such as electricians, plumbers,
           and chefs, among others.
         </Paragraph>
       </SectionContainer>
-      <SectionContainer>
+      <SectionContainer className="pb-[26px]">
         <SubHeading>3. Canadian Experience Class</SubHeading>
-        <Paragraph>
+        <Paragraph className="pt-4">
           The Canadian Experience Class is for individuals who have already
           gained skilled work experience in Canada. This program is ideal for
           temporary foreign workers or international graduates who have
@@ -56,7 +58,7 @@ export const EEPrograms = () => {
       </SectionContainer>
       <SectionContainer>
         <SubHeading>Who is Eligible for Express Entry?</SubHeading>
-        <Paragraph>
+        <Paragraph className="pt-4">
           Eligibility for Express Entry depends on several factors including
           age, education, work experience, and language proficiency. Detailed
           criteria are available on our Express Entry Work Experience
@@ -65,7 +67,7 @@ export const EEPrograms = () => {
       </SectionContainer>
 
       <SectionContainer>
-        <div className="text-center mt-12">
+        <div className="text-center py-10">
           <BookFreeConsultation />
         </div>
       </SectionContainer>
