@@ -1,7 +1,4 @@
-type StepsType = {
-  title: string;
-  description: string;
-};
+import { StepsType } from "@/types/StepsType";
 
 export const Steps: StepsType[] = [
   {
