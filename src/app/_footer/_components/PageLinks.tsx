@@ -14,25 +14,24 @@ export type LinksType = {
 const servicesLinks: LinksType = {
     title: "services",
     links: [
-        { name: "immigrate", href: "#" },
-        { name: "work", href: "#" },
-        { name: "study", href: "#" },
-        { name: "sponsor", href: "#" },
+        { name: "immigrate", href: "/immigrate" },
+        { name: "work", href: "/work" },
+        { name: "study", href: "/study" },
+        { name: "sponsor", href: "/sponsor" },
     ]
 }
 
 const companyLinks: LinksType = {
     title: "company",
-    href: "#",
     links: [
-        { name: "aboutUs", href: "#" },
-        { name: "contact", href: "#" },
+        { name: "aboutUs", href: "/about" },
+        { name: "contact", href: "/contact" },
     ]
 }
 
 const faqLinks: LinksType = {
     title: "faq",
-    href: "#",
+    href: "/faq",
 }
 
 export default function PageLinks() {

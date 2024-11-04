@@ -13,9 +13,13 @@ export default function SubLinks({ link }: Props) {
 
     return (
         <div className="flex flex-col space-y-3">
-            <Link href={link.href || "#"}>
+            {link.href ? (
+                <Link href={link.href}>
+                    <Menu className="text-primary-white">{t(`${link.title}`)}</Menu>
+                </Link>
+            ) : (
                 <Menu className="text-primary-white">{t(`${link.title}`)}</Menu>
-            </Link>
+            )}
             {link.links && link.links.map((link) => ((
                 <div key={link.name} className="flex flex-col space-y-2">
                     <Link href={link.href}>
