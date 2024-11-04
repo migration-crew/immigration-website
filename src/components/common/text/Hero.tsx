@@ -20,5 +20,5 @@ export const Hero = ({
   className?: string | undefined;
   children: React.ReactNode;
 }) => {
-  return <h1 className={cn("text-hero-section-mobile lg:text-hero-section", className)}>{children}</h1>;
+  return <h1 className={cn("text-hero-section-mobile xl:text-hero-section", className)}>{children}</h1>;
 };

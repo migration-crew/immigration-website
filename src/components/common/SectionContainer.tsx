@@ -4,6 +4,7 @@ import React from "react";
 /**
  * Common Section Container
  * @param className - pass custom classes
+ * @param bgColor - pass background color
  * @param children - our own components or html elements
  * @example
  * ```tsx
@@ -14,14 +15,16 @@ import React from "react";
  */
 export const SectionContainer = ({
   className,
+  bgColor,
   children,
 }: {
   className?: string | undefined;
+  bgColor?: string | undefined;
   children: React.ReactNode;
 }) => {
   return (
-    <section className="grid place-content-center w-full">
-      <div className={cn("w-[398px] lg:w-[1080px]", className)}>{children}</div>
+    <section className={cn("grid place-content-center w-full", bgColor)}>
+      <div className={cn("w-[355px] xl:w-[1080px]", className)}>{children}</div>
     </section>
   );
 };

@@ -19,9 +19,18 @@ type Props = {
  * @param children - our own components or html elements
  * @example
  * ```tsx
- *  <SectionContainer className="py-[40px] lg:py-[50px]">
-      <p>By taking this quiz, you will discover xxx.</p>
-    </SectionContainer>
+ *  <ResponsiveImage
+          alt="Larissa"
+          src={Larissa}
+          divClassName="w-[398px] h-[316px]"
+          imgClassName="rounded-3xl"
+        >
+          <div className="absolute w-full h-full grid place-content-center bg-secondary-blue-op-20 rounded-t-xl">
+            <h1 className="text-page-titles-mobile xl:text-heading-mobile font-bold text-primary-white">
+              Larissa
+            </h1>
+          </div>
+        </ResponsiveImage>
  * ```
  */
 export const ResponsiveImage = ({
@@ -39,7 +48,7 @@ export const ResponsiveImage = ({
         layout={"fill"}
         objectFit={"cover"}
         quality={100}
-        className={imgClassName}
+        className={cn(imgClassName)}
       />
       {children}
     </div>

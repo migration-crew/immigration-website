@@ -1,20 +1,31 @@
 import { SectionContainer } from "@/components/common/SectionContainer";
 import { Button } from "@/components/ui/UpImmigrationButton";
+import { cn } from "@/lib/utils";
 import googleReview from "@/public/googleReview.png";
+import { TestimonialsType } from "@/types/TestimonialsType";
 import Image from "next/image";
 import Link from "next/link";
 import { Caption } from "./text/Caption";
 import { HeavyBody } from "./text/HeavyBody";
 import { HeavySubHeader } from "./text/HeavySubHeader";
-import { TestimonialsType } from "@/types/TestimonialsType";
 
 type Props = {
-  testimonials: TestimonialsType[]
-}
+  testimonials: TestimonialsType[];
+  className?: string | undefined;
+};
 
-export const Testimonial = ({ testimonials }: Props) => {
+/**
+ * Testimonial section
+ * @param testimonials - pass testimonials data
+ * @param className - pass custom classes to section container of Testimonial component
+ * @example
+ * ```tsx
+ *  <Testimonial testimonials={testimonialData} className="pt-[50px] py-[100px]" />
+ * ```
+ */
+export const Testimonial = ({ testimonials, className }: Props) => {
   return (
-    <SectionContainer className="hidden lg:block">
+    <SectionContainer className={cn("hidden lg:block", className)}>
       <div>
         <h2 className="text-3xl font-bold mb-6">Testimonials</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

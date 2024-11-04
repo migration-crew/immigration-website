@@ -1,0 +1,21 @@
+import { ContactItem } from "@/data/ContactData"
+import { useTranslations } from "next-intl"
+
+type Props = {
+    className: string | undefined
+    components: ContactItem[]
+}
+
+export default function ContactMenu({ className, components }: Props) {
+    const t = useTranslations("LocaleSwitcher")
+
+    return (
+        <div className={`flex space-x-4 ${className}`}>
+            {components.map((component) => (
+                <a target="_blank" key={component.name} href={component.href}>
+                    <component.imageComponent size={35} />
+                </a>
+            ))}
+        </div>
+    )
+}
