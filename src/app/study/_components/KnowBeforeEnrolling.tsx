@@ -2,7 +2,7 @@ import { SectionContainer } from "@/components/common/SectionContainer";
 
 export function KnowBeforeEnrolling() {
   return (
-    <SectionContainer>
+    <SectionContainer className="flex flex-col gap-6 px-4">
       <h2 className="text-2xl font-bold">
         All you have to know before enrolling to study in Canada
       </h2>
