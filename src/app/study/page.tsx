@@ -1,5 +1,6 @@
 import { HeaderPicture } from "@/components/common/HeaderPicture";
 import studyImage from "@/public/study.jpeg";
+import { StudyInCanada } from "./_components/StudyInCanada";
 
 export default function StudyPage() {
   return (
@@ -9,6 +10,7 @@ export default function StudyPage() {
         src={studyImage}
         title={"Study"}
       />
+      <StudyInCanada />
     </div>
   );
 }
