@@ -9,9 +9,9 @@ export function ContactForm() {
   }
 
   return (
-    <Card>
+    <Card className="xl:w-full xl:w-3/5">
       <UpImmigrationForm title="Send us a message" 
-      className="min-w-[550px]" onSubmitCallback={handleOnSubmit}/>
+      className="min-h-[550px] xl:min-h-[500px]" onSubmitCallback={handleOnSubmit}/>
     </Card>
   );
 }
