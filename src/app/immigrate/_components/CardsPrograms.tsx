@@ -29,12 +29,12 @@ export const CardsPrograms = () => {
             </a>
           ))}
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
           {ImmigrationPrograms.map((program) => (
             <div
               id={program.title}
               key={program.title}
-              className="bg-white rounded-lg overflow-hidden shadow-md"
+              className="bg-white rounded-lg overflow-hidden shadow-[0px_-8px_10px_-1px_rgba(0,0,0,0.10)]"
             >
               <div className="p-6">
                 <div className="flex justify-between">

@@ -1,4 +1,3 @@
-import { Menu } from 'lucide-react'
 import {
     Sheet,
     SheetClose,
@@ -6,10 +5,11 @@ import {
     SheetFooter,
     SheetTrigger,
 } from "@/components/ui/SheetForHeader"
+import { contactData } from '@/data/ContactData'
+import { Menu } from 'lucide-react'
+import ContactMenu from '../../../components/common/ContactMenu'
 import { HeaderComponent } from '../Header'
 import NavigationMenuForMobile from './NavigationMenuForMobile'
-import { contactData } from '@/data/ContactData'
-import HamburgerMenuFooter from './HamburgerMenuFooter'
 
 type Props = {
     className: string | undefined
@@ -30,7 +30,7 @@ export default function HamburgerMenu({className, immigrateComponents, workCompo
                 />
                 <SheetFooter>
                     <SheetClose asChild>
-                        <HamburgerMenuFooter components={contactData}/>
+                        <ContactMenu className="fixed bottom-10" components={contactData}/>
                     </SheetClose>
                 </SheetFooter>
             </SheetContent>

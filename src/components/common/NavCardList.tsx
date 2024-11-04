@@ -67,7 +67,10 @@ const navCardItems = [
 export const NavCardList = forwardRef<HTMLDivElement, Props>(
   function NavCardList({ refs }: Props, ref) {
     return (
-      <div className="flex flex-col flex-shrink-0" ref={ref}>
+      <div
+        className="flex flex-col lg:grid lg:grid-cols-2 gap-4 flex-shrink-0"
+        ref={ref}
+      >
         {navCardItems.map((item, index) => (
           <NavCardItem
             key={item.id}

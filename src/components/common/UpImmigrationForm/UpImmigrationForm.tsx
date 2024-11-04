@@ -1,6 +1,6 @@
 "use client";
 
-import { Form } from "@/components/ui/BookConsultationForm";
+import { Form } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
