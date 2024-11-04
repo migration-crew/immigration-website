@@ -3,7 +3,7 @@ import { SectionContainer } from "@/components/common/SectionContainer";
 
 export function StudyInCanada() {
   return (
-    <SectionContainer className="flex flex-col gap-4 p-4">
+    <SectionContainer className="flex flex-col gap-4">
       <h2 className="text-xl font-bold ">Why study in Canada?</h2>
       <p>
         Canada offers world-class education, diverse cultural experiences, and
