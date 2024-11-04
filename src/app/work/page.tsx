@@ -17,7 +17,7 @@ export default function WorkPage() {
       <WorkInCanada />
       <DiscoverOptions />
       <StepsComponent />
-      <ApplicationGuide />
+      <ApplicationGuide title="Where to start?" />
       <Testimonial testimonials={testimonialData} />
       <TestimonialMobile testimonials={testimonialData} />
       <FAQ data={FAQs} />
