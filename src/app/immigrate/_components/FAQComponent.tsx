@@ -2,7 +2,7 @@
 import { SectionContainer } from "@/components/common/SectionContainer";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
-import { FAQs } from "../content/faqs";
+import { FAQs } from "../../../data/faqsImmigrateData";
 
 export const FAQComponent = () => {
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);

@@ -4,7 +4,7 @@ import { Paragraph } from "@/components/common/text/Paragraph";
 import { SubHeading } from "@/components/common/text/SubHeading";
 import PNPrograms from "@/public/Provincial-Nominee-Programs.jpg";
 import Image from "next/image";
-import { PNPFAQs } from "../content/faqs";
+import { PNPFAQs } from "../../../data/faqsImmigrateData";
 
 export const PNProgramsComponent = () => {
   return (
