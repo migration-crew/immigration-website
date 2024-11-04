@@ -11,6 +11,7 @@ import { LastNameField } from "./_components/LastNameField";
 import { MessageField } from "./_components/MessageField";
 import { SendButton } from "./_components/SendButton";
 import { Heading } from "../../common/text/Heading";
+import { useTranslations } from "next-intl";
 
 const formSchema = z.object({
   firstname: z.string().trim(),
@@ -29,6 +30,7 @@ export type FormValues = z.infer<typeof formSchema>;
 
 export function UpImmigrationForm({ className, title, onSubmitCallback }: Props) {
   const { toast } = useToast();
+  const t = useTranslations("Form");
 
   // 1. Here I define a form using react-hook-form.
   const form = useForm<FormValues>({
@@ -46,7 +48,7 @@ export function UpImmigrationForm({ className, title, onSubmitCallback }: Props)
     onSubmitCallback();
     console.log(values);
     toast({
-      description: "Thanks for your message! We will get back to you soon.",
+      description: t("submitMessage"),
     });
     form.reset();
   }
