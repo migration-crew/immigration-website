@@ -26,6 +26,9 @@
         "workInCanada": "Work in Canada",
         "labourMarketImpactAssessment": "Labour Market Impact Assessment (LMIA)",
         "postGraduationWorkPermit": "Post-Graduation Work Permit",
-        "otherPermits": "Other Permits"
+        "otherPermits": "Other Permits",
+        "services": "Services",
+        "company": "Company",
+        "sponsor": "Sponsor"
     }
 }
