@@ -1,8 +1,9 @@
 import { HeaderPicture } from "@/components/common/HeaderPicture";
+import { StepsComponent } from "@/components/common/Steps";
 import caregiver from "@/public/caregiver.jpg";
 import { EEPrograms } from "../_components/EEPrograms";
 import { IntroductionCaregiver } from "../_components/IntroductionCaregiver";
-import { StepsEEComponent } from "../_components/StepsEE";
+import { EPSteps } from "../content/steps";
 
 export default function Caregiver() {
   return (
@@ -15,7 +16,7 @@ export default function Caregiver() {
 
       <IntroductionCaregiver />
 
-      <StepsEEComponent />
+      <StepsComponent steps={EPSteps} title="What is the process?" />
 
       <EEPrograms />
     </>

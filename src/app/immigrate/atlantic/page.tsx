@@ -1,8 +1,9 @@
 import { HeaderPicture } from "@/components/common/HeaderPicture";
+import { StepsComponent } from "@/components/common/Steps";
 import atlanticIP from "@/public/atlanticIP.jpg";
 import { EEPrograms } from "../_components/EEPrograms";
 import { IntroductionAtlantic } from "../_components/IntroductionAtlantic";
-import { StepsEEComponent } from "../_components/StepsEE";
+import { EPSteps } from "../content/steps";
 
 export default function AtlanticImmigration() {
   return (
@@ -15,7 +16,7 @@ export default function AtlanticImmigration() {
 
       <IntroductionAtlantic />
 
-      <StepsEEComponent />
+      <StepsComponent steps={EPSteps} title="What is the process?" />
 
       <EEPrograms />
     </>
