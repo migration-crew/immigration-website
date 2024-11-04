@@ -15,7 +15,7 @@ type Props = {
 };
 
 /**
- * FAQ section
+ * Testimonial section
  * @param testimonials - pass testimonials data
  * @param className - pass custom classes to section container of Testimonial component
  * @example
