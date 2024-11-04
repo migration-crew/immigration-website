@@ -29,7 +29,7 @@ export const NavCardItem = forwardRef<HTMLDivElement, Props>(
       <Card
         id={id}
         className={`flex flex-col p-6 rounded-[20px] gap-4 self-stretch shadow-[0px_-8px_10px_-1px_rgba(0,0,0,0.10)] ${
-          isLast ? "" : "mb-[-51px] lg:mb-0"
+          isLast ? "" : "mb-[-51px] xl:mb-0"
         }`}
         ref={ref}
       >
