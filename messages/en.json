@@ -36,5 +36,14 @@
         "company": "Company",
         "sponsor": "Sponsor",
         "allRightsReserved": "All Rights Reserved."
+    },
+    "Form": {
+        "bookAConsultation": "Book a Consultation",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send",
+        "submitMessage": "Thanks for your message! We will get back to you soon."
     }
 }
