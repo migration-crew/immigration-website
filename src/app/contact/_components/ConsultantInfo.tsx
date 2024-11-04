@@ -7,27 +7,28 @@ import Image from "next/image";
 
 export function ConsultantInfo() {
   return (
-    <div className="flex my-14">
-      <Card>
+    <div className="xl:flex my-14 xl:items-center">
+      <div className="xl:w-2/5">
         <Image
           alt="contact us"
           src={Consultant}
           className="rounded-md"
-          layout="fill"
         />
-      </Card>
-      <div className="ml-4 w-3/4 pt-44">
-        <Heading>How Can We Help You Today?</Heading>
-        <SubHeading className="text-primary-red">
-          Larissa Castelluber
-        </SubHeading>
-        <OtherButton>
-          Hi there, <br />
-          I'm Larissa Castelluber, and I'm dedicated to helping you achieve your
-          Canadian dream. I understand the challenges of the immigration process
-          and am here to provide you with the support and guidance you need.
-          Let's make your journey to Canada a successful and fulfilling one!
-        </OtherButton>
+      </div>
+      <div className="space-y-7 xl:ml-7 xl:w-3/5 xl:flex xl:flex-col xl:space-y-10">
+        <Heading className="mt-7">How Can We Help You Today?</Heading>
+        <div className="xl:flex xl:flex-col space-y-4">
+          <SubHeading className="text-primary-red">
+            Larissa Castelluber
+          </SubHeading>
+          <OtherButton>
+            Hi there, <br />
+            I'm Larissa Castelluber, and I'm dedicated to helping you achieve your
+            Canadian dream. I understand the challenges of the immigration process
+            and am here to provide you with the support and guidance you need.
+            Let's make your journey to Canada a successful and fulfilling one!
+          </OtherButton>
+        </div>
       </div>
     </div>
   );
