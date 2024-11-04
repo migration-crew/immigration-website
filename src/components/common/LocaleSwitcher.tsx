@@ -22,39 +22,40 @@ export default function LanguageSwitcher() {
     };
 
     return (
-        // The select component is a custom component that is not provided by the library
-        // <>
-        //     <select value={locale} onChange={(e) => handleLanguageChange(e.target.value)} className="w-[70px]">
-        //         <option value="en">
-        //             {t("en")}
-        //             {/* <Image src={unitedStates} alt="english" width={25} /> */}
-        //         </option>
-        //         <option value="es">
-        //             {t("es")}
-        //             {/* <Image src={spain} alt="spanish" width={25} /> */}
-        //         </option>
-        //         <option value="pt">
-        //             {t("pt")}
-        //             {/* <Image src={brazil} alt="portuguese" width={25} /> */}
-        //         </option>
-        //     </select>
-        // </>
+        <>
+            <select
+                value={locale}
+                onChange={(e) => handleLanguageChange(e.target.value)}
+                className="w-[90px] p-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:border-transparent transition-colors"
+            >
+                <option value="en" className="flex items-center">
+                    EN
+                </option>
+                <option value="es" className="flex items-center">
+                    ES
+                </option>
+                <option value="pt" className="flex items-center">
+                    PT-BR
+                </option>
+            </select>
+        </>
 
-        <Select value={locale} onValueChange={handleLanguageChange}>
-            <SelectTrigger className="w-[70px]">
-                <SelectValue placeholder="Select Language" />
-            </SelectTrigger>
-            <SelectContent>
-                <SelectItem value="en">
-                    <Image src={unitedStates} alt="english" width={25}/>
-                </SelectItem>
-                <SelectItem value="es">
-                    <Image src={spain} alt="spanish" width={25}/> 
-                </SelectItem>
-                <SelectItem value="pt">
-                    <Image src={brazil} alt="portuguese" width={25}/> 
-                </SelectItem>
-            </SelectContent>
-        </Select>
+        // FIXME: I couldn't use the Select component from Shadcn because the weired margin will appear on the right side of the container
+        // <Select value={locale} onValueChange={handleLanguageChange}>
+        //     <SelectTrigger className="w-[70px]">
+        //         <SelectValue placeholder="Select Language" />
+        //     </SelectTrigger>
+        //     <SelectContent>
+        //         <SelectItem value="en">
+        //             <Image src={unitedStates} alt="english" width={25}/>
+        //         </SelectItem>
+        //         <SelectItem value="es">
+        //             <Image src={spain} alt="spanish" width={25}/> 
+        //         </SelectItem>
+        //         <SelectItem value="pt">
+        //             <Image src={brazil} alt="portuguese" width={25}/> 
+        //         </SelectItem>
+        //     </SelectContent>
+        // </Select>
     );
 };
