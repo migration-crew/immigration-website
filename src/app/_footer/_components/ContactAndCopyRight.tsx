@@ -8,7 +8,7 @@ export default function ContactAndCopyRight() {
 
     return (
         <div className="flex flex-col justify-between items-end">
-            <ContactMenu className="" components={contactData}/>
+            <ContactMenu className="text-primary-white" components={contactData}/>
             <Caption className="text-primary-white">
                 {`©Up Immigration Consulting. ${t("allRightsReserved")}`}
             </Caption>
