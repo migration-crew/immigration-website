@@ -7,7 +7,9 @@ import {
   CarouselItem,
   type CarouselApi,
 } from "@/components/ui/carousel";
+import { cn } from "@/lib/utils";
 import googleReview from "@/public/googleReview.png";
+import { TestimonialsType } from "@/types/TestimonialsType";
 import Image from "next/image";
 import * as React from "react";
 import { SectionContainer } from "./SectionContainer";
@@ -15,13 +17,22 @@ import { Caption } from "./text/Caption";
 import { Heading } from "./text/Heading";
 import { HeavyBody } from "./text/HeavyBody";
 import { HeavySubHeader } from "./text/HeavySubHeader";
-import { TestimonialsType } from "@/types/TestimonialsType";
 
 type Props = {
-  testimonials: TestimonialsType[]
-}
+  testimonials: TestimonialsType[];
+  className?: string | undefined;
+};
 
-export default function TestimonialMobile({ testimonials }: Props) {
+/**
+ * Testimonial section for mobile
+ * @param testimonials - pass testimonials data
+ * @param className - pass custom classes to section container of Testimonial component for mobile
+ * @example
+ * ```tsx
+ *  <TestimonialMobile testimonials={testimonialData} className="pt-[50px] py-[100px]" />
+ * ```
+ */
+export default function TestimonialMobile({ testimonials, className }: Props) {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
@@ -40,7 +51,7 @@ export default function TestimonialMobile({ testimonials }: Props) {
   }, [api]);
 
   return (
-    <SectionContainer className="lg:hidden">
+    <SectionContainer className={cn("lg:hidden", className)}>
       <Heading>Success stories</Heading>
       <div className="flex justify-between">
         <Image
