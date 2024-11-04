@@ -1,5 +1,6 @@
 "use client";
 import { UpImmigrationForm } from "@/components/common/UpImmigrationForm/UpImmigrationForm";
+import { Card } from "@/components/ui/card";
 
 export function BookFreeConsultationForm() {
   const handleOnSubmit = () => {
@@ -8,6 +9,8 @@ export function BookFreeConsultationForm() {
   }
 
   return (
-    <UpImmigrationForm title="Book a free initial consultation!" onSubmitCallback={handleOnSubmit}/>
+    <Card>
+      <UpImmigrationForm title="Book a free initial consultation!" onSubmitCallback={handleOnSubmit}/>
+    </Card>
   );
 }
