@@ -37,7 +37,7 @@ const faqLinks: LinksType = {
 
 export default function PageLinks() {
     return (
-        <div className="flex space-x-20 xl:space-x-60">
+        <div className="flex space-x-14 xl:space-x-60">
             <SubLinks link={servicesLinks} />
             <SubLinks link={companyLinks} />
             <SubLinks link={faqLinks} />

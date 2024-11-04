@@ -4,7 +4,7 @@ import PageLinks from "./_components/PageLinks";
 
 export default function Footer() {
     return (
-        <footer className="pl-20 pt-14 pr-20 pb-24 bg-primary-red mt-40 xl:mt-100 xl:flex justify-between">
+        <footer className="p-5 xl:pl-20 xl:pt-14 xl:pr-20 xl:pb-24 bg-primary-red mt-40 xl:mt-100 xl:flex justify-between space-y-5">
             <Logo />
             <PageLinks />
             <ContactAndCopyRight />

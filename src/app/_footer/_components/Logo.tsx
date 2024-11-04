@@ -1,4 +1,4 @@
-import logoWhite from '../../../public/logoWhite.png'
+import logoWhite from '@/public/logoWhite.png'
 import Image from 'next/image';
 
 export default function Logo() {
@@ -8,7 +8,7 @@ export default function Logo() {
             alt="logo image"
             quality={100}
             priority
-            className="lg:w-56 lg:h-32"
+            className="w-36 lg:w-56 lg:h-32"
         />
     );
 }
