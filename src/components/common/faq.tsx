@@ -5,8 +5,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/FAQaccordion";
 import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { QAItem } from "@/data/FAQData";
+
 import { cn } from "@/lib/utils";
+import { QAItem } from "@/types/FAQ";
 import { SectionContainer } from "./SectionContainer";
 
 type Props = {

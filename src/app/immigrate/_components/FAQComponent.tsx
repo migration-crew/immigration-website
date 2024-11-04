@@ -1,8 +1,8 @@
 "use client";
 import { SectionContainer } from "@/components/common/SectionContainer";
+import { FAQs } from "@/data/FAQData";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
-import { FAQs } from "../content/faqs";
 
 export const FAQComponent = () => {
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
