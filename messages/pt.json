@@ -6,5 +6,25 @@
         "en": "Inglês",
         "pt": "Português",
         "es": "Espanhol"
+    },
+    "NavigationMenu": {
+        "immigrate": "Imigrar",
+        "work": "Trabalhar",
+        "study": "Estudar",
+        "aboutUs": "Sobre Nós",
+        "contact": "Contato",
+        "blog": "Blog",
+        "faq": "Perguntas Frequentes",
+        "immigrateToCanada": "Imigrar para o Canadá",
+        "expressEntry": "Entrada Expressa",
+        "provincialNomineeProgram": "Programa de Nomeação Provincial - PNP",
+        "familySponsorship": "Patrocínio Familiar",
+        "caregiversPrograms": "Programas para Cuidadores",
+        "investorsEntrepreneurs": "Para Investidores e Empreendedores",
+        "otherPrograms": "Outros Programas",
+        "workInCanada": "Trabalhar no Canadá",
+        "labourMarketImpactAssessment": "Avaliação de Impacto no Mercado de Trabalho (LMIA)",
+        "postGraduationWorkPermit": "Permissão de Trabalho Pós-Graduação",
+        "otherPermits": "Outras Permissões"
     }
 }

@@ -2,6 +2,18 @@ import { useTranslations } from "next-intl";
 
 import { HeaderPicture } from "@/components/common/HeaderPicture";
 import { SectionContainer } from "@/components/common/SectionContainer";
+import { Caption } from "@/components/common/text/Caption";
+import { CtaButton } from "@/components/common/text/CtaButton";
+import { Heading } from "@/components/common/text/Heading";
+import { HeavyBody } from "@/components/common/text/HeavyBody";
+import { HeavySubHeader } from "@/components/common/text/HeavySubHeader";
+import { Hero } from "@/components/common/text/Hero";
+import { Input } from "@/components/common/text/Input";
+import { Menu } from "@/components/common/text/Menu";
+import { OtherButton } from "@/components/common/text/OtherButton";
+import { Paragraph } from "@/components/common/text/Paragraph";
+import { SubHeading } from "@/components/common/text/SubHeading";
+import { Title } from "@/components/common/text/Title";
 import about from "@/public/about.jpeg";
 
 export default function AboutPage() {
@@ -43,6 +55,20 @@ export default function AboutPage() {
             the Canadian immigration process.
           </p>
         </div>
+      </SectionContainer>
+      <SectionContainer>
+        <Hero>Hero</Hero>
+        <Title>Title</Title>
+        <Heading>Heading</Heading>
+        <SubHeading>Sub Heading</SubHeading>
+        <Paragraph>Paragraph</Paragraph>
+        <Caption>Caption</Caption>
+        <CtaButton>CtaButton</CtaButton>
+        <OtherButton>OtherButton</OtherButton>
+        <Menu>Menu</Menu>
+        <Input>Input</Input>
+        <HeavySubHeader>HeavySubHeader</HeavySubHeader>
+        <HeavyBody>HeavyBody</HeavyBody>
       </SectionContainer>
     </>
   );
