@@ -17,11 +17,11 @@ type Props = {
 };
 
 /**
- * Common Section Container
+ * FAQ section
  * @param data - pass FAQ data
  * @param title - pass title
  * @param bgColor - pass background color
- * @param className - pass custom classes
+ * @param className - pass custom classes to section container of faq component
  * @example
  * ```tsx
  *  <FAQ
