@@ -23,7 +23,7 @@ export const HeavySubHeader = ({
   return (
     <p
       className={cn(
-        "text-text-heavy-sub-header-mobile lg:text-text-heavy-sub-header",
+        "text-text-heavy-sub-header-mobile xl:text-text-heavy-sub-header",
         className
       )}
     >
