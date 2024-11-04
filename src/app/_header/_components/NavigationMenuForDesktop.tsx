@@ -54,12 +54,12 @@ export default function NavigationMenuForDesktop({className, immigrateComponents
                         {t("contact")}
                     </NavigationMenuLink>
                 </NavigationMenuItem>
-                {/* Blog */}
-                <NavigationMenuItem>
+                {/* Blog (We don't know if it's necessary, so I commented our for now) */}
+                {/* <NavigationMenuItem>
                     <NavigationMenuLink href="/blog" className="text-menu">
                         {t("blog")}
                     </NavigationMenuLink>
-                </NavigationMenuItem>
+                </NavigationMenuItem> */}
                 {/* FAQ */}
                 <NavigationMenuItem>
                     <NavigationMenuLink href="/faq" className="text-menu">
