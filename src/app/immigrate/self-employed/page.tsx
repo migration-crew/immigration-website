@@ -1,8 +1,9 @@
 import { HeaderPicture } from "@/components/common/HeaderPicture";
+import { StepsComponent } from "@/components/common/Steps";
 import selfEmployed from "@/public/selfEmployed.jpg";
 import { EEPrograms } from "../_components/EEPrograms";
 import { IntroductionSelfEmployed } from "../_components/IntroductionSelfEmployed";
-import { StepsEEComponent } from "../_components/StepsEE";
+import { EPSteps } from "../content/steps";
 
 export default function SelfEmployed() {
   return (
@@ -15,7 +16,7 @@ export default function SelfEmployed() {
 
       <IntroductionSelfEmployed />
 
-      <StepsEEComponent />
+      <StepsComponent steps={EPSteps} title="What is the process?" />
 
       <EEPrograms />
     </>
