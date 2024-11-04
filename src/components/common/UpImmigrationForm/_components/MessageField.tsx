@@ -1,30 +1,32 @@
+import { Textarea } from "@/components/ui/textarea";
 import {
   FormControl,
   FormField,
   FormItem,
   FormLabel,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
 import { Control } from "react-hook-form";
-import { FormValues } from "./BookFreeConsultationForm";
+import { FormValues } from "../UpImmigrationForm";
+import { useTranslations } from "next-intl";
 
 interface Props {
   control: Control<FormValues>;
 }
 
-export function EmailField({ control }: Props) {
+export function MessageField({ control }: Props) {
+  const t = useTranslations("Form");
+
   return (
     <FormField
       control={control}
-      name="email"
+      name="message"
       render={({ field }) => (
         <FormItem>
-          <FormLabel>Email</FormLabel>
+          <FormLabel>{t("message")}</FormLabel>
           <FormControl>
-            <Input
+            <Textarea
               {...field}
               className={`rounded-[8px] py-3 px-4 bg-white`}
-              required
             />
           </FormControl>
         </FormItem>

@@ -6,20 +6,23 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Control } from "react-hook-form";
-import { FormValues } from "./BookFreeConsultationForm";
+import { FormValues } from "../UpImmigrationForm";
+import { useTranslations } from "next-intl";
 
 interface Props {
   control: Control<FormValues>;
 }
 
-export function LastNameField({ control }: Props) {
+export function EmailField({ control }: Props) {
+  const t = useTranslations("Form");
+
   return (
     <FormField
       control={control}
-      name="lastname"
+      name="email"
       render={({ field }) => (
         <FormItem>
-          <FormLabel>Last Name</FormLabel>
+          <FormLabel>{t("email")}</FormLabel>
           <FormControl>
             <Input
               {...field}

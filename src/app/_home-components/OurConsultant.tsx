@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export const OurConsultant = () => {
   return (
-    <SectionContainer className="pt-[100px] pb-[50px] xl:flex">
+    <SectionContainer className="pt-[100px] pb-[50px] xl:flex" bgColor="bg-neutral-secondary-white">
       <div className="max-w-[640px]">
         <h2 className="text-heading-mobile xl:text-heading">Our consultant</h2>
         <SubHeading className="py-4 xl:pb-0">Larissa Castelluber</SubHeading>
