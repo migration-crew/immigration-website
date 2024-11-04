@@ -29,9 +29,9 @@ export const Quiz = () => {
           ></ResponsiveImage>
         </CardHeader>
         <CardFooter className="bg-primary-red flex-1 rounded-b-xl p-4 xl:p-6 flex justify-between xl:justify-center text-primary-white">
-          <Title className="text-[36px]">Start Quiz</Title>
-          <ArrowRight size={36} className="xl:hidden"/>
-          <ArrowRight size={48} className="hidden xl:block ml-2"/>
+          <Title className="text-[36px]">Start Quiz!</Title>
+          <ArrowRight size={36} strokeWidth={4} className="xl:hidden"/>
+          <ArrowRight size={48} strokeWidth={4} className="hidden xl:block ml-2"/>
         </CardFooter>
       </Card>
     </SectionContainer>
