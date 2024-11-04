@@ -1,10 +1,10 @@
+import { Textarea } from "@/components/ui/textarea";
 import {
   FormControl,
   FormField,
   FormItem,
   FormLabel,
-} from "@/components/ui/BookConsultationForm";
-import { Textarea } from "@/components/ui/BookConsultationTextarea";
+} from "@/components/ui/form";
 import { Control } from "react-hook-form";
 import { FormValues } from "./BookFreeConsultationForm";
 
