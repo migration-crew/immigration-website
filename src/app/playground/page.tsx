@@ -35,7 +35,7 @@ export default function AboutPage() {
           navigate the complexities of immigration with confidence.
         </p>
       </SectionContainer>
-      <SectionContainer className="lg:flex py-[50px] lg:py-[40px]">
+      <SectionContainer className="xl:flex py-[50px] xl:py-[40px]">
         <div className="w-1/2">picture section</div>
         <div className="w-1/2">
           <h3>Larissa Castelluber</h3>
@@ -77,7 +77,7 @@ export default function AboutPage() {
           imgClassName="rounded-3xl"
         >
           <div className="absolute w-full h-full grid place-content-center bg-secondary-blue-op-20 rounded-t-xl">
-            <h1 className="text-page-titles-mobile lg:text-heading-mobile font-bold text-primary-white">
+            <h1 className="text-page-titles-mobile xl:text-heading-mobile font-bold text-primary-white">
               Larissa
             </h1>
           </div>
