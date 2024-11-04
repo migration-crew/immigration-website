@@ -20,7 +20,7 @@ export default function WorkPage() {
       <ApplicationGuide />
       <Testimonial testimonials={testimonialData} />
       <TestimonialMobile testimonials={testimonialData} />
-      <FAQ data={FAQs} />
+      <FAQ data={FAQs} title="Immigration Frequent Questions" />
     </div>
   );
 }
