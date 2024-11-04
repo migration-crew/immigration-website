@@ -10,9 +10,9 @@ import { PNPPrograms } from "../content/pnpPrograms";
 export const ProvincesAndTerritories = () => {
   return (
     <>
-      <SectionContainer className="py-16">
+      <SectionContainer className="mb-6 py-16">
         <SectionContainer>
-          <Heading className="mb-6">Provinces and Territories</Heading>
+          <Heading>Provinces and Territories</Heading>
           <Image
             src={Provinces}
             alt="Provincial Nominee Programs by Province"
@@ -22,9 +22,10 @@ export const ProvincesAndTerritories = () => {
         </SectionContainer>
 
         <SectionContainer>
-          <SubHeading className="mb-8 pt-10">
+          <SubHeading className="pt-10 pb-3">
             Provincial Nominee Programs by Province
           </SubHeading>
+          <div className="bg-primary-red w-[50px] h-[2.5px] mb-8"></div>
           {PNPPrograms.map((program) => (
             <div key={program.title}>
               <HeavySubHeader className="mb-6">{program.title}</HeavySubHeader>

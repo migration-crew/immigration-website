@@ -15,6 +15,7 @@ export const IntoductionRNIP = () => {
 
         <SectionContainer className="pb-10">
           <SubHeading className="pb-3">How does Express Entry work?</SubHeading>
+          <div className="bg-primary-red w-[50px] h-[2.5px]"></div>
           <Paragraph className="pt-4 text-justify">
             The Express Entry system is the fastest way for skilled workers to
             move to Canada. It uses a points system called the Comprehensive
@@ -31,6 +32,7 @@ export const IntoductionRNIP = () => {
           <SubHeading className="pb-3">
             What is the Express Entry System?
           </SubHeading>
+          <div className="bg-primary-red w-[50px] h-[2.5px]"></div>
           <Paragraph className="pt-4 text-justify">
             The Express Entry system is a streamlined immigration process
             designed to manage applications for permanent residence in Canada.
@@ -52,6 +54,7 @@ export const IntoductionRNIP = () => {
 
         <SectionContainer className="pb-10">
           <SubHeading className="pb-3">How does Express Entry work?</SubHeading>
+          <div className="bg-primary-red w-[50px] h-[2.5px]"></div>
           <Paragraph className="pt-4 text-justify">
             The Express Entry system is the fastest way for skilled workers to
             move to Canada. It uses a points system called the Comprehensive

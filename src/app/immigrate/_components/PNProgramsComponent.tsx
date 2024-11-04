@@ -24,7 +24,8 @@ export const PNProgramsComponent = () => {
       <SectionContainer>
         {PNPFAQs.map((pnpfaq) => (
           <div key={pnpfaq.question}>
-            <SubHeading className="mb-6">{pnpfaq.question}</SubHeading>
+            <SubHeading>{pnpfaq.question}</SubHeading>
+            <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
             <Paragraph className="mb-6 text-justify">{pnpfaq.answer}</Paragraph>
           </div>
         ))}
@@ -36,6 +37,7 @@ export const PNProgramsComponent = () => {
         <SubHeading className="pt-8">
           How Much Does it Cost to Immigrate through a PNP?
         </SubHeading>
+        <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
         <Paragraph className="text-justify">
           Costs vary by province and include application fees for both the
           provincial nomination and the federal permanent residence application.
@@ -45,6 +47,7 @@ export const PNProgramsComponent = () => {
         <SubHeading className="pt-8">
           What is the Processing Time for a PNP Application?
         </SubHeading>
+        <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
         <Paragraph className="text-justify">
           Processing times vary by province and stream but generally range from
           a few months to over a year.
@@ -57,6 +60,7 @@ export const PNProgramsComponent = () => {
         <SubHeading className="pt-8">
           What is the Ideal PNP Candidate?
         </SubHeading>
+        <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
         <Paragraph className="text-justify">
           The ideal candidate varies by province but generally includes
           individuals with high education, relevant work experience, strong
@@ -66,6 +70,7 @@ export const PNProgramsComponent = () => {
         <SubHeading className="pt-8">
           Do I Need an ECA Report for PNPs?
         </SubHeading>
+        <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
         <Paragraph className="text-justify">
           Most PNPs require an Educational Credential Assessment (ECA) to verify
           that your foreign education is equivalent to a Canadian credential.
@@ -74,6 +79,7 @@ export const PNProgramsComponent = () => {
         <SubHeading className="pt-8">
           How Can I Increase My Chances of Receiving a Nomination?
         </SubHeading>
+        <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
         <Paragraph className="text-justify">
           How Can I Increase My Chances of Receiving a Nomination?
         </Paragraph>
@@ -85,6 +91,7 @@ export const PNProgramsComponent = () => {
         <SubHeading className="pt-8">
           Canadian PNPs for Healthcare Professionals
         </SubHeading>
+        <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
         <Paragraph className="text-justify">
           Several provinces have streams dedicated to attracting healthcare
           professionals to address labor shortages in the healthcare sector.
@@ -93,6 +100,7 @@ export const PNProgramsComponent = () => {
         <SubHeading className="pt-8">
           Canadian PNPs for International Students
         </SubHeading>
+        <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
         <Paragraph className="text-justify">
           Many provinces have streams that facilitate the transition from
           international student to permanent resident, focusing on graduates
@@ -102,6 +110,7 @@ export const PNProgramsComponent = () => {
         <SubHeading className="pt-8">
           Canadian PNPs for IT Professionals
         </SubHeading>
+        <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
         <Paragraph className="text-justify">
           Provinces with strong tech industries, such as Ontario and British
           Columbia, have streams specifically for IT professionals.
@@ -110,6 +119,7 @@ export const PNProgramsComponent = () => {
         <SubHeading className="pt-8">
           Canadian PNPs for Entrepreneurs
         </SubHeading>
+        <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
         <Paragraph className="text-justify">
           Entrepreneurial streams are available in several provinces, targeting
           individuals who can start or invest in businesses in the province.

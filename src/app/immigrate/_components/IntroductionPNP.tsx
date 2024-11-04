@@ -15,6 +15,7 @@ export const IntroductionPNP = () => {
           <SubHeading className="pb-3">
             What are Provincial Nominee Programs?
           </SubHeading>
+          <div className="bg-primary-red w-[50px] h-[2.5px]"></div>
           <Paragraph className="pt-4 text-justify">
             The Provincial Nominee Programs (PNPs) allow Canadian provinces and
             territories to nominate individuals who wish to immigrate to Canada
