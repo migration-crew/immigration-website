@@ -2,7 +2,7 @@ import { Heading } from "@/components/common/text/Heading";
 import { OtherButton } from "@/components/common/text/OtherButton";
 import { SubHeading } from "@/components/common/text/SubHeading";
 import { Card } from "@/components/ui/card";
-import Consultant from "@/public/Consultant.png";
+import consultant from "@/public/consultant.png";
 import Image from "next/image";
 
 export function ConsultantInfo() {
@@ -11,8 +11,12 @@ export function ConsultantInfo() {
       <div className="xl:w-2/5">
         <Image
           alt="contact us"
-          src={Consultant}
-          className="rounded-md"
+          src={consultant}
+          layout="responsive"
+          objectFit="cover"
+          width={482}
+          height={642}
+          className="rounded-2xl w-full max-h-[350px] xl:max-h-[500px]"
         />
       </div>
       <div className="space-y-7 xl:ml-7 xl:w-3/5 xl:flex xl:flex-col xl:space-y-10">
