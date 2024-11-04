@@ -10,7 +10,7 @@ export default function ContactPage() {
   return (
     <>
       <HeaderPicture alt="contact us" src={Larissa} title="Contact Us" />
-      <SectionContainer className="flex">
+      <SectionContainer className="flex w-full">
         <GetInTouch />
         <ContactForm />
       </SectionContainer>

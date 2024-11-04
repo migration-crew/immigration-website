@@ -1,5 +1,6 @@
 "use client";
 import { UpImmigrationForm } from "@/components/common/UpImmigrationForm/UpImmigrationForm";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export function ContactForm() {
   const handleOnSubmit = () => {
@@ -8,6 +9,9 @@ export function ContactForm() {
   }
 
   return (
-      <UpImmigrationForm title="Send us a message" onSubmitCallback={handleOnSubmit}/>
+    <Card>
+      <UpImmigrationForm title="Send us a message" 
+      className="min-w-[550px]" onSubmitCallback={handleOnSubmit}/>
+    </Card>
   );
 }

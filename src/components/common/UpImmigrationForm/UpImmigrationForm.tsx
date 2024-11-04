@@ -10,6 +10,7 @@ import { FirstNameField } from "./_components/FirstNameField";
 import { LastNameField } from "./_components/LastNameField";
 import { MessageField } from "./_components/MessageField";
 import { SendButton } from "./_components/SendButton";
+import { Heading } from "../../common/text/Heading";
 
 const formSchema = z.object({
   firstname: z.string().trim(),
@@ -51,8 +52,8 @@ export function UpImmigrationForm({ className, title, onSubmitCallback }: Props)
   }
 
   return (
-    <div className={`py-10 px-4 flex flex-col gap-4 bg-neutral-secondary-white ${className}`}>
-      <h2 className="text-xl font-bold ">{title}</h2>
+    <div className={`py-10 px-4 flex flex-col gap-4 bg-neutral-secondary-white h-full ${className}`}>
+      <Heading>{title}</Heading>
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
