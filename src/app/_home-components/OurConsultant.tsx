@@ -7,11 +7,11 @@ import Image from "next/image";
 
 export const OurConsultant = () => {
   return (
-    <SectionContainer className="pt-[100px] pb-[50px] lg:flex">
+    <SectionContainer className="pt-[100px] pb-[50px] xl:flex">
       <div className="max-w-[640px]">
-        <h2 className="text-heading-mobile lg:text-heading">Our consultant</h2>
-        <SubHeading className="py-4 lg:pb-0">Larissa Castelluber</SubHeading>
-        <div className="relative max-w-[398px] h-[316px] lg:hidden">
+        <h2 className="text-heading-mobile xl:text-heading">Our consultant</h2>
+        <SubHeading className="py-4 xl:pb-0">Larissa Castelluber</SubHeading>
+        <div className="relative max-w-[398px] h-[316px] xl:hidden">
           <Image
             alt="Larissa"
             src={Larissa}
@@ -20,7 +20,7 @@ export const OurConsultant = () => {
             className="rounded-3xl"
           />
         </div>
-        <Paragraph className="py-4 pb-8 lg:py-8">
+        <Paragraph className="py-4 pb-8 xl:py-8">
           I&apos;m committed to helping you realize your Canadian dream. I
           understand the complexities of the immigration process and am here to
           offer the support and guidance you need. Together, we can ensure your
@@ -33,7 +33,7 @@ export const OurConsultant = () => {
             <p>Registration: R710678</p>
             <p className="text-[#E92736]">Verify with ICCRC</p>
           </div>
-          <div className="relative w-[185px] h-[45px] lg:w-[309px] lg:h-[75px]">
+          <div className="relative w-[185px] h-[45px] xl:w-[309px] xl:h-[75px]">
             <Image
               alt="CICCLogo"
               src={CICCLogo}
@@ -43,7 +43,7 @@ export const OurConsultant = () => {
           </div>
         </div>
       </div>
-      <div className="relative w-[398px] h-[316px] ml-[42px] hidden lg:block">
+      <div className="relative w-[398px] h-[316px] ml-[42px] hidden xl:block">
         <Image
           alt="Larissa"
           src={Larissa}

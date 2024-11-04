@@ -21,7 +21,7 @@ export const Input = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p className={cn("text-inputs-mobile lg:text-inputs", className)}>
+    <p className={cn("text-inputs-mobile xl:text-inputs", className)}>
       {children}
     </p>
   );

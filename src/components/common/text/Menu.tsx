@@ -21,6 +21,6 @@ export const Menu = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p className={cn("text-menu-mobile lg:text-menu", className)}>{children}</p>
+    <p className={cn("text-menu-mobile xl:text-menu", className)}>{children}</p>
   );
 };

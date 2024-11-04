@@ -8,9 +8,9 @@ import study from "@/public/studyLink.png";
 
 export const CanadianImmigrationServices = () => {
   return (
-    <SectionContainer className="py-[40px] lg:py-[50px]">
-      <h2 className="pb-6 text-heading-mobile lg:text-heading">Canadian immigration services</h2>
-      <div className="flex flex-col lg:flex-row gap-4 lg:gap-6">
+    <SectionContainer className="py-[40px] xl:py-[50px]">
+      <h2 className="pb-6 text-heading-mobile xl:text-heading">Canadian immigration services</h2>
+      <div className="flex flex-col xl:flex-row gap-4 xl:gap-6">
         <NavCard
           alt="immigrate"
           src={immigrate}
