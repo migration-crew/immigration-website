@@ -5,6 +5,7 @@ import { CanadianImmigrationServices } from "./_home-components/CanadianImmigrat
 import { OurConsultant } from "./_home-components/OurConsultant";
 import { Quiz } from "./_home-components/Quiz";
 import { Title } from "./_home-components/Title";
+import { WhyChooseUs } from "./_home-components/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <OurConsultant />
       <CanadianImmigrationServices />
       <Quiz />
+      <WhyChooseUs />
       <Testimonial
         testimonials={testimonialData}
         className="pt-[50px] pb-[100px]"
