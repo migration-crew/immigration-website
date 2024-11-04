@@ -41,8 +41,8 @@ export default function NavigationMenuForDesktop({ immigrateComponents, workComp
             <Link href="/about" className="text-menu">{t("aboutUs")}</Link>
             {/* Contact */}
             <Link href="/contact" className="text-menu">{t("contact")}</Link>
-            {/* Blog */}
-            <Link href="/blog" className="text-menu">{t("blog")}</Link>
+            {/* Blog (We don't know if it's necessary, so I commented our for now) */}
+            {/* <Link href="/blog" className="text-menu">{t("blog")}</Link> */}
             {/* FAQ */}
             <Link href="/faq" className="text-menu">{t("faq")}</Link>
         </div>

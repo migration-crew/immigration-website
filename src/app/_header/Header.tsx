@@ -13,14 +13,19 @@ export type HeaderComponent = {
 export default function Header() {
     const t = useTranslations("NavigationMenu")
 
+    const urlPrefix = "/immigrate"
+
     const immigrateComponents: HeaderComponent[] = [
-        { title: t("immigrateToCanada"), href: "/immigrate" },
-        { title: t("expressEntry"), href: "/express-entry" },
-        { title: t("provincialNomineeProgram"), href: "/investors-entrepreneurs" },
-        { title: t("familySponsorship"), href: "/family" },
-        { title: t("caregiversPrograms"), href: "/caregiver" },
-        { title: t("investorsEntrepreneurs"), href: "/investors-entrepreneurs" },
-        { title: t("otherPrograms"), href: "/others" },
+        { title: t("immigrateToCanada"), href: `${urlPrefix}` },
+        { title: t("expressEntry"), href: `${urlPrefix}/express-entry` },
+        { title: t("provincialNomineeProgram"), href: `${urlPrefix}/pnp` },
+        { title: t("familySponsorship"), href: `${urlPrefix}/family` },
+        { title: t("caregiversPrograms"), href: `${urlPrefix}/caregiver` },
+        { title: t("startUpVisa"), href: `${urlPrefix}/start-up` },
+        { title: t("selfEmployedProgram"), href: `${urlPrefix}/self-employed` },
+        { title: t("HumanitarianANdCompassionate"), href: `${urlPrefix}/humanitarian` },
+        { title: t("atlanticImmigrationProgram"), href: `${urlPrefix}/atlantic` },
+        { title: t("northenImmigrationProgram"), href: `${urlPrefix}/rnip` },
     ]
 
     const workComponents: HeaderComponent[] = [
