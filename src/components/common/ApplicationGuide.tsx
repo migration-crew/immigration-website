@@ -6,7 +6,7 @@ import { Timeline } from "./TimeLine";
 
 export function ApplicationGuide() {
   return (
-    <SectionContainer className="flex flex-col gap-4 p-4">
+    <SectionContainer className="flex flex-col gap-4 p-4 xl:hidden">
       <h2 className="text-xl font-bold">Where to start?</h2>
       <div className="flex items-center gap-4">
         <Timeline />
