@@ -69,7 +69,7 @@ export default function QuizDialog({ quiz, isOpen, onClose }: Props) {
 
     return (
         <Dialog open={isOpen}>
-            <DialogContent className="sm:max-w-md">
+            <DialogContent className="sm:max-w-md xl:h-[600px]">
                 {isOpenResult ? (
                     <>
                         <DialogHeader>
