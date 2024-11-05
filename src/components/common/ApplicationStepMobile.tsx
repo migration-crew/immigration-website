@@ -3,18 +3,20 @@ import Link from "next/link";
 import { ApplicationSteps } from "./ApplicationSteps";
 import { SectionContainer } from "./SectionContainer";
 import { TimelineMobile } from "./TimeLineMobile";
+import { StepsType } from "@/types/StepsType";
 
 export type Props = {
-  title?: string;
+  steps: StepsType[];
+  title: string;
 };
 
-export function ApplicationGuide({ title }: Props) {
+export function ApplicationStepMobile({ steps, title }: Props) {
   return (
     <SectionContainer className="flex flex-col gap-4 p-4 xl:hidden">
       <h2 className="text-xl font-bold">{title}</h2>
       <div className="flex items-center gap-4">
-        <TimelineMobile />
-        <ApplicationSteps />
+        <TimelineMobile numCircles={steps.length}/>
+        <ApplicationSteps steps={steps}/>
       </div>
       <div>
         <Button className="w-full">

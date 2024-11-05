@@ -5,7 +5,7 @@ import { Testimonial } from "@/components/common/Testimonial";
 import TestimonialMobile from "@/components/common/TestimonialMobile";
 import { FAQs } from "@/data/FAQData";
 import immigratePage from "@/public/immigratePage.png";
-import { TimelineDesktop } from "../../components/common/TimelineDesktop";
+import { ApplicationStepDesktop } from "../../components/common/ApplicationStepDesktop";
 import { testimonialData } from "../../data/testimonials";
 import { CardsPrograms } from "./_components/CardsPrograms";
 import { Introduction } from "./_components/Introduction";
@@ -23,7 +23,7 @@ export default function ImmigratePage() {
 
       <CardsPrograms />
 
-      <TimelineDesktop steps={Steps} title="Where to start?" />
+      <ApplicationStepDesktop steps={Steps} title="Where to start?" />
 
       <Testimonial testimonials={testimonialData} />
       <TestimonialMobile testimonials={testimonialData} />
