@@ -10,7 +10,7 @@ type Props = {
   title: string;
 };
 
-export const StepsComponent = ({ steps, title }: Props) => {
+export const TimelineDesktop = ({ steps, title }: Props) => {
   return (
     <SectionContainer className="py-[100px] hidden lg:block">
       <Heading>{title}</Heading>
