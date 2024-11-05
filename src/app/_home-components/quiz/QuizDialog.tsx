@@ -102,7 +102,7 @@ export default function QuizDialog({ quiz, isOpen, onClose }: Props) {
                                 <StepCounter currentStep={currentStep} totalSteps={quiz.length} />
                             </DialogTitle>
                         </DialogHeader>
-                        <CtaButton>{quiz[currentStep - 1]?.question}</CtaButton>
+                        <CtaButton className="mt-5">{quiz[currentStep - 1]?.question}</CtaButton>
                         <AnswerButtons answers={quiz[currentStep - 1]?.answers || []} />
                         <DialogFooter className="sm:justify-start mt-16">
                             <QuizPagination
