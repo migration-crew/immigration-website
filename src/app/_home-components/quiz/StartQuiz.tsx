@@ -5,6 +5,7 @@ import { Card, CardFooter, CardHeader } from "@/components/ui/card";
 import startQuiz from "@/public/startQuiz.png";
 import { ArrowRight } from 'lucide-react';
 import QuizDialog from "./QuizDialog";
+import { quizData } from "./quizData";
 
 export const StartQuiz = () => {
   return (
@@ -27,7 +28,7 @@ export const StartQuiz = () => {
           ></ResponsiveImage>
         </CardHeader>
         <CardFooter className="bg-primary-red flex-1 rounded-b-xl p-4 xl:p-6 flex justify-between xl:justify-center text-primary-white">
-          <QuizDialog />
+          <QuizDialog quiz={quizData}/>
           <ArrowRight size={36} strokeWidth={4} className="xl:hidden" />
           <ArrowRight size={48} strokeWidth={4} className="hidden xl:block ml-2" />
         </CardFooter>

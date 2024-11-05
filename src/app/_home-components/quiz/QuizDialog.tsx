@@ -10,8 +10,22 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/UpImmigrationButton"
+import StepCounter from "./StepCounter"
+import { CtaButton } from "@/components/common/text/CtaButton"
+import AnswerButtons from "./AnswerButtons"
+import QuizPagination from "./QuizPagination"
 
-export default function QuizDialog() {
+export type QuizType = {
+    id: number
+    question: string
+    answers: string[]
+}
+
+type Props = {
+    quiz: QuizType[]
+}
+
+export default function QuizDialog({ quiz }: Props) {
     return (
         <Dialog>
             <DialogTrigger asChild>
@@ -19,22 +33,12 @@ export default function QuizDialog() {
             </DialogTrigger>
             <DialogContent className="sm:max-w-md">
                 <DialogHeader>
-                    <DialogTitle>Share link</DialogTitle>
-                    <DialogDescription>
-                        Anyone who has this link will be able to view this.
-                    </DialogDescription>
+                    <DialogTitle><StepCounter currentStep={1} totalSteps={quiz.length}/></DialogTitle>
                 </DialogHeader>
-                <div className="flex items-center space-x-2">
-                    <Button type="submit" size="sm" className="px-3">
-                        <span className="sr-only">Copy</span>
-                    </Button>
-                </div>
+                <CtaButton>What would you like to do in Canada?</CtaButton>
+                <AnswerButtons answers={["Study", "Work", "Immigrate"]}/>
                 <DialogFooter className="sm:justify-start">
-                    <DialogClose asChild>
-                        <Button type="button" variant="secondary">
-                            Close
-                        </Button>
-                    </DialogClose>
+                    <QuizPagination currentStep={1} totalSteps={5}/>
                 </DialogFooter>
             </DialogContent>
         </Dialog>
