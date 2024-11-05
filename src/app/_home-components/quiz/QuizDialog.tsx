@@ -62,13 +62,18 @@ export default function QuizDialog({ quiz, isOpen, onClose }: Props) {
         setIsOpenResult(false);
     }
 
+    const handleOnClose = () => {
+        onClose();
+        setCurrentStep(1);
+    }
+
     return (
         <Dialog open={isOpen}>
             <DialogContent className="sm:max-w-md">
                 {isOpenResult ? (
                     <>
                         <DialogHeader>
-                            <DialogTitle>
+                            <DialogTitle className="mt-5">
                                 <button onClick={handleLastClose}><Cross2Icon className="fixed right-5 top-5 h-7 w-7" /></button>
                             </DialogTitle>
                         </DialogHeader>
@@ -92,16 +97,14 @@ export default function QuizDialog({ quiz, isOpen, onClose }: Props) {
                 ) : (
                     <>
                         <DialogHeader>
-                            <DialogTitle>
-                                <div className="flex justify-between items-center">
-                                    <StepCounter currentStep={currentStep} totalSteps={quiz.length} />
-                                    <button onClick={onClose}><Cross2Icon className="h-7 w-7" /></button>
-                                </div>
+                            <DialogTitle className="mt-10">
+                                <button onClick={handleOnClose}><Cross2Icon className="fixed right-5 top-5 h-7 w-7" /></button>
+                                <StepCounter currentStep={currentStep} totalSteps={quiz.length} />
                             </DialogTitle>
                         </DialogHeader>
                         <CtaButton>{quiz[currentStep - 1]?.question}</CtaButton>
                         <AnswerButtons answers={quiz[currentStep - 1]?.answers || []} />
-                        <DialogFooter className="sm:justify-start">
+                        <DialogFooter className="sm:justify-start mt-16">
                             <QuizPagination
                                 currentStep={currentStep}
                                 totalSteps={quiz.length}
