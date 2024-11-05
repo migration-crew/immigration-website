@@ -71,7 +71,7 @@ export const WhoWeAre = () => {
         </div>
         <div className="xl:w-1/2 mt-6 xl:m-0">
           <Button className="w-full xl:w-fit py-3 px-4">
-            <Link href="/book-consultation">Book a consultation</Link>
+            <Link href="/book-consultation">Book a free consultation</Link>
           </Button>
         </div>
       </div>

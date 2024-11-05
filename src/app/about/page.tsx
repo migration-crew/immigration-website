@@ -5,6 +5,7 @@ import about from "@/public/about.jpeg";
 import { WhoWeAre } from "./_components/WhoWeAre";
 import { OurStrength } from "./_components/OurStrength";
 import { OurStory } from "./_components/OurStory";
+import { GetInTouch } from "./_components/GetInTouch";
 
 
 export default function AboutPage() {
@@ -22,6 +23,7 @@ export default function AboutPage() {
       <WhoWeAre />
       <OurStrength />
       <OurStory />
+      <GetInTouch />
     </>
   );
 }
