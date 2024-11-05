@@ -6,8 +6,6 @@ import { Card, CardFooter, CardHeader } from "@/components/ui/card";
 import startQuiz from "@/public/startQuiz.png";
 import { ArrowRight } from 'lucide-react';
 
-
-
 export const Quiz = () => {
   return (
     <SectionContainer className="py-10 xl:py-[50px]" bgColor="bg-neutral-secondary-white">
