@@ -27,7 +27,7 @@ export function DiscoverOptions() {
   };
 
   return (
-    <SectionContainer className="flex flex-col gap-4 p-4">
+    <SectionContainer className="flex flex-col gap-4">
       <h2 className="text-2xl font-bold">Discover all your options</h2>
       <DiscoverOptionsList scrollToRef={scrollToRef} refs={refs} />
       <NavCardList refs={refs} />

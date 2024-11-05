@@ -3,7 +3,7 @@ import { SectionContainer } from "@/components/common/SectionContainer";
 
 export function WorkInCanada() {
   return (
-    <SectionContainer className="flex flex-col gap-4 p-4">
+    <SectionContainer className="flex flex-col gap-4 mb-5">
       <h2 className="text-xl font-bold ">How to work in Canada?</h2>
       <p>
         Over 400,000 international workers come to Canada each year, playing a

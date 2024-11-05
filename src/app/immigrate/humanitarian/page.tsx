@@ -1,5 +1,5 @@
+import { ApplicationStepDesktop } from "@/components/common/ApplicationStepDesktop";
 import { HeaderPicture } from "@/components/common/HeaderPicture";
-import { StepsComponent } from "@/components/common/Steps";
 import humanitarian from "@/public/humanitarian.jpg";
 import { EEPrograms } from "../_components/EEPrograms";
 import { IntroductionHumanitarian } from "../_components/IntroductionHumanitarian";
@@ -16,7 +16,7 @@ export default function Humanitarian() {
 
       <IntroductionHumanitarian />
 
-      <StepsComponent steps={EPSteps} title="What is the process?" />
+      <ApplicationStepDesktop steps={EPSteps} title="What is the process?" />
 
       <EEPrograms />
     </>

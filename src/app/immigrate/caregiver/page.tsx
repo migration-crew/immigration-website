@@ -1,5 +1,5 @@
+import { ApplicationStepDesktop } from "@/components/common/ApplicationStepDesktop";
 import { HeaderPicture } from "@/components/common/HeaderPicture";
-import { StepsComponent } from "@/components/common/Steps";
 import caregiver from "@/public/caregiver.jpg";
 import { EEPrograms } from "../_components/EEPrograms";
 import { IntroductionCaregiver } from "../_components/IntroductionCaregiver";
@@ -16,7 +16,7 @@ export default function Caregiver() {
 
       <IntroductionCaregiver />
 
-      <StepsComponent steps={EPSteps} title="What is the process?" />
+      <ApplicationStepDesktop steps={EPSteps} title="What is the process?" />
 
       <EEPrograms />
     </>
