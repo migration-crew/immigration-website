@@ -7,7 +7,7 @@ type Props = {
 
 export default function StepCounter({ currentStep, totalSteps }: { currentStep: number, totalSteps: number }) {
     return (
-        <div className="space-y-2">
+        <div className="space-y-3 flex flex-col items-start">
             <Caption>Step {currentStep} of {totalSteps}</Caption>
             <div className="flex justify-between">
                 {[...Array(totalSteps)].map((_, index) => (
@@ -20,7 +20,7 @@ export default function StepCounter({ currentStep, totalSteps }: { currentStep: 
                             {index + 1}
                         </div>
                         {index < totalSteps - 1 && (
-                            <div className="flex-1 h-0.5 w-[103px] bg-gray-200 m-0"></div>
+                            <div className="flex-1 h-0.5 w-[77px] xl:w-[103px] bg-gray-200 m-0"></div>
                         )}
                     </div>
                 ))}
