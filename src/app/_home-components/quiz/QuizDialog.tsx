@@ -19,9 +19,10 @@ import { useState } from "react"
 import { Cross2Icon } from "@radix-ui/react-icons"
 import { SubHeading } from "@/components/common/text/SubHeading";
 import { Heading } from "@/components/common/text/Heading";
-import expressEntry from "@/public/expressEntry.png";
+import expressEntry from "@/public/expressEntry.jpg";
 import { HeavyBody } from "@/components/common/text/HeavyBody";
 import { BookFreeConsultation } from "@/components/common/BookFreeConsultation";
+import Image from "next/image";
 
 export type QuizType = {
     id: number
@@ -71,11 +72,18 @@ export default function QuizDialog({ quiz, isOpen, onClose }: Props) {
                                 <button onClick={handleLastClose}><Cross2Icon className="fixed right-5 top-5 h-7 w-7" /></button>
                             </DialogTitle>
                         </DialogHeader>
-                        <div>
+                        <div className="space-y-3">
                             <SubHeading>Your pathway option could be...</SubHeading>
                             <Heading>Express Entry</Heading>
                             <HeavyBody>You might be eligible for Express Entry. Find out more by talking with our consultant!</HeavyBody>
-                            {/* <Image src={expressEntry} alt="expressEntry"></Image> */}
+                            <Image
+                                src={expressEntry}
+                                alt="expressEntry"
+                                objectFit="cover"
+                                quality={100}
+                                width={380}
+                                height={200}
+                            />
                         </div>
                         <DialogFooter className="sm:justify-start">
                             <BookFreeConsultation className="w-full"/>
