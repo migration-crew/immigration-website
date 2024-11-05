@@ -1,12 +1,12 @@
 import { ResponsiveImage } from "@/components/common/ResponsiveImage";
 import { SectionContainer } from "@/components/common/SectionContainer";
 import { Heading } from "@/components/common/text/Heading";
-import { Title } from "@/components/common/text/Title";
 import { Card, CardFooter, CardHeader } from "@/components/ui/card";
 import startQuiz from "@/public/startQuiz.png";
 import { ArrowRight } from 'lucide-react';
+import QuizDialog from "./QuizDialog";
 
-export const Quiz = () => {
+export const StartQuiz = () => {
   return (
     <SectionContainer className="py-10 xl:py-[50px]" bgColor="bg-neutral-secondary-white">
       <Heading>
@@ -27,9 +27,9 @@ export const Quiz = () => {
           ></ResponsiveImage>
         </CardHeader>
         <CardFooter className="bg-primary-red flex-1 rounded-b-xl p-4 xl:p-6 flex justify-between xl:justify-center text-primary-white">
-          <Title className="text-[36px]">Start Quiz!</Title>
-          <ArrowRight size={36} strokeWidth={4} className="xl:hidden"/>
-          <ArrowRight size={48} strokeWidth={4} className="hidden xl:block ml-2"/>
+          <QuizDialog />
+          <ArrowRight size={36} strokeWidth={4} className="xl:hidden" />
+          <ArrowRight size={48} strokeWidth={4} className="hidden xl:block ml-2" />
         </CardFooter>
       </Card>
     </SectionContainer>
