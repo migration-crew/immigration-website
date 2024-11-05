@@ -1,14 +1,27 @@
+"use client";
 import { ResponsiveImage } from "@/components/common/ResponsiveImage";
 import { SectionContainer } from "@/components/common/SectionContainer";
 import { Heading } from "@/components/common/text/Heading";
-import { Title } from "@/components/common/text/Title";
 import { Card, CardFooter, CardHeader } from "@/components/ui/card";
 import startQuiz from "@/public/startQuiz.png";
 import { ArrowRight } from 'lucide-react';
+import QuizDialog from "./QuizDialog";
+import { quizData } from "./quizData";
+import { Title } from "@/components/common/text/Title"
+import { Button } from "@/components/ui/UpImmigrationButton"
+import { useState } from "react";
 
+export const StartQuiz = () => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false)
 
+  const handleOpenDialog = () => {
+    setIsDialogOpen(true)
+  }
 
-export const Quiz = () => {
+  const handleCloseDialog = () => {
+    setIsDialogOpen(false)
+  }
+
   return (
     <SectionContainer className="py-10 xl:py-[50px]" bgColor="bg-neutral-secondary-white">
       <Heading>
@@ -29,11 +42,14 @@ export const Quiz = () => {
           ></ResponsiveImage>
         </CardHeader>
         <CardFooter className="bg-primary-red flex-1 rounded-b-xl p-4 xl:p-6 flex justify-between xl:justify-center text-primary-white">
-          <Title className="text-[36px]">Start Quiz!</Title>
-          <ArrowRight size={36} strokeWidth={4} className="xl:hidden"/>
-          <ArrowRight size={48} strokeWidth={4} className="hidden xl:block ml-2"/>
+          <button onClick={handleOpenDialog}>
+            <Title className="text-[36px] cursor-pointer">Start Quiz!</Title>
+          </button>
+          <ArrowRight size={36} strokeWidth={4} className="xl:hidden" />
+          <ArrowRight size={48} strokeWidth={4} className="hidden xl:block ml-2" />
         </CardFooter>
       </Card>
+      <QuizDialog quiz={quizData} isOpen={isDialogOpen} onClose={handleCloseDialog}/>
     </SectionContainer>
   );
 };
