@@ -21,7 +21,11 @@ export default function WorkPage() {
       <StepsComponent steps={Steps} title="Where to Start?" />
       <Testimonial testimonials={testimonialData} />
       <TestimonialMobile testimonials={testimonialData} />
-      <FAQ data={FAQs} title="Immigration Frequent Questions" />
+      <FAQ
+        data={FAQs}
+        title="Immigration Frequent Questions"
+        className="bg-neutral-secondary-white w-full"
+      />
     </div>
   );
 }
