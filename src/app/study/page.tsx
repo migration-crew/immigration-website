@@ -1,5 +1,8 @@
+import { ApplicationGuide } from "@/components/common/ApplicationGuide";
 import { HeaderPicture } from "@/components/common/HeaderPicture";
+import { StepsComponent } from "@/components/common/Steps";
 import studyImage from "@/public/study.jpeg";
+import { Steps } from "../immigrate/content/steps";
 import { KnowBeforeEnrolling } from "./_components/KnowBeforeEnrolling";
 import { StudyInCanada } from "./_components/StudyInCanada";
 
@@ -13,6 +16,8 @@ export default function StudyPage() {
       />
       <StudyInCanada />
       <KnowBeforeEnrolling />
+      <ApplicationGuide />
+      <StepsComponent steps={Steps} title="Where to Start?" />
     </div>
   );
 }

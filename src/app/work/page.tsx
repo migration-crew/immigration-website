@@ -21,7 +21,11 @@ export default function WorkPage() {
       <ApplicationGuide />
       <Testimonial testimonials={testimonialData} />
       <TestimonialMobile testimonials={testimonialData} />
-      <FAQ data={FAQs} title="Immigration Frequent Questions" />
+      <FAQ
+        data={FAQs}
+        title="Immigration Frequent Questions"
+        className="bg-neutral-secondary-white w-full"
+      />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { StudyCard } from "./StudyCardItem";
 
 export function StudyCardList() {
   return (
-    <SectionContainer className="flex flex-col gap-6 px-4 xl:grid xl:grid-cols-2">
+    <SectionContainer className="flex flex-col gap-6 xl:grid xl:grid-cols-2">
       {studyCardItems.map((item) => (
         <StudyCard key={item.title} {...item} />
       ))}
