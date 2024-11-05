@@ -10,6 +10,15 @@ export type Props = {
   title: string;
 };
 
+/**
+ * Application Step for Mobile
+ * @param steps: StepsType[]
+ * @param title: string e.g. Where to start?
+ * @example
+ * ```tsx
+ * <ApplicationStepMobile steps={Steps} title="Where to start?">
+ * ```
+ */
 export function ApplicationStepMobile({ steps, title }: Props) {
   return (
     <SectionContainer className="flex flex-col gap-4 p-4 xl:hidden">

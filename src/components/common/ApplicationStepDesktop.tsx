@@ -10,6 +10,15 @@ type Props = {
   title: string;
 };
 
+/**
+ * Application Step for Desktop
+ * @param steps: StepsType[]
+ * @param title: string e.g. Where to start?
+ * @example
+ * ```tsx
+ * <ApplicationStepDesktop steps={Steps} title="Where to start?">
+ * ```
+ */
 export const ApplicationStepDesktop = ({ steps, title }: Props) => {
   return (
     <SectionContainer className="py-[100px] hidden lg:block">
