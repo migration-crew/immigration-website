@@ -17,7 +17,6 @@ const servicesLinks: LinksType = {
         { name: "immigrate", href: "/immigrate" },
         { name: "work", href: "/work" },
         { name: "study", href: "/study" },
-        { name: "sponsor", href: "/sponsor" },
     ]
 }
 

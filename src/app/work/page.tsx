@@ -17,8 +17,8 @@ export default function WorkPage() {
       <HeaderPicture alt="Image of work page" src={workImage} title={"Work"} />
       <WorkInCanada />
       <DiscoverOptions />
+      <ApplicationGuide title="Where to start?" />
       <StepsComponent steps={Steps} title="Where to Start?" />
-      <ApplicationGuide />
       <Testimonial testimonials={testimonialData} />
       <TestimonialMobile testimonials={testimonialData} />
       <FAQ
