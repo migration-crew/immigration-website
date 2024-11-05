@@ -7,7 +7,7 @@ interface Props {
   className?: string;
 }
 
-export const Timeline: React.FC<Props> = ({
+export const TimelineMobile: React.FC<Props> = ({
   numCircles = 5,
   circleSize = 21,
   circleSpacing = 44,
