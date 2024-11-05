@@ -13,8 +13,9 @@ const buttonVariants = cva(
           "bg-primary-red text-primary-white shadow hover:bg-primary-hover-red",
         destructive:
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
+        // For quiz before a button is clicked
         outline:
-          "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
+          "bg-primary-white text-text-primary-black border-2 border-primary-red shadow-sm hover:bg-secondary/80",
         secondary:
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
