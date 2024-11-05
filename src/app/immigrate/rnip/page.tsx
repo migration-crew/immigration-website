@@ -1,5 +1,5 @@
 import { HeaderPicture } from "@/components/common/HeaderPicture";
-import { StepsComponent } from "@/components/common/Steps";
+import { TimelineDesktop } from "@/components/common/TimelineDesktop";
 import RNIP from "@/public/RNIP.jpg";
 import { EEPrograms } from "../_components/EEPrograms";
 import { IntoductionRNIP } from "../_components/IntoductionRNIP";
@@ -16,7 +16,7 @@ export default function NorthernImmigrationRNIP() {
 
       <IntoductionRNIP />
 
-      <StepsComponent steps={EPSteps} title="What is the process?" />
+      <TimelineDesktop steps={EPSteps} title="What is the process?" />
 
       <EEPrograms />
     </>

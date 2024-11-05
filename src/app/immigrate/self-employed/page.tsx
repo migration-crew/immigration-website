@@ -1,5 +1,5 @@
 import { HeaderPicture } from "@/components/common/HeaderPicture";
-import { StepsComponent } from "@/components/common/Steps";
+import { TimelineDesktop } from "@/components/common/TimelineDesktop";
 import selfEmployed from "@/public/selfEmployed.jpg";
 import { EEPrograms } from "../_components/EEPrograms";
 import { IntroductionSelfEmployed } from "../_components/IntroductionSelfEmployed";
@@ -16,7 +16,7 @@ export default function SelfEmployed() {
 
       <IntroductionSelfEmployed />
 
-      <StepsComponent steps={EPSteps} title="What is the process?" />
+      <TimelineDesktop steps={EPSteps} title="What is the process?" />
 
       <EEPrograms />
     </>
