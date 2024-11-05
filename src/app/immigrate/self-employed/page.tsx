@@ -1,5 +1,5 @@
+import { ApplicationStepDesktop } from "@/components/common/ApplicationStepDesktop";
 import { HeaderPicture } from "@/components/common/HeaderPicture";
-import { TimelineDesktop } from "@/components/common/TimelineDesktop";
 import selfEmployed from "@/public/selfEmployed.jpg";
 import { EEPrograms } from "../_components/EEPrograms";
 import { IntroductionSelfEmployed } from "../_components/IntroductionSelfEmployed";
@@ -16,7 +16,7 @@ export default function SelfEmployed() {
 
       <IntroductionSelfEmployed />
 
-      <TimelineDesktop steps={EPSteps} title="What is the process?" />
+      <ApplicationStepDesktop steps={EPSteps} title="What is the process?" />
 
       <EEPrograms />
     </>

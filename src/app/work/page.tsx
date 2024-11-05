@@ -1,9 +1,9 @@
-import { ApplicationGuide } from "@/components/common/ApplicationGuide";
+import { ApplicationStepDesktop } from "@/components/common/ApplicationStepDesktop";
+import { ApplicationStepMobile } from "@/components/common/ApplicationStepMobile";
 import FAQ from "@/components/common/faq";
 import { HeaderPicture } from "@/components/common/HeaderPicture";
 import { Testimonial } from "@/components/common/Testimonial";
 import TestimonialMobile from "@/components/common/TestimonialMobile";
-import { TimelineDesktop } from "@/components/common/TimelineDesktop";
 import { FAQs } from "@/data/FAQData";
 import { testimonialData } from "@/data/testimonials";
 import workImage from "@/public/work.jpeg";
@@ -17,8 +17,8 @@ export default function WorkPage() {
       <HeaderPicture alt="Image of work page" src={workImage} title={"Work"} />
       <WorkInCanada />
       <DiscoverOptions />
-      <ApplicationGuide title="Where to start?" />
-      <TimelineDesktop steps={Steps} title="Where to Start?" />
+      <ApplicationStepMobile steps={Steps} title="Where to start?" />
+      <ApplicationStepDesktop steps={Steps} title="Where to Start?" />
       <Testimonial testimonials={testimonialData} />
       <TestimonialMobile testimonials={testimonialData} />
       <FAQ

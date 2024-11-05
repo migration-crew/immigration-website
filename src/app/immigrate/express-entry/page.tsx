@@ -1,5 +1,5 @@
+import { ApplicationStepDesktop } from "@/components/common/ApplicationStepDesktop";
 import { HeaderPicture } from "@/components/common/HeaderPicture";
-import { TimelineDesktop } from "@/components/common/TimelineDesktop";
 import expressEntry from "@/public/expressEntry.jpg";
 import { EEPrograms } from "../_components/EEPrograms";
 import { IntroductionEE } from "../_components/IntroductionEE";
@@ -16,7 +16,7 @@ export default function ExpressEntry() {
 
       <IntroductionEE />
 
-      <TimelineDesktop steps={EPSteps} title="What is the process?" />
+      <ApplicationStepDesktop steps={EPSteps} title="What is the process?" />
 
       <EEPrograms />
     </>
