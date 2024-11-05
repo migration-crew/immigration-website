@@ -14,12 +14,12 @@ export default function AnswerButtons({ answers }: Props) {
     };
 
     return (
-        <div>
+        <div className="flex flex-wrap gap-2">
             {answers.map((answer, index) => (
                 <Button
                     variant={selectedIndex === index ? "default" : "outline"}
                     key={index}
-                    className="w-full mt-2"
+                    className="w-40 mt-2"
                     onClick={() => handleClick(index)}
                 >
                     {answer}
