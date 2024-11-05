@@ -1,3 +1,4 @@
+import { ResponsiveImage } from "@/components/common/ResponsiveImage";
 import { Heading } from "@/components/common/text/Heading";
 import { OtherButton } from "@/components/common/text/OtherButton";
 import { SubHeading } from "@/components/common/text/SubHeading";
@@ -9,15 +10,7 @@ export function ConsultantInfo() {
   return (
     <div className="xl:flex my-14 xl:items-center">
       <div className="xl:w-2/5">
-        <Image
-          alt="contact us"
-          src={consultant}
-          layout="responsive"
-          objectFit="cover"
-          width={482}
-          height={642}
-          className="rounded-2xl w-full max-h-[350px] xl:max-h-[500px]"
-        />
+        <ResponsiveImage alt="consultant" src={consultant} divClassName="w-[350px] h-[340px] xl:w-[420px] xl:h-[600px]" imgClassName="rounded-2xl"/>
       </div>
       <div className="space-y-7 xl:ml-7 xl:w-3/5 xl:flex xl:flex-col xl:space-y-10">
         <Heading className="mt-7">How Can We Help You Today?</Heading>
