@@ -1,8 +1,10 @@
 import { ApplicationGuide } from "@/components/common/ApplicationGuide";
+import FAQ from "@/components/common/faq";
 import { HeaderPicture } from "@/components/common/HeaderPicture";
 import { StepsComponent } from "@/components/common/Steps";
 import { Testimonial } from "@/components/common/Testimonial";
 import TestimonialMobile from "@/components/common/TestimonialMobile";
+import { FAQs } from "@/data/FAQData";
 import { testimonialData } from "@/data/testimonials";
 import studyImage from "@/public/study.jpeg";
 import { Steps } from "../immigrate/content/steps";
@@ -23,6 +25,11 @@ export default function StudyPage() {
       <StepsComponent steps={Steps} title="Where to Start?" />
       <Testimonial testimonials={testimonialData} />
       <TestimonialMobile testimonials={testimonialData} />
+      <FAQ
+        data={FAQs}
+        title="Immigration Frequent Questions"
+        className="bg-neutral-secondary-white w-full"
+      />
     </div>
   );
 }
