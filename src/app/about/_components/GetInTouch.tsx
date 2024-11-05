@@ -1,4 +1,3 @@
-import { BookFreeConsultation } from "@/components/common/BookFreeConsultation";
 import { SectionContainer } from "@/components/common/SectionContainer";
 import { Heading } from "@/components/common/text/Heading";
 import { Paragraph } from "@/components/common/text/Paragraph";
@@ -7,7 +6,10 @@ import Link from "next/link";
 
 export const GetInTouch = () => {
   return (
-    <SectionContainer className="py-10 xl:pb-[100px]">
+    <SectionContainer
+      className="py-10 xl:pb-[100px]"
+      bgColor="bg-neutral-secondary-white xl:bg-inherit"
+    >
       <Heading>Get in touch</Heading>
       <Paragraph className="py-4 xl:pt-5">
         We are eager to assist you in realizing your immigration dreams in

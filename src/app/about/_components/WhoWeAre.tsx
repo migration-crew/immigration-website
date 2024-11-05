@@ -13,7 +13,7 @@ import { Menu } from "@/components/common/text/Menu";
 
 export const WhoWeAre = () => {
   return (
-    <SectionContainer className="py-[100px]">
+    <SectionContainer className="py-10 lx:py-[100px]">
       <Heading className="pb-4">Who we are?</Heading>
       <Paragraph>
         Here at Up Immigration, we are dedicated to making your Canadian dream a
