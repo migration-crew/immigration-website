@@ -2,9 +2,11 @@ import { SectionContainer } from "@/components/common/SectionContainer";
 import { Heading } from "@/components/common/text/Heading";
 import { Book, FolderCheck, Trophy } from "lucide-react";
 
-import { Menu } from "@/components/common/text/Menu";
-import { Strength } from "./Strength";
+import { ResponsiveImage } from "@/components/common/ResponsiveImage";
 import { Caption } from "@/components/common/text/Caption";
+import { Paragraph } from "@/components/common/text/Paragraph";
+import Language from "@/public/languageIcon.svg";
+import { Strength } from "./Strength";
 
 export const WhyChooseUs = () => {
   return (
@@ -23,10 +25,15 @@ export const WhyChooseUs = () => {
         />
         <div className="text-center">
           <div className="pb-12 flex justify-center">
-            <Trophy size={70} />
+            <ResponsiveImage
+              alt="Languate"
+              src={Language}
+              divClassName="h-[70px] w-[70px]"
+            />
           </div>
           <div>
             <Heading className="text-primary-red">3</Heading>
+            <Paragraph>Languages</Paragraph>
             <Caption className="font-normal xl:font-normal">
               English/ Portuguese/ Spanish
             </Caption>
