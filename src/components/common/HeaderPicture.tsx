@@ -30,7 +30,7 @@ export const HeaderPicture = ({ alt, src, title }: Props) => {
         quality={100}
       />
       <div className="absolute w-full h-full grid place-content-center bg-secondary-blue-op-20">
-        <h1 className="text-[36px] md:text-[48px] font-bold text-primary-white">
+        <h1 className="text-[36px] xl:text-[48px] font-bold text-primary-white">
           {title}
         </h1>
       </div>
