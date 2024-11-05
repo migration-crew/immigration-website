@@ -6,9 +6,18 @@ type Props = {
     totalSteps: number
     onNext: () => void
     onBack: () => void
+    onGoLast: () => void
 }
 
-export default function QuizPagination({ currentStep, totalSteps, onNext, onBack }: Props) {
+export default function QuizPagination({ currentStep, totalSteps, onNext, onBack, onGoLast }: Props) {
+    const handleNextClick = () => {
+        if (currentStep === totalSteps) {
+            onGoLast();
+        } else {
+            onNext();
+        }
+    };
+
     return (
         <div className="flex w-full justify-between">
             <div>
@@ -20,9 +29,9 @@ export default function QuizPagination({ currentStep, totalSteps, onNext, onBack
                 }
             </div>
             <div>
-                {currentStep < totalSteps && 
+                {currentStep <= totalSteps && 
                 <div className="flex items-center space-x-2">
-                    <button onClick={onNext}><Caption className="text-secondary-blue">Next</Caption></button>
+                    <button onClick={handleNextClick}><Caption className="text-secondary-blue">Next</Caption></button>
                     <MoveRight className="h-3 w-3 text-secondary-blue"/>
                 </div>
                 }
