@@ -9,7 +9,11 @@ import unitedStates from "@/public/unitedStates.png"
 import spain from "@/public/spain.png"
 import brazil from "@/public/brazil.png"
 
-export default function LanguageSwitcher() {
+type Props = {
+    className: string;
+}
+
+export default function LanguageSwitcher({ className }: Props) {
     const t = useTranslations('LocaleSwitcher');
     const locale = useLocale();
     const [isPending, startTransition] = useTransition();
@@ -26,7 +30,7 @@ export default function LanguageSwitcher() {
             <select
                 value={locale}
                 onChange={(e) => handleLanguageChange(e.target.value)}
-                className="w-[90px] p-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:border-transparent transition-colors"
+                className={`w-[90px] p-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:border-transparent transition-colors ${className}`}
             >
                 <option value="en" className="flex items-center">
                     EN

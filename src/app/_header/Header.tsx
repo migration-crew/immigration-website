@@ -49,16 +49,21 @@ export default function Header() {
                     immigrateComponents={immigrateComponents}
                     workComponents={workComponents} 
                 />
-                <LanguageSwitcher />
-                <BookFreeConsultation
-                    className={classNameForDesktop}
-                />
+                <div className={`flex space-x-5 items-center ${classNameForDesktop}`}>
+                    <LanguageSwitcher className={classNameForDesktop}/>
+                    <BookFreeConsultation
+                        className={classNameForDesktop}
+                    />
+                </div>
                 {/* For Mobile */}
-                <HamburgerMenu
-                    className={classNameForMobile}
-                    immigrateComponents={immigrateComponents} 
-                    workComponents={workComponents}
-                />
+                <div className={`flex space-x-5 items-center ${classNameForMobile}`}>
+                    <LanguageSwitcher className={classNameForMobile}/>
+                    <HamburgerMenu
+                        className={classNameForMobile}
+                        immigrateComponents={immigrateComponents} 
+                        workComponents={workComponents}
+                    />
+                </div>
             </div>
         </header>
     )
