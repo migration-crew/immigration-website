@@ -1,8 +1,9 @@
 import { HeaderPicture } from "@/components/common/HeaderPicture";
+import { StepsComponent } from "@/components/common/Steps";
 import familySP from "@/public/familySP.jpg";
 import { EEPrograms } from "../_components/EEPrograms";
 import { IntroductionFamily } from "../_components/IntroductionFamily";
-import { StepsEEComponent } from "../_components/StepsEE";
+import { EPSteps } from "../content/steps";
 
 export default function ExpressEntry() {
   return (
@@ -15,7 +16,7 @@ export default function ExpressEntry() {
 
       <IntroductionFamily />
 
-      <StepsEEComponent />
+      <StepsComponent steps={EPSteps} title="What is the process?" />
 
       <EEPrograms />
     </>

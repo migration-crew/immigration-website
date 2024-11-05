@@ -1,9 +1,11 @@
 import { BookFreeConsultation } from "@/components/common/BookFreeConsultation";
 import { Heading } from "@/components/common/text/Heading";
 import { OtherButton } from "@/components/common/text/OtherButton";
-import { AiOutlineWhatsApp as Whatsapp } from "react-icons/ai";
-import { AiFillMail as Mail } from "react-icons/ai";
-import { Card } from "@/components/ui/card"
+import { Card } from "@/components/ui/card";
+import {
+  AiFillMail as Mail,
+  AiOutlineWhatsApp as Whatsapp,
+} from "react-icons/ai";
 
 export function GetInTouch() {
   return (

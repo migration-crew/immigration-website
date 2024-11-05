@@ -1,9 +1,9 @@
 import { HeaderPicture } from "@/components/common/HeaderPicture";
+import { StepsComponent } from "@/components/common/Steps";
 import startUP from "@/public/startUp.png";
 import { EEPrograms } from "../_components/EEPrograms";
 import { IntroductionStartUp } from "../_components/IntroductionStartUp";
-import { StepsEEComponent } from "../_components/StepsEE";
-
+import { EPSteps } from "../content/steps";
 export default function StartUp() {
   return (
     <>
@@ -15,7 +15,7 @@ export default function StartUp() {
 
       <IntroductionStartUp />
 
-      <StepsEEComponent />
+      <StepsComponent steps={EPSteps} title="What is the process?" />
 
       <EEPrograms />
     </>

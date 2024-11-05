@@ -1,8 +1,9 @@
 import { HeaderPicture } from "@/components/common/HeaderPicture";
+import { StepsComponent } from "@/components/common/Steps";
 import humanitarian from "@/public/humanitarian.jpg";
 import { EEPrograms } from "../_components/EEPrograms";
 import { IntroductionHumanitarian } from "../_components/IntroductionHumanitarian";
-import { StepsEEComponent } from "../_components/StepsEE";
+import { EPSteps } from "../content/steps";
 
 export default function Humanitarian() {
   return (
@@ -15,7 +16,7 @@ export default function Humanitarian() {
 
       <IntroductionHumanitarian />
 
-      <StepsEEComponent />
+      <StepsComponent steps={EPSteps} title="What is the process?" />
 
       <EEPrograms />
     </>
