@@ -1,5 +1,5 @@
 import { Caption } from "@/components/common/text/Caption";
-import { Button } from "@/components/ui/UpImmigrationButton";
+import { MoveLeft, MoveRight } from "lucide-react"
 
 type Props = {
     currentStep: number
@@ -10,12 +10,22 @@ type Props = {
 
 export default function QuizPagination({ currentStep, totalSteps, onNext, onBack }: Props) {
     return (
-        <div className="flex justify-between">
+        <div className="flex w-full justify-between">
             <div>
-                {currentStep > 1 && <Button onClick={onBack}><Caption>Back</Caption></Button>}
+                {currentStep > 1 && 
+                <div className="flex items-center space-x-2">
+                    <MoveLeft className="h-3 w-3 text-primary-black"/>
+                    <button onClick={onBack}><Caption className="text-primary-black">Back</Caption></button>
+                </div>
+                }
             </div>
             <div>
-                {currentStep < totalSteps && <Button onClick={onNext}><Caption>Next</Caption></Button>}
+                {currentStep < totalSteps && 
+                <div className="flex items-center space-x-2">
+                    <button onClick={onNext}><Caption className="text-secondary-blue">Next</Caption></button>
+                    <MoveRight className="h-3 w-3 text-secondary-blue"/>
+                </div>
+                }
             </div>
         </div>
     )

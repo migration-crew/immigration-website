@@ -16,6 +16,7 @@ import { CtaButton } from "@/components/common/text/CtaButton"
 import AnswerButtons from "./AnswerButtons"
 import QuizPagination from "./QuizPagination"
 import { useState } from "react"
+import { Cross2Icon } from "@radix-ui/react-icons"
 
 export type QuizType = {
     id: number
@@ -48,7 +49,12 @@ export default function QuizDialog({ quiz, isOpen, onClose }: Props) {
         <Dialog open={isOpen}>
             <DialogContent className="sm:max-w-md">
                 <DialogHeader>
-                    <DialogTitle><StepCounter currentStep={currentStep} totalSteps={quiz.length} /></DialogTitle>
+                    <DialogTitle>
+                        <div className="flex justify-between items-center">
+                            <StepCounter currentStep={currentStep} totalSteps={quiz.length} />
+                            <button onClick={onClose}><Cross2Icon className="h-7 w-7"/></button>
+                        </div>
+                    </DialogTitle>
                 </DialogHeader>
                 <CtaButton>{quiz[currentStep - 1]?.question}</CtaButton>
                 <AnswerButtons answers={quiz[currentStep - 1]?.answers || []} />
@@ -59,9 +65,6 @@ export default function QuizDialog({ quiz, isOpen, onClose }: Props) {
                         onNext={handleNext}
                         onBack={handleBack}
                     />
-                    <Button type="button" variant="secondary" onClick={onClose}>
-                        Close
-                    </Button>
                 </DialogFooter>
             </DialogContent>
         </Dialog>

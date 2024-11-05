@@ -42,9 +42,9 @@ export const StartQuiz = () => {
           ></ResponsiveImage>
         </CardHeader>
         <CardFooter className="bg-primary-red flex-1 rounded-b-xl p-4 xl:p-6 flex justify-between xl:justify-center text-primary-white">
-          <Button onClick={handleOpenDialog}>
+          <button onClick={handleOpenDialog}>
             <Title className="text-[36px] cursor-pointer">Start Quiz!</Title>
-          </Button>
+          </button>
           <ArrowRight size={36} strokeWidth={4} className="xl:hidden" />
           <ArrowRight size={48} strokeWidth={4} className="hidden xl:block ml-2" />
         </CardFooter>
