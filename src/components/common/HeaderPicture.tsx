@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import { Hero } from "./text/Hero";
 
 
 type Props = {
@@ -30,9 +31,7 @@ export const HeaderPicture = ({ alt, src, title }: Props) => {
         quality={100}
       />
       <div className="absolute w-full h-full grid place-content-center bg-secondary-blue-op-20">
-        <h1 className="text-[36px] xl:text-[48px] font-bold text-primary-white">
-          {title}
-        </h1>
+        <Hero className="text-primary-white">{title}</Hero>
       </div>
     </section>
   );

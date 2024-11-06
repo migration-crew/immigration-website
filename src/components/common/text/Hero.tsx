@@ -4,7 +4,7 @@ import React from "react";
 /**
  * Hero page Text
  * @remarks
- * Desktop: 60px, 700 w, Mobile: 36px, 700 w
+ * Desktop: 55px, 700 w, Mobile: 36px, 700 w
  * @param className - pass custom classes
  * @param children - text content
  * @example
@@ -12,7 +12,6 @@ import React from "react";
  * <Hero className='pb-4'>Take the Quiz</Hero>
  * ```
  */
-
 export const Hero = ({
   className,
   children,
