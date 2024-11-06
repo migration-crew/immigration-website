@@ -1,10 +1,12 @@
+import { cn } from "@/lib/utils";
 import Image, { StaticImageData } from "next/image";
-
+import { Title } from "./text/Title";
 
 type Props = {
   alt: string;
   src: StaticImageData;
   title: string;
+  className?: string | undefined;
 };
 
 /**
@@ -12,14 +14,15 @@ type Props = {
  * @param alt - explanation of picture
  * @param src - link of picture
  * @param title - page title
+ * @param className - adjust center of picture e.g. "object-[0%,20%]" recomment %. only change second one.
  * @example
  * ```tsx
  * import about from "@/public/about.jpeg";
   ...
- *  <HeaderPicture alt="about us" src={about} title="About us" />
+ *  <HeaderPicture alt="about us" src={about} title="About us" className="object-[0%,20%]" />
  * ```
  */
-export const HeaderPicture = ({ alt, src, title }: Props) => {
+export const HeaderPicture = ({ alt, src, title, className }: Props) => {
   return (
     <section className="relative h-[218px] xl:h-[360px]">
       <Image
@@ -27,12 +30,11 @@ export const HeaderPicture = ({ alt, src, title }: Props) => {
         src={src}
         layout={"fill"}
         objectFit={"cover"}
-        quality={100}
+        priority
+        className={cn(className)}
       />
       <div className="absolute w-full h-full grid place-content-center bg-secondary-blue-op-20">
-        <h1 className="text-[36px] xl:text-[48px] font-bold text-primary-white">
-          {title}
-        </h1>
+        <Title className="text-primary-white">{title}</Title>
       </div>
     </section>
   );
