@@ -13,7 +13,7 @@ import { WorkInCanada } from "./_components/WorkInCanada";
 
 export default function WorkPage() {
   return (
-    <div className="flex flex-col h-full gap-4">
+    <div className="flex flex-col h-full gap-4 xl:gap-[100px]">
       <HeaderPicture alt="Image of work page" src={workImage} title={"Work"} />
       <WorkInCanada />
       <DiscoverOptions />

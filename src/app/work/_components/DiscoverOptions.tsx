@@ -1,6 +1,7 @@
 "use client";
 
 import { SectionContainer } from "@/components/common/SectionContainer";
+import { Heading } from "@/components/common/text/Heading";
 import { useRef } from "react";
 import { NavCardList } from "../../../components/common/NavCardList";
 import { DiscoverOptionsList } from "./DiscoverOptionsList";
@@ -28,7 +29,9 @@ export function DiscoverOptions() {
 
   return (
     <SectionContainer className="flex flex-col gap-4">
-      <h2 className="text-2xl font-bold">Discover all your options</h2>
+      <Heading className="text-2xl font-bold">
+        Discover all your options
+      </Heading>
       <DiscoverOptionsList scrollToRef={scrollToRef} refs={refs} />
       <NavCardList refs={refs} />
     </SectionContainer>
