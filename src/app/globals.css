@@ -59,7 +59,7 @@ body {
 
     /* Font Size and Weight (Defined size and weight separately because we can define together, but we cannot use a variable from tailwind.config.ts) */
     /* Size for Desktop */
-    --font-size-hero-section: 60px;
+    --font-size-hero-section: 55px;
     --font-size-page-titles: 48px;
     --font-size-heading: 36px;
     --font-size-subheading: 24px;
@@ -87,7 +87,7 @@ body {
 
     /* Size for Mobile */
     --font-size-hero-section-for-mobile: 36px;
-    --font-size-page-titles-for-mobile: 32px;
+    --font-size-page-titles-for-mobile: 36px;
     --font-size-heading-for-mobile: 24px;
     --font-size-subheading-for-mobile: 20px;
     --font-size-paragraph-text-for-mobile: 14px;
