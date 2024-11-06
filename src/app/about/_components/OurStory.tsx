@@ -13,7 +13,6 @@ export const OurStory = () => {
       </Paragraph>
       <video
         controls
-        autoPlay
         preload="none"
         className="rounded-xl w-[398px] h-[225px] xl:w-[1080px] xl:h-[610px]"
       >
