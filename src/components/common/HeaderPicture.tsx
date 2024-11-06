@@ -14,7 +14,7 @@ type Props = {
  * @param alt - explanation of picture
  * @param src - link of picture
  * @param title - page title
- * @param className - adjust center of picture e.g. "object-[0%,20%]" recomment %. only change second one.
+ * @param className - adjust center of picture e.g. "object-[50%,20%]" recomment %. only change second one.
  * @example
  * ```tsx
  * import about from "@/public/about.jpeg";
