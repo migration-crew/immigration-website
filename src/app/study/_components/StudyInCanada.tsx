@@ -5,7 +5,7 @@ import { Paragraph } from "@/components/common/text/Paragraph";
 
 export function StudyInCanada() {
   return (
-    <SectionContainer className="flex flex-col gap-4 xl:gap-8">
+    <SectionContainer className="flex flex-col gap-4">
       <Heading className="">Why study in Canada?</Heading>
       <Paragraph className="">
         Canada offers world-class education, diverse cultural experiences, and

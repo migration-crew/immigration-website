@@ -21,7 +21,7 @@ export function WorkInCanada() {
         transition to your new life in Canada. Contact us today to start your
         journey to Canada with confidence.
       </Paragraph>
-      <BookFreeConsultation />
+      <BookFreeConsultation className="xl:w-fit" />
     </SectionContainer>
   );
 }
