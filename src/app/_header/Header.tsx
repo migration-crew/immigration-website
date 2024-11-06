@@ -40,7 +40,7 @@ export default function Header() {
     const classNameForMobile = cn("flex lg:hidden")
 
     return (
-        <header className='pl-6 pt-2.5 pr-6 bg-primary-white overflow-x-hidden'>
+        <header className='pl-6 pt-2.5 pr-6 bg-primary-white'>
             <div className='flex items-center justify-between'>
                 <LogoButton />
                 {/* For Desktop */}
