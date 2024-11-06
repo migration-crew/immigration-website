@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/UpImmigrationButton";
+import { StepsType } from "@/types/StepsType";
 import Link from "next/link";
 import { ApplicationSteps } from "./ApplicationSteps";
 import { SectionContainer } from "./SectionContainer";
 import { TimelineMobile } from "./TimeLineMobile";
-import { StepsType } from "@/types/StepsType";
 
 export type Props = {
   steps: StepsType[];
   title: string;
+  circleSpacing?: number;
 };
 
 /**
@@ -19,13 +20,16 @@ export type Props = {
  * <ApplicationStepMobile steps={Steps} title="Where to start?">
  * ```
  */
-export function ApplicationStepMobile({ steps, title }: Props) {
+export function ApplicationStepMobile({ steps, title, circleSpacing }: Props) {
   return (
     <SectionContainer className="flex flex-col gap-4 p-4 xl:hidden">
       <h2 className="text-xl font-bold">{title}</h2>
       <div className="flex items-center gap-4">
-        <TimelineMobile numCircles={steps.length}/>
-        <ApplicationSteps steps={steps}/>
+        <TimelineMobile
+          circleSpacing={circleSpacing}
+          numCircles={steps.length}
+        />
+        <ApplicationSteps steps={steps} />
       </div>
       <div>
         <Button className="w-full">
