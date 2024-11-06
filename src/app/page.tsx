@@ -19,7 +19,7 @@ export default function Home() {
       <StartQuiz />
       <WhyChooseUs />
       <ApplicationStepDesktop title="Where to start?" steps={Steps} />
-      <ApplicationStepMobile title="Where to start?" steps={Steps}/>
+      <ApplicationStepMobile title="Where to start?" steps={Steps}  circleSpacing={50} height="h-[70px]"/>
       <Testimonial
         testimonials={testimonialData}
         className="pt-[50px] pb-[100px]"
