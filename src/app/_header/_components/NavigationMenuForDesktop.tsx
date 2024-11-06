@@ -13,7 +13,7 @@ import SubMenu from "./SubMenu"
 type Props = {
     className: string | undefined
     immigrateComponents: HeaderComponent[]
-    workComponents: HeaderComponent[]
+    workComponents: HeaderComponent[] // It's not used for now, but I kept it for future use
 }
 
 export default function NavigationMenuForDesktop({className, immigrateComponents, workComponents}: Props) {
@@ -30,11 +30,16 @@ export default function NavigationMenuForDesktop({className, immigrateComponents
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 {/* Work */}
-                <NavigationMenuItem>
+                {/* <NavigationMenuItem>
                     <NavigationMenuTrigger>{t("work")}</NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <SubMenu components={workComponents}/>
                     </NavigationMenuContent>
+                </NavigationMenuItem> */}
+                <NavigationMenuItem>
+                    <NavigationMenuLink href="/work"  className="text-menu">
+                        {t("work")}
+                    </NavigationMenuLink>
                 </NavigationMenuItem>
                 {/* Study */}
                 <NavigationMenuItem>

@@ -19,14 +19,12 @@ import about from "@/public/about.jpeg";
 
 import Larissa from "@/public/Larissa.png";
 
-import Image from "next/image";
-
 export default function AboutPage() {
   const t = useTranslations("products");
 
   return (
     <>
-      <HeaderPicture alt="about us" src={about} title={t("cart")} />
+      <HeaderPicture alt="about us" src={about} title={t("cart")} className="object-[0%,20%]" />
       <SectionContainer>
         <h1>Who we are?</h1>
         <p>
