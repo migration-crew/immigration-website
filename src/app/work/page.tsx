@@ -17,7 +17,12 @@ export default function WorkPage() {
       <HeaderPicture alt="Image of work page" src={workImage} title={"Work"} />
       <WorkInCanada />
       <DiscoverOptions />
-      <ApplicationStepMobile steps={Steps} title="Where to start?" />
+      <ApplicationStepMobile
+        steps={Steps}
+        title="Where to start?"
+        circleSpacing={50}
+        height="h-[70px]"
+      />
       <ApplicationStepDesktop steps={Steps} title="Where to Start?" />
       <Testimonial testimonials={testimonialData} />
       <TestimonialMobile testimonials={testimonialData} />
