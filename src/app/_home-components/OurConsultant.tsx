@@ -33,11 +33,10 @@ export const OurConsultant = () => {
         </Paragraph>
         <div className="flex justify-between items-end">
           <div>
-            <p>{t("registry")}: R710678</p>
-            <p className="text-[#E92736]">{t("verified")} ICCRC</p>
-
-            <Paragraph>Registration: R710678</Paragraph>
-            <Paragraph className="text-[#E92736]">Verify with ICCRC</Paragraph>
+            <Paragraph>{t("registry")}: R710678</Paragraph>
+            <Paragraph className="text-[#E92736]">
+              {t("verified")} ICCRC
+            </Paragraph>
           </div>
           <div className="relative w-[185px] h-[45px] xl:w-[309px] xl:h-[75px]">
             <Image
