@@ -35,44 +35,49 @@ export const Testimonial = ({ testimonials, className }: Props) => {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="bg-white p-6 rounded-lg shadow-md"
+              className="bg-white rounded-lg shadow-testimonials-card"
             >
-              <div className="flex items-center mb-4">
+              <div className="relative w-full h-[236px] rounded-t-lg overflow-hidden">
                 <Image
                   src={testimonial.image}
                   alt={testimonial.name}
-                  width={343}
-                  height={236}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-t-lg"
                 />
               </div>
-              <div>
-                <div className="flex justify-between">
-                  <HeavySubHeader>{testimonial.name}</HeavySubHeader>
-                  <div className="flex items-center">
-                    <Image
-                      src={testimonial.countryImage}
-                      alt={testimonial.country}
-                      width={22}
-                      height={16}
-                    />
+              <div className="flex flex-col p-4 gap-4">
+                <div className="">
+                  <div className="flex justify-between">
+                    <HeavySubHeader>{testimonial.name}</HeavySubHeader>
+                    <div className="flex items-center">
+                      <Image
+                        src={testimonial.countryImage}
+                        alt={testimonial.country}
+                        width={22}
+                        height={16}
+                      />
+                    </div>
                   </div>
+                  <Caption>{testimonial.status}</Caption>
                 </div>
-                <Caption>{testimonial.status}</Caption>
+                <div className="flex">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <svg
+                      key={star}
+                      className="w-5 h-5 text-yellow-400 fill-current"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                  ))}
+                </div>
+                <div>
+                  <HeavyBody className="text-justify">
+                    &quot;{t("testimonialDescription")}&quot;
+                  </HeavyBody>
+                </div>
               </div>
-              <div className="mt-4 flex">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <svg
-                    key={star}
-                    className="w-5 h-5 text-yellow-400 fill-current"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                  </svg>
-                ))}
-              </div>
-              <HeavyBody className="text-justify">
-                &quot;{t("testimonialDescription")}&quot;
-              </HeavyBody>
             </div>
           ))}
         </div>
