@@ -59,7 +59,7 @@ body {
 
     /* Font Size and Weight (Defined size and weight separately because we can define together, but we cannot use a variable from tailwind.config.ts) */
     /* Size for Desktop */
-    --font-size-hero-section: 60px;
+    --font-size-hero-section: 55px;
     --font-size-page-titles: 48px;
     --font-size-heading: 36px;
     --font-size-subheading: 24px;
