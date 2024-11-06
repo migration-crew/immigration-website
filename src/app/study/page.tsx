@@ -21,7 +21,7 @@ export default function StudyPage() {
       />
       <StudyInCanada />
       <KnowBeforeEnrolling />
-      <ApplicationStepMobile steps={Steps} title="Where to start?"/>
+      <ApplicationStepMobile steps={Steps} title="Where to start?" />
       <ApplicationStepDesktop steps={Steps} title="Where to Start?" />
       <Testimonial testimonials={testimonialData} />
       <TestimonialMobile testimonials={testimonialData} />
