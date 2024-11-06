@@ -1,4 +1,5 @@
 import { ApplicationStepDesktop } from "@/components/common/ApplicationStepDesktop";
+import { ApplicationStepMobile } from "@/components/common/ApplicationStepMobile";
 import { HeaderPicture } from "@/components/common/HeaderPicture";
 import atlanticIP from "@/public/atlanticIP.jpg";
 import { EEPrograms } from "../_components/EEPrograms";
@@ -17,6 +18,7 @@ export default function AtlanticImmigration() {
       <IntroductionAtlantic />
 
       <ApplicationStepDesktop steps={EPSteps} title="What is the process?" />
+      <ApplicationStepMobile steps={EPSteps} title="What is the process?" />
 
       <EEPrograms />
     </>

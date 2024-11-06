@@ -1,8 +1,10 @@
 "use-client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/UpImmigrationButton";
 import CloseIcon from "@/public/close-icon.svg";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import { ForwardedRef, forwardRef, useState } from "react";
 
 interface Props {
@@ -12,11 +14,12 @@ interface Props {
   image: StaticImageData;
   id: string;
   isLast: boolean;
+  buttonLink?: string;
 }
 
 export const NavCardItem = forwardRef<HTMLDivElement, Props>(
   function WorkNavCard(
-    { id, title, alt, description, image, isLast }: Props,
+    { id, title, alt, description, image, isLast, buttonLink }: Props,
     ref: ForwardedRef<HTMLDivElement>
   ) {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -29,8 +32,8 @@ export const NavCardItem = forwardRef<HTMLDivElement, Props>(
       <Card
         id={id}
         className={`flex flex-col p-6 rounded-[20px] gap-4 self-stretch shadow-[0px_-8px_10px_-1px_rgba(0,0,0,0.10)] ${
-          isLast ? "" : "mb-[-51px] xl:mb-0"
-        }`}
+          isLast ? "xl:mb-0" : isExpanded ? "" : "mb-[-51px]"
+        } xl:w-[343px]  xl:mb-0`}
         ref={ref}
       >
         <div className="flex flex-col gap-2">
@@ -58,7 +61,7 @@ export const NavCardItem = forwardRef<HTMLDivElement, Props>(
           </div>
         </div>
         <div
-          className="w-full h-[197px] sm:h-[300px] lg:h-[400px] rounded-[10px]"
+          className="w-full h-[197px] sm:h-[300px] lg:h-[400px] rounded-[10px] xl:h-[197px]"
           style={{
             background: `linear-gradient(0deg, rgba(34, 116, 165, 0.30) 0%, rgba(34, 116, 165, 0.30) 100%), url(${image.src}) lightgray 50% / cover no-repeat`,
           }}
@@ -70,6 +73,11 @@ export const NavCardItem = forwardRef<HTMLDivElement, Props>(
             className="w-full h-full rounded-[10px] opacity-0"
           />
         </div>
+        {buttonLink && (
+          <Link href={buttonLink}>
+            <Button>Read more</Button>
+          </Link>
+        )}
       </Card>
     );
   }

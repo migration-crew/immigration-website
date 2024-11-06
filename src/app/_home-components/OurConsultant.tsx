@@ -1,4 +1,5 @@
 import { SectionContainer } from "@/components/common/SectionContainer";
+import { Heading } from "@/components/common/text/Heading";
 import { Paragraph } from "@/components/common/text/Paragraph";
 import { SubHeading } from "@/components/common/text/SubHeading";
 import CICCLogo from "@/public/CICCLogo.png";
@@ -9,7 +10,7 @@ export const OurConsultant = () => {
   return (
     <SectionContainer className="pt-[100px] pb-[50px] xl:flex" bgColor="bg-neutral-secondary-white">
       <div className="max-w-[640px]">
-        <h2 className="text-heading-mobile xl:text-heading">Our consultant</h2>
+        <Heading>Our consultant</Heading>
         <SubHeading className="py-4 xl:pb-0">Larissa Castelluber</SubHeading>
         <div className="relative max-w-[398px] h-[316px] xl:hidden">
           <Image
@@ -30,8 +31,8 @@ export const OurConsultant = () => {
         </Paragraph>
         <div className="flex justify-between items-end">
           <div>
-            <p>Registration: R710678</p>
-            <p className="text-[#E92736]">Verify with ICCRC</p>
+            <Paragraph>Registration: R710678</Paragraph>
+            <Paragraph className="text-[#E92736]">Verify with ICCRC</Paragraph>
           </div>
           <div className="relative w-[185px] h-[45px] xl:w-[309px] xl:h-[75px]">
             <Image
