@@ -14,11 +14,13 @@ export type Props = {
 
 /**
  * Application Step for Mobile
- * @param steps: StepsType[]
+ * @param steps: pass step data StepsType[]
  * @param title: string e.g. Where to start?
+ * @param circleSpacing: to change the line height. the space between each circle will change
+ * @param height: set height of step explanation. need to include spacing
  * @example
  * ```tsx
- * <ApplicationStepMobile steps={Steps} title="Where to start?">
+ * <ApplicationStepMobile steps={EPSteps} title="What is the process?" circleSpacing={120} height="h-[140px]"  />
  * ```
  */
 export function ApplicationStepMobile({ steps, title, circleSpacing, height }: Props) {
