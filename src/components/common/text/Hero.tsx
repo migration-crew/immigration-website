@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils";
 import React from "react";
 
 /**
@@ -20,5 +19,12 @@ export const Hero = ({
   className?: string | undefined;
   children: React.ReactNode;
 }) => {
-  return <h1 className={cn("text-hero-section-mobile xl:text-hero-section", className)}>{children}</h1>;
+  //When we put cn(), this component doesn't work on picuture
+  return (
+    <h1
+      className={`text-hero-section-mobile xl:text-hero-section ${className}`}
+    >
+      {children}
+    </h1>
+  );
 };
