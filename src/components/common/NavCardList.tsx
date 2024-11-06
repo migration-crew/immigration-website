@@ -3,6 +3,7 @@ import OpenWorkPermit from "@/public/open-work-permit.png";
 import Pgwp from "@/public/pgwp.png";
 import Sowp from "@/public/sowp.png";
 import WorkPermitExtensions from "@/public/work-permit-extensions.png";
+import { StaticImageData } from "next/image";
 import { forwardRef } from "react";
 import { NavCardItem } from "../../app/work/_components/NavCardItem";
 
@@ -16,7 +17,17 @@ interface Props {
   };
 }
 
-const navCardItems = [
+type navCardItemsType = {
+  ref: string;
+  id: string;
+  title: string;
+  alt: string;
+  description: string;
+  image: StaticImageData;
+  buttonLink?: string;
+};
+
+const navCardItems: navCardItemsType[] = [
   {
     ref: "workPermitRef",
     id: "work-permit-extensions",
@@ -68,7 +79,7 @@ export const NavCardList = forwardRef<HTMLDivElement, Props>(
   function NavCardList({ refs }: Props, ref) {
     return (
       <div
-        className="flex flex-col lg:grid lg:grid-cols-2 gap-4 flex-shrink-0"
+        className="flex flex-col xl:grid xl:grid-cols-3 gap-4 flex-shrink-0"
         ref={ref}
       >
         {navCardItems.map((item, index) => (
@@ -81,6 +92,7 @@ export const NavCardList = forwardRef<HTMLDivElement, Props>(
             description={item.description}
             image={item.image}
             isLast={index === navCardItems.length - 1}
+            buttonLink={item.buttonLink}
           />
         ))}
       </div>
