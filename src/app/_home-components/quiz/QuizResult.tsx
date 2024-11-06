@@ -13,6 +13,7 @@ import Image from "next/image";
 import expressEntry from "@/public/expressEntry.jpg";
 import { useTranslations } from "next-intl";
 import { BookFreeConsultation } from "@/components/common/BookFreeConsultation";
+import { ResponsiveImage } from "@/components/common/ResponsiveImage";
 
 type Props = {
     onClose: () => void;
@@ -34,13 +35,10 @@ export default function QuizResult({ onClose }: Props) {
                 <SubHeading>{t("pathwayOption")}</SubHeading>
                 <Heading>{t("expressEntry")}</Heading>
                 <HeavyBody>{t("pathwayDescription")}</HeavyBody>
-                <Image
-                    src={expressEntry}
+                <ResponsiveImage
                     alt="expressEntry"
-                    objectFit="cover"
-                    quality={100}
-                    width={380}
-                    height={200}
+                    src={expressEntry}
+                    divClassName="h-[220px] w-[400px]"
                 />
             </div>
             <DialogFooter className="sm:justify-start">
