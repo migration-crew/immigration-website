@@ -26,11 +26,11 @@ export const WhyChooseUs = () => {
           text={t("approvedRate")}
         />
         <div className="text-center">
-          <div className="pb-12 flex justify-center">
+          <div className="pb-7 flex justify-center">
             <ResponsiveImage
               alt="Languate"
               src={Language}
-              divClassName="h-[70px] w-[70px]"
+              divClassName="h-[90px] w-[90px]"
             />
           </div>
           <div>

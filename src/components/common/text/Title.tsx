@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils";
 import React from "react";
 
 /**
@@ -20,5 +19,10 @@ export const Title = ({
   className?: string | undefined;
   children: React.ReactNode;
 }) => {
-  return <h2 className={cn("text-page-titles-mobile xl:text-page-titles", className)}>{children}</h2>;
+  //When we put cn(), this component doesn't work on picuture
+  return (
+    <h2 className={`text-page-titles-mobile xl:text-page-titles ${className}`}>
+      {children}
+    </h2>
+  );
 };

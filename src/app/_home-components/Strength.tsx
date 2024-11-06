@@ -10,7 +10,7 @@ type Props = {
 
 export const Strength = ({ icon, num, text }: Props) => {
   return (
-    <div className="text-center grid place-content-center">
+    <div className="text-center flex flex-col items-center justify-start">
       <div className="pb-12 flex justify-center">{icon}</div>
       <div>
         <Heading className="text-primary-red">{num}</Heading>
