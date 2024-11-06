@@ -10,7 +10,7 @@ interface Props {
 export const TimelineMobile: React.FC<Props> = ({
   numCircles = 5,
   circleSize = 21,
-  circleSpacing = 44,
+  circleSpacing = 60,
   circleColor = "bg-secondary-blue",
   textColor = "text-white",
   className = "",
