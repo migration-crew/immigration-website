@@ -11,7 +11,7 @@ import Link from "next/link"
 
 type Props = {
     immigrateComponents: HeaderComponent[]
-    workComponents: HeaderComponent[]
+    workComponents: HeaderComponent[]  // It's not used for now, but I kept it for future use
 }
 
 export default function NavigationMenuForDesktop({ immigrateComponents, workComponents }: Props) {
@@ -28,13 +28,15 @@ export default function NavigationMenuForDesktop({ immigrateComponents, workComp
                     </AccordionContent>
                 </AccordionItem>
                 {/* Work */}
-                <AccordionItem value="work">
+                {/* <AccordionItem value="work">
                     <AccordionTrigger>{t("work")}</AccordionTrigger>
                     <AccordionContent>
                         <SubMenu components={workComponents} />
                     </AccordionContent>
-                </AccordionItem>
+                </AccordionItem> */}
             </Accordion>
+            {/* Work */}
+            <Link href="/work" className="text-menu">{t("work")}</Link>
             {/* Study */}
             <Link href="/study" className="text-menu">{t("study")}</Link>
             {/* About us */}
