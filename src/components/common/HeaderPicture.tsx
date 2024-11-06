@@ -21,7 +21,7 @@ type Props = {
  */
 export const HeaderPicture = ({ alt, src, title }: Props) => {
   return (
-    <section className="relative min-h-[218px] md:min-h-[360px]">
+    <section className="relative h-[218px] xl:h-[360px]">
       <Image
         alt={alt}
         src={src}
