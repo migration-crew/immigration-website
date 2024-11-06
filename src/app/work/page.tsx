@@ -29,7 +29,7 @@ export default function WorkPage() {
       <FAQ
         data={FAQs}
         title="Immigration Frequent Questions"
-        className="bg-neutral-secondary-white w-full"
+        bgColor="bg-neutral-secondary-white"
       />
     </div>
   );
