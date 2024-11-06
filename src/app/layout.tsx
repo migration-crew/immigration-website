@@ -22,14 +22,16 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${poppins.className}  antialiased`}>
-        <NextIntlClientProvider messages={messages}>
-          <Header />
+    <body className={`${poppins.className} antialiased min-h-screen flex flex-col`}>
+      <NextIntlClientProvider messages={messages}>
+        <Header />
+        <main className="flex-grow">
           {children}
-          <Footer />
-        </NextIntlClientProvider>
-        <Toaster />
-      </body>
-    </html>
+        </main>
+        <Footer />
+      </NextIntlClientProvider>
+      <Toaster />
+    </body>
+  </html>
   );
 }
