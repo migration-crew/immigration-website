@@ -1,4 +1,5 @@
 import { SectionContainer } from "@/components/common/SectionContainer";
+import { Heading } from "@/components/common/text/Heading";
 import { Paragraph } from "@/components/common/text/Paragraph";
 import { SubHeading } from "@/components/common/text/SubHeading";
 import CICCLogo from "@/public/CICCLogo.png";
@@ -15,9 +16,8 @@ export const OurConsultant = () => {
       bgColor="bg-neutral-secondary-white"
     >
       <div className="max-w-[640px]">
-        <h2 className="text-heading-mobile xl:text-heading">
-          {t("ourConsultant")}
-        </h2>
+        <Heading>{t("ourConsultant")}</Heading>
+
         <SubHeading className="py-4 xl:pb-0">Larissa Castelluber</SubHeading>
         <div className="relative max-w-[398px] h-[316px] xl:hidden">
           <Image
@@ -35,6 +35,9 @@ export const OurConsultant = () => {
           <div>
             <p>{t("registry")}: R710678</p>
             <p className="text-[#E92736]">{t("verified")} ICCRC</p>
+
+            <Paragraph>Registration: R710678</Paragraph>
+            <Paragraph className="text-[#E92736]">Verify with ICCRC</Paragraph>
           </div>
           <div className="relative w-[185px] h-[45px] xl:w-[309px] xl:h-[75px]">
             <Image

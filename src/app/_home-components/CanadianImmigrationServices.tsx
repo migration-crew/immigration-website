@@ -1,4 +1,5 @@
 import { SectionContainer } from "@/components/common/SectionContainer";
+import { Heading } from "@/components/common/text/Heading";
 import immigrate from "@/public/immigrateLink.png";
 import study from "@/public/studyLink.png";
 import work from "@/public/workLink.png";
@@ -10,9 +11,8 @@ export const CanadianImmigrationServices = () => {
 
   return (
     <SectionContainer className="py-[40px] xl:py-[50px]">
-      <h2 className="pb-6 text-heading-mobile xl:text-heading">
-        {t("immigrationServices")}
-      </h2>
+      <Heading className="pb-6">{t("immigrationServices")}</Heading>
+
       <div className="flex flex-col xl:flex-row gap-4 xl:gap-6">
         <NavCard
           alt="immigrate"

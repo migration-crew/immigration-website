@@ -42,9 +42,7 @@ export const StartQuiz = () => {
         </CardHeader>
         <CardFooter className="bg-primary-red flex-1 rounded-b-xl p-4 xl:p-6 flex justify-between xl:justify-center text-primary-white">
           <button onClick={handleOpenDialog}>
-            <Title className="text-[36px] cursor-pointer">
-              {t("startQuizButton")}
-            </Title>
+            <Title className="cursor-pointer">{t("startQuizButton")}</Title>
           </button>
           <ArrowRight size={36} strokeWidth={4} className="xl:hidden" />
           <ArrowRight
