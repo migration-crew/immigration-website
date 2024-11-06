@@ -1,40 +1,50 @@
 {
-    "products": {
-        "cart": "Agregar al carrito"
-    },
-    "LocaleSwitcher": {
-        "language": "Idioma",
-        "en": "Inglés",
-        "pt": "Portugués",
-        "es": "Español"
-    },
-    "NavigationMenu": {
-        "immigrate": "Emigrar",
-        "work": "Trabajar",
-        "study": "Estudiar",
-        "aboutUs": "Sobre Nosotros",
-        "contact": "Contacto",
-        "blog": "Blog",
-        "faq": "Preguntas Frecuentes",
-        "immigrateToCanada": "Emigrar a Canadá",
-        "expressEntry": "Entrada Exprés",
-        "provincialNomineeProgram": "Programa de Nominación Provincial - PNP",
-        "familySponsorship": "Patrocinio Familiar",
-        "caregiversPrograms": "Programas para Cuidadores",
-        "investorsEntrepreneurs": "Para Inversionistas y Emprendedores",
-        "otherPrograms": "Otros Programas",
-        "workInCanada": "Trabajar en Canadá",
-        "labourMarketImpactAssessment": "Evaluación de Impacto en el Mercado Laboral (LMIA)",
-        "postGraduationWorkPermit": "Permiso de Trabajo Post-Graduación",
-        "otherPermits": "Otros Permisos",
-        "startUpVisa": "Programa de Visa para Start-Up",
-        "selfEmployedProgram": "Programa para Trabajadores Autónomos",
-        "HumanitarianANdCompassionate": "Programa Humanitario y Compasivo",
-        "atlanticImmigrationProgram": "Programa de Inmigración Atlántica",
-        "northenImmigrationProgram": "Programa de Inmigración del Norte - Programa RNIP",
-        "services": "Servicios",
-        "company": "Empresa",
-        "sponsor": "Patrocinador",
-        "allRightsReserved": "Todos los derechos reservados."
-    }
+  "products": {
+    "cart": "Agregar al carrito"
+  },
+  "LocaleSwitcher": {
+    "language": "Idioma",
+    "en": "Inglés",
+    "pt": "Portugués",
+    "es": "Español"
+  },
+  "NavigationMenu": {
+    "immigrate": "Emigrar",
+    "work": "Trabajar",
+    "study": "Estudiar",
+    "aboutUs": "Sobre Nosotros",
+    "contact": "Contacto",
+    "blog": "Blog",
+    "faq": "Preguntas Frecuentes",
+    "immigrateToCanada": "Emigrar a Canadá",
+    "expressEntry": "Entrada Exprés",
+    "provincialNomineeProgram": "Programa de Nominación Provincial - PNP",
+    "familySponsorship": "Patrocinio Familiar",
+    "caregiversPrograms": "Programas para Cuidadores",
+    "investorsEntrepreneurs": "Para Inversionistas y Emprendedores",
+    "otherPrograms": "Otros Programas",
+    "workInCanada": "Trabajar en Canadá",
+    "labourMarketImpactAssessment": "Evaluación de Impacto en el Mercado Laboral (LMIA)",
+    "postGraduationWorkPermit": "Permiso de Trabajo Post-Graduación",
+    "otherPermits": "Otros Permisos",
+    "startUpVisa": "Programa de Visa para Start-Up",
+    "selfEmployedProgram": "Programa para Trabajadores Autónomos",
+    "HumanitarianANdCompassionate": "Programa Humanitario y Compasivo",
+    "atlanticImmigrationProgram": "Programa de Inmigración Atlántica",
+    "northenImmigrationProgram": "Programa de Inmigración del Norte - Programa RNIP",
+    "services": "Servicios",
+    "company": "Empresa",
+    "sponsor": "Patrocinador",
+    "allRightsReserved": "Todos los derechos reservados."
+  },
+  "Form": {
+    "bookAConsultation": "Agenda una Consulta",
+    "title": "Agenda una consulta inicial gratis!",
+    "firstName": "Primer nombre",
+    "lastName": "Apellido",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "submitMessage": "Gracias por contactarnos. Nos pondremos en contacto contigo lo antes posible."
+  }
 }
