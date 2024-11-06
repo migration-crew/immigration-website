@@ -1,4 +1,5 @@
 import { Steps } from "@/app/immigrate/content/steps";
+import { ApplicationStepMobile } from "@/components/common/ApplicationStepMobile";
 import FAQ from "@/components/common/faq";
 import { HeaderPicture } from "@/components/common/HeaderPicture";
 import { Testimonial } from "@/components/common/Testimonial";
@@ -24,6 +25,7 @@ export default function ImmigratePage() {
       <CardsPrograms />
 
       <ApplicationStepDesktop steps={Steps} title="Where to start?" />
+      <ApplicationStepMobile steps={Steps} title="Where to start?" />
 
       <Testimonial testimonials={testimonialData} />
       <TestimonialMobile testimonials={testimonialData} />
