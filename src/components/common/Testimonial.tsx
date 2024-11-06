@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/UpImmigrationButton";
 import { cn } from "@/lib/utils";
 import googleReview from "@/public/googleReview.png";
 import { TestimonialsType } from "@/types/TestimonialsType";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { Caption } from "./text/Caption";
@@ -24,10 +25,12 @@ type Props = {
  * ```
  */
 export const Testimonial = ({ testimonials, className }: Props) => {
+  const t = useTranslations("Home");
+
   return (
     <SectionContainer className={cn("hidden lg:block", className)}>
       <div>
-        <h2 className="text-3xl font-bold mb-6">Testimonials</h2>
+        <h2 className="text-3xl font-bold mb-6">{t("testimonialsTitle")}</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
             <div
@@ -68,7 +71,7 @@ export const Testimonial = ({ testimonials, className }: Props) => {
                 ))}
               </div>
               <HeavyBody className="text-justify">
-                &quot;{testimonial.text}&quot;
+                &quot;{t("testimonialDescription")}&quot;
               </HeavyBody>
             </div>
           ))}
@@ -81,12 +84,10 @@ export const Testimonial = ({ testimonials, className }: Props) => {
             width={150}
             height={50}
           />
-          <p className="text-gray-600 py-4">
-            Explore our Google Reviews for top-rated immigration services.
-          </p>
+          <p className="text-gray-600 py-4">{t("googleReviews")}</p>
           <Button>
             <Link href="https://www.google.com/search?q=Up+immigration&client=opera-gx&hs=dC0&sca_esv=db3f177c98a4bf7a&sxsrf=ADLYWIKchpWGpCthIu-52xqY_0D914VxfQ%3A1730482678099&ei=9hElZ9LcBbrTp84PlLH0oAQ&ved=0ahUKEwjSr8Wq1ruJAxW66ckDHZQYHUQQ4dUDCBA&uact=5&oq=Up+immigration&gs_lp=Egxnd3Mtd2l6LXNlcnAiDlVwIGltbWlncmF0aW9uMgQQIxgnMgwQIxiABBgTGCcYigUyDBAjGIAEGBMYJxiKBTIOEC4YgAQYxwEYywEYrwEyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IuAlQ6wVYiwdwAHgCkAEAmAHOAaABlgOqAQMyLTK4AQPIAQD4AQGYAgKgAtABwgIEEAAYR5gDAOIDBRIBMSBAiAYBkAYIkgcFMS4wLjGgB8gW&sclient=gws-wiz-serp#">
-              Read more
+              {t("readMoreButton")}
             </Link>
           </Button>
         </div>

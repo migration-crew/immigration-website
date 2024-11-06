@@ -3,13 +3,21 @@ import { Paragraph } from "@/components/common/text/Paragraph";
 import { SubHeading } from "@/components/common/text/SubHeading";
 import CICCLogo from "@/public/CICCLogo.png";
 import Larissa from "@/public/Larissa.png";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export const OurConsultant = () => {
+  const t = useTranslations("Home");
+
   return (
-    <SectionContainer className="pt-[100px] pb-[50px] xl:flex" bgColor="bg-neutral-secondary-white">
+    <SectionContainer
+      className="pt-[100px] pb-[50px] xl:flex"
+      bgColor="bg-neutral-secondary-white"
+    >
       <div className="max-w-[640px]">
-        <h2 className="text-heading-mobile xl:text-heading">Our consultant</h2>
+        <h2 className="text-heading-mobile xl:text-heading">
+          {t("ourConsultant")}
+        </h2>
         <SubHeading className="py-4 xl:pb-0">Larissa Castelluber</SubHeading>
         <div className="relative max-w-[398px] h-[316px] xl:hidden">
           <Image
@@ -21,17 +29,12 @@ export const OurConsultant = () => {
           />
         </div>
         <Paragraph className="py-4 pb-8 xl:py-8">
-          I&apos;m committed to helping you realize your Canadian dream. I
-          understand the complexities of the immigration process and am here to
-          offer the support and guidance you need. Together, we can ensure your
-          journey to Canada is successful and fulfilling. Proudly regulated and
-          in good standing with the College of Immigration and Citizenship
-          Consultants, Larissa Castelluber, registration R710678
+          {t("ourConsultantDescription")}
         </Paragraph>
         <div className="flex justify-between items-end">
           <div>
-            <p>Registration: R710678</p>
-            <p className="text-[#E92736]">Verify with ICCRC</p>
+            <p>{t("registry")}: R710678</p>
+            <p className="text-[#E92736]">{t("verified")} ICCRC</p>
           </div>
           <div className="relative w-[185px] h-[45px] xl:w-[309px] xl:h-[75px]">
             <Image
