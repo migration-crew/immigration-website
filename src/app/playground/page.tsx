@@ -17,8 +17,9 @@ import { SubHeading } from "@/components/common/text/SubHeading";
 import { Title } from "@/components/common/text/Title";
 import about from "@/public/about.jpeg";
 
-import Larissa from "@/public/Larissa.png";
 import { ApplicationStepMobile } from "@/components/common/ApplicationStepMobile";
+import { TitleWithAccentLine } from "@/components/common/TitleWithAccentLine";
+import Larissa from "@/public/Larissa.png";
 import { EPSteps, Steps } from "../immigrate/content/steps";
 
 export default function AboutPage() {
@@ -26,7 +27,12 @@ export default function AboutPage() {
 
   return (
     <>
-      <HeaderPicture alt="about us" src={about} title={t("cart")} className="object-[0%,20%]" />
+      <HeaderPicture
+        alt="about us"
+        src={about}
+        title={t("cart")}
+        className="object-[0%,20%]"
+      />
       <SectionContainer>
         <h1>Who we are?</h1>
         <p>
@@ -83,8 +89,52 @@ export default function AboutPage() {
           </div>
         </ResponsiveImage>
       </SectionContainer>
-      <ApplicationStepMobile title="Where to start?" steps={Steps} height="h-[60px]" />
-      <ApplicationStepMobile steps={EPSteps} title="What is the process?" circleSpacing={120} height="h-[140px]"  />
+      <ApplicationStepMobile
+        title="Where to start?"
+        steps={Steps}
+        height="h-[60px]"
+      />
+      <ApplicationStepMobile
+        steps={EPSteps}
+        title="What is the process?"
+        circleSpacing={120}
+        height="h-[140px]"
+      />
+      <TitleWithAccentLine
+        title="Federal Immigration Programs Managed by Express Entry"
+        text={`Express Entry operates through an online system that manages${(
+          <br />
+        )} applications for three federal immigration programs:`}
+      >
+        <div className="pt-[26px]">
+          <div className="pb-[26px]">
+            <SubHeading>1. Federal Skilled Worker Program</SubHeading>
+            <Paragraph className="pt-4">
+              The Federal Skilled Worker Program is for skilled workers who have
+              work experience and want to become permanent residents.
+            </Paragraph>
+          </div>
+          <div className="pb-[26px]">
+            <SubHeading>2. Federal Skilled Trades Program</SubHeading>
+            <Paragraph className="pt-4">
+              The Federal Skilled Trades Program targets skilled tradespeople
+              with qualifications in specific trades. This program emphasizes
+              practical skills and work experience in trades such as
+              electricians, plumbers, and chefs, among others.
+            </Paragraph>
+          </div>
+          <div className="pb-[26px]">
+            <SubHeading>3. Canadian Experience Class</SubHeading>
+            <Paragraph className="pt-4">
+              The Canadian Experience Class is for individuals who have already
+              gained skilled work experience in Canada. This program is ideal
+              for temporary foreign workers or international graduates who have
+              accumulated significant work experience in Canada and wish to
+              transition to permanent residence.
+            </Paragraph>
+          </div>
+        </div>
+      </TitleWithAccentLine>
     </>
   );
 }
