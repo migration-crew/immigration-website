@@ -8,7 +8,7 @@ import { FAQs } from "@/data/FAQData";
 import immigratePage from "@/public/immigratePage.png";
 import { ApplicationStepDesktop } from "../../components/common/ApplicationStepDesktop";
 import { testimonialData } from "../../data/testimonials";
-import { CardsPrograms } from "./_components/CardsPrograms";
+import { DiscorverOptionsIP } from "./_components/DiscorverOptionsIP";
 import { Introduction } from "./_components/Introduction";
 
 export default function ImmigratePage() {
@@ -22,7 +22,8 @@ export default function ImmigratePage() {
 
       <Introduction />
 
-      <CardsPrograms />
+      {/* <CardsPrograms /> */}
+      <DiscorverOptionsIP />
 
       <ApplicationStepDesktop steps={Steps} title="Where to start?" />
       <ApplicationStepMobile steps={Steps} title="Where to start?" />
