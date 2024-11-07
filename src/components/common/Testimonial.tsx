@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Card } from "../ui/card";
 import { Caption } from "./text/Caption";
+import { Heading } from "./text/Heading";
 import { HeavyBody } from "./text/HeavyBody";
 import { HeavySubHeader } from "./text/HeavySubHeader";
 import { Paragraph } from "./text/Paragraph";
@@ -32,7 +33,7 @@ export const Testimonial = ({ testimonials, className }: Props) => {
   return (
     <SectionContainer className={cn("hidden lg:block", className)}>
       <div>
-        <h2 className="text-3xl font-bold mb-6">{t("testimonialsTitle")}</h2>
+        <Heading>{t("testimonialsTitle")}</Heading>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
             <Card key={testimonial.name}>
