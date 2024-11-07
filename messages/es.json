@@ -92,11 +92,23 @@
     "languagesTitle": "Idiomas",
     "languagesOptions": "Inglés/ Portugués/ Español",
     "yearsExperience": "Años de experiencia",
+    "whereToStart": "¿Por dónde empezar?",
+    "step1Title": "Agenda una consulta gratuita de 20 minutos",
+    "step1Description": "Cuéntanos sobre tus objetivos en Canadá y tu perfil.",
+    "step2Title": "Analiza tus opciones",
+    "step2Description": "Te proporcionaremos posibles vías y te enviaremos una cotización.",
+    "step3Title": "Haz tu pago",
+    "step3Description": "Puedes pagar por transferencia electrónica mediante pagos a plazos.",
+    "step4Title": "Reúne los documentos",
+    "step4Description": "Listaremos los documentos necesarios para tu solicitud.",
+    "step5Title": "Aplica",
+    "step5Description": "Uno de nuestros expertos enviará tu solicitud.",
+    "freeConsultationButton": "Agenda una consulta inicial gratuita",
     "testimonialsTitle": "Testimonios",
     "expressEntry": "Entrada Express",
     "permanentResident": "Residente Permanente",
     "testimonialDescription": "Tuve una experiencia increíble con mi solicitud de visa. Hicieron que todo el proceso fuera fácil y sin estrés. La experiencia del personal y la atención al detalle fueron impresionantes.",
     "googleReviews": "Explora nuestras Reseñas de Google para conocer los servicios de inmigración mejor calificados.",
-    "readMoreButton": "Leer más"
+    "reviewsButton": "Explora las reseñas de Google"
   }
 }
