@@ -24,12 +24,7 @@ export default function StudyPage() {
       <ApplicationStepMobile steps={Steps} title="Where to start?" />
       <ApplicationStepDesktop steps={Steps} title="Where to Start?" />
       <Testimonial testimonials={testimonialData} />
-      <TestimonialMobile
-        testimonials={testimonialData}
-        optionalText="Explore more of our Google Reviews for top-rated immigration services. "
-        reviewsButtonText="Explore Google Reviews"
-        buttonClassName="w-full"
-      />
+      <TestimonialMobile testimonials={testimonialData} />
       <FAQ
         data={FAQs}
         title="Immigration Frequent Questions"

@@ -6,9 +6,11 @@ import { TestimonialsType } from "@/types/TestimonialsType";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import { Card } from "../ui/card";
 import { Caption } from "./text/Caption";
 import { HeavyBody } from "./text/HeavyBody";
 import { HeavySubHeader } from "./text/HeavySubHeader";
+import { Paragraph } from "./text/Paragraph";
 
 type Props = {
   testimonials: TestimonialsType[];
@@ -33,10 +35,7 @@ export const Testimonial = ({ testimonials, className }: Props) => {
         <h2 className="text-3xl font-bold mb-6">{t("testimonialsTitle")}</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <div
-              key={testimonial.name}
-              className="bg-white rounded-lg shadow-testimonials-card"
-            >
+            <Card key={testimonial.name}>
               <div className="relative w-full h-[236px] rounded-t-lg overflow-hidden">
                 <Image
                   src={testimonial.image}
@@ -78,7 +77,7 @@ export const Testimonial = ({ testimonials, className }: Props) => {
                   </HeavyBody>
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
         <div className="flex flex-col items-center pt-4">
@@ -89,12 +88,15 @@ export const Testimonial = ({ testimonials, className }: Props) => {
             width={150}
             height={50}
           />
-          <p className="text-gray-600 py-4">{t("googleReviews")}</p>
-          <Button>
-            <Link href="https://www.google.com/search?q=Up+immigration&client=opera-gx&hs=dC0&sca_esv=db3f177c98a4bf7a&sxsrf=ADLYWIKchpWGpCthIu-52xqY_0D914VxfQ%3A1730482678099&ei=9hElZ9LcBbrTp84PlLH0oAQ&ved=0ahUKEwjSr8Wq1ruJAxW66ckDHZQYHUQQ4dUDCBA&uact=5&oq=Up+immigration&gs_lp=Egxnd3Mtd2l6LXNlcnAiDlVwIGltbWlncmF0aW9uMgQQIxgnMgwQIxiABBgTGCcYigUyDBAjGIAEGBMYJxiKBTIOEC4YgAQYxwEYywEYrwEyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IuAlQ6wVYiwdwAHgCkAEAmAHOAaABlgOqAQMyLTK4AQPIAQD4AQGYAgKgAtABwgIEEAAYR5gDAOIDBRIBMSBAiAYBkAYIkgcFMS4wLjGgB8gW&sclient=gws-wiz-serp#">
-              {t("readMoreButton")}
-            </Link>
-          </Button>
+          <Paragraph className="text-gray-600 py-4">
+            {"Explore our Google Reviews for top-rated immigration services."}
+          </Paragraph>
+
+          <Link href="https://www.google.com/search?q=Up+immigration&client=opera-gx&hs=dC0&sca_esv=db3f177c98a4bf7a&sxsrf=ADLYWIKchpWGpCthIu-52xqY_0D914VxfQ%3A1730482678099&ei=9hElZ9LcBbrTp84PlLH0oAQ&ved=0ahUKEwjSr8Wq1ruJAxW66ckDHZQYHUQQ4dUDCBA&uact=5&oq=Up+immigration&gs_lp=Egxnd3Mtd2l6LXNlcnAiDlVwIGltbWlncmF0aW9uMgQQIxgnMgwQIxiABBgTGCcYigUyDBAjGIAEGBMYJxiKBTIOEC4YgAQYxwEYywEYrwEyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IuAlQ6wVYiwdwAHgCkAEAmAHOAaABlgOqAQMyLTK4AQPIAQD4AQGYAgKgAtABwgIEEAAYR5gDAOIDBRIBMSBAiAYBkAYIkgcFMS4wLjGgB8gW&sclient=gws-wiz-serp#">
+            <Button className="w-full xl:w-fit">
+              {"Explore Google Reviews"}
+            </Button>
+          </Link>
         </div>
       </div>
     </SectionContainer>
