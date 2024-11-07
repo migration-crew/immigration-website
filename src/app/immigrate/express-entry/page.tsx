@@ -22,6 +22,7 @@ export default function ExpressEntry() {
         circleSpacing={110}
         steps={EPSteps}
         title="What is the process?"
+        height="h-[130px]"
       />
 
       <EEPrograms />

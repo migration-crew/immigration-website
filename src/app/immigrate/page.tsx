@@ -25,7 +25,7 @@ export default function ImmigratePage() {
       <CardsPrograms />
 
       <ApplicationStepDesktop steps={Steps} title="Where to start?" />
-      <ApplicationStepMobile steps={Steps} title="Where to start?" />
+      <ApplicationStepMobile steps={Steps} title="Where to start?" circleSpacing={54} height="h-[75px]" />
 
       <Testimonial testimonials={testimonialData} />
       <TestimonialMobile testimonials={testimonialData} />

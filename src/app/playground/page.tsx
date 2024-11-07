@@ -18,6 +18,8 @@ import { Title } from "@/components/common/text/Title";
 import about from "@/public/about.jpeg";
 
 import Larissa from "@/public/Larissa.png";
+import { ApplicationStepMobile } from "@/components/common/ApplicationStepMobile";
+import { EPSteps, Steps } from "../immigrate/content/steps";
 
 export default function AboutPage() {
   const t = useTranslations("products");
@@ -81,6 +83,8 @@ export default function AboutPage() {
           </div>
         </ResponsiveImage>
       </SectionContainer>
+      <ApplicationStepMobile title="Where to start?" steps={Steps} height="h-[60px]" />
+      <ApplicationStepMobile steps={EPSteps} title="What is the process?" circleSpacing={120} height="h-[140px]"  />
     </>
   );
 }
