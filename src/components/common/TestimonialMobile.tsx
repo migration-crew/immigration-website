@@ -11,12 +11,15 @@ import { cn } from "@/lib/utils";
 import googleReview from "@/public/googleReview.png";
 import { TestimonialsType } from "@/types/TestimonialsType";
 import Image from "next/image";
+import Link from "next/link";
 import * as React from "react";
+import { Button } from "../ui/UpImmigrationButton";
 import { SectionContainer } from "./SectionContainer";
 import { Caption } from "./text/Caption";
 import { Heading } from "./text/Heading";
 import { HeavyBody } from "./text/HeavyBody";
 import { HeavySubHeader } from "./text/HeavySubHeader";
+import { Paragraph } from "./text/Paragraph";
 
 type Props = {
   testimonials: TestimonialsType[];
@@ -65,19 +68,20 @@ export default function TestimonialMobile({ testimonials, className }: Props) {
           5.0
         </h1>
       </div>
-      <div className="w-full max-w-4xl mx-auto px-4">
+      <div className="w-full max-w-4xl mx-auto px-4 flex flex-col gap-4">
         <Carousel setApi={setApi} className="w-full">
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index}>
-                <Card className="border-none shadow-lg rounded-3xl overflow-hidden">
+                <Card className="border-none shadow-testimonials-card rounded-[20px] overflow-hidden">
                   <div className="flex gap-3">
-                    <div className="relative w-[50%] h-[260px]">
+                    <div className="relative flex-1 h-[260px] rounded-l-lg">
                       <Image
                         src={testimonial.image}
                         alt={`${testimonial.name}'s testimonial`}
-                        fill
-                        className="object-cover"
+                        layout="fill"
+                        objectFit="cover"
+                        className="rounded-l-lg"
                       />
                     </div>
                     <div className="flex w-[50%] flex-col justify-center py-4 pr-4">
@@ -113,6 +117,16 @@ export default function TestimonialMobile({ testimonials, className }: Props) {
             />
           ))}
         </div>
+        <Paragraph>
+          {
+            "Explore more of our Google Reviews for top-rated immigration services."
+          }
+        </Paragraph>
+        <Link href="https://www.google.com/search?q=Up+immigration&client=opera-gx&hs=dC0&sca_esv=db3f177c98a4bf7a&sxsrf=ADLYWIKchpWGpCthIu-52xqY_0D914VxfQ%3A1730482678099&ei=9hElZ9LcBbrTp84PlLH0oAQ&ved=0ahUKEwjSr8Wq1ruJAxW66ckDHZQYHUQQ4dUDCBA&uact=5&oq=Up+immigration&gs_lp=Egxnd3Mtd2l6LXNlcnAiDlVwIGltbWlncmF0aW9uMgQQIxgnMgwQIxiABBgTGCcYigUyDBAjGIAEGBMYJxiKBTIOEC4YgAQYxwEYywEYrwEyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IuAlQ6wVYiwdwAHgCkAEAmAHOAaABlgOqAQMyLTK4AQPIAQD4AQGYAgKgAtABwgIEEAAYR5gDAOIDBRIBMSBAiAYBkAYIkgcFMS4wLjGgB8gW&sclient=gws-wiz-serp#">
+          <Button className="w-full xl:w-fit">
+            {"Explore Google Reviews"}
+          </Button>
+        </Link>
       </div>
     </SectionContainer>
   );

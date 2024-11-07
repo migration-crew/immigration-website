@@ -18,7 +18,7 @@ export default function Caregiver() {
       <IntroductionCaregiver />
 
       <ApplicationStepDesktop steps={EPSteps} title="What is the process?" />
-      <ApplicationStepMobile steps={EPSteps} title="What is the process?" />
+      <ApplicationStepMobile steps={EPSteps} title="What is the process?" circleSpacing={110} height="h-[130px]" />
 
       <EEPrograms />
     </>
