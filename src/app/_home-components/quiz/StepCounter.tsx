@@ -25,16 +25,16 @@ export default function StepCounter({
           <div key={index} className="flex items-center mx-0">
             <div
               key={index}
-              className={`w-6 h-6 rounded-full flex items-center justify-center ${
+              className={`w-6 h-6 rounded-full flex items-center justify-center text-primary-white ${
                 index + 1 === currentStep
-                  ? "bg-secondary-blue text-primary-white"
-                  : "bg-gray-200"
+                  ? "bg-secondary-blue"
+                  : "bg-disabled-black"
               }`}
             >
               {index + 1}
             </div>
             {index < totalSteps - 1 && (
-              <div className="flex-1 h-0.5 w-[77px] xl:w-[103px] bg-gray-200 m-0"></div>
+              <div className="flex-1 h-0.5 w-[77px] xl:w-[103px] bg-disabled-black m-0"></div>
             )}
           </div>
         ))}
