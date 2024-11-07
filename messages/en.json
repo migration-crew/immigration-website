@@ -92,11 +92,23 @@
     "languagesTitle": "Languages",
     "languagesOptions": "English/ Portuguese/ Spanish",
     "yearsExperience": "Years of experience",
+    "whereToStart": "Where to start?",
+    "step1Title": "Book a 20 min Free Consultation",
+    "step1Description": "Tell us about your goals in Canada and your profile.",
+    "step2Title": "Analyze your options",
+    "step2Description": "We'll provide possible pathways for you and send you a quote.",
+    "step3Title": "Make your payment",
+    "step3Description": "You can pay via e-transfer through installment payments",
+    "step4Title": "Gather the Documents",
+    "step4Description": "We'll list the documents required for your application.",
+    "step5Title": "Apply",
+    "step5Description": "One of our experts will submit your application.",
+    "freeConsultationButton": "Book a free initial consultation",
     "testimonialsTitle": "Testimonials",
     "expressEntry": "Express Entry",
     "permanentResident": "Permanent Resident",
     "testimonialDescription": "I had an amazing experience with my visa application. They made the entire process easy and stress-free. The staff's expertise and attention to detail were impressive.",
     "googleReviews": "Explore our Google Reviews for top-rated immigration services.",
-    "readMoreButton": "Read more"
+    "reviewsButton": "Explore Google Reviews"
   }
 }

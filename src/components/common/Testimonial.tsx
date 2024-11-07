@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Card } from "../ui/card";
 import { Caption } from "./text/Caption";
+import { Heading } from "./text/Heading";
 import { HeavyBody } from "./text/HeavyBody";
 import { HeavySubHeader } from "./text/HeavySubHeader";
 import { Paragraph } from "./text/Paragraph";
@@ -31,8 +32,8 @@ export const Testimonial = ({ testimonials, className }: Props) => {
 
   return (
     <SectionContainer className={cn("hidden lg:block", className)}>
-      <div>
-        <h2 className="text-3xl font-bold mb-6">{t("testimonialsTitle")}</h2>
+      <div className="flex flex-col gap-4">
+        <Heading>{t("testimonialsTitle")}</Heading>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
             <Card key={testimonial.name}>
@@ -89,13 +90,11 @@ export const Testimonial = ({ testimonials, className }: Props) => {
             height={50}
           />
           <Paragraph className="text-gray-600 py-4">
-            {"Explore our Google Reviews for top-rated immigration services."}
+            {t("googleReviews")}
           </Paragraph>
 
           <Link href="https://www.google.com/search?q=Up+immigration&client=opera-gx&hs=dC0&sca_esv=db3f177c98a4bf7a&sxsrf=ADLYWIKchpWGpCthIu-52xqY_0D914VxfQ%3A1730482678099&ei=9hElZ9LcBbrTp84PlLH0oAQ&ved=0ahUKEwjSr8Wq1ruJAxW66ckDHZQYHUQQ4dUDCBA&uact=5&oq=Up+immigration&gs_lp=Egxnd3Mtd2l6LXNlcnAiDlVwIGltbWlncmF0aW9uMgQQIxgnMgwQIxiABBgTGCcYigUyDBAjGIAEGBMYJxiKBTIOEC4YgAQYxwEYywEYrwEyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IuAlQ6wVYiwdwAHgCkAEAmAHOAaABlgOqAQMyLTK4AQPIAQD4AQGYAgKgAtABwgIEEAAYR5gDAOIDBRIBMSBAiAYBkAYIkgcFMS4wLjGgB8gW&sclient=gws-wiz-serp#">
-            <Button className="w-full xl:w-fit">
-              {"Explore Google Reviews"}
-            </Button>
+            <Button className="w-full xl:w-fit">{t("reviewsButton")}</Button>
           </Link>
         </div>
       </div>
