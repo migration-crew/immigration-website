@@ -3,15 +3,15 @@
 import { Form } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { Heading } from "../../common/text/Heading";
 import { EmailField } from "./_components/EmailField";
 import { FirstNameField } from "./_components/FirstNameField";
 import { LastNameField } from "./_components/LastNameField";
 import { MessageField } from "./_components/MessageField";
 import { SendButton } from "./_components/SendButton";
-import { Heading } from "../../common/text/Heading";
-import { useTranslations } from "next-intl";
 
 const formSchema = z.object({
   firstname: z.string().trim(),
@@ -21,14 +21,18 @@ const formSchema = z.object({
 });
 
 type Props = {
-  className?: string
-  title: string
-  onSubmitCallback: () => void
-}
+  className?: string;
+  title: string;
+  onSubmitCallback: () => void;
+};
 
 export type FormValues = z.infer<typeof formSchema>;
 
-export function UpImmigrationForm({ className, title, onSubmitCallback }: Props) {
+export function UpImmigrationForm({
+  className,
+  title,
+  onSubmitCallback,
+}: Props) {
   const { toast } = useToast();
   const t = useTranslations("Form");
 
@@ -54,12 +58,14 @@ export function UpImmigrationForm({ className, title, onSubmitCallback }: Props)
   }
 
   return (
-    <div className={`py-10 px-4 flex flex-col gap-4 bg-neutral-secondary-white h-full ${className}`}>
+    <div
+      className={`py-6 px-4 flex flex-col gap-8 bg-neutral-secondary-white h-full ${className}`}
+    >
       <Heading>{title}</Heading>
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="flex flex-col gap-2"
+          className="flex flex-col gap-6"
         >
           <FirstNameField control={form.control} />
           <LastNameField control={form.control} />
