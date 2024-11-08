@@ -11,11 +11,9 @@ export const EEPrograms = () => {
     <>
       <SectionContainer className="py-10">
         <Image
-          className="pt-10 pb-10"
+          className="pt-10 pb-10 w-full rounded-xl"
           src={EEProgramsImage}
           alt="Express Entry"
-          width={1200}
-          height={400}
         />
       </SectionContainer>
 
