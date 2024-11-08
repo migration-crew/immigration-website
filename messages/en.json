@@ -111,6 +111,11 @@
     "googleReviews": "Explore our Google Reviews for top-rated immigration services.",
     "reviewsButton": "Explore Google Reviews"
   },
+  "IntroductionImmigrate": {
+    "heading": "Do you want to immigrate to Canada?",
+    "paragraph1": "Canada is a top destination for individuals and families seeking new opportunities. With over 80 immigration programs available, including options for skilled workers, Labour Market Impact Assessments (LMIA), Provincial Nominee Programs (PNP), and family reunification, there are numerous pathways to becoming a permanent resident.",
+    "paragraph2": "Our team at Up Immigration is here to guide you through the process, helping you find the program that best suits your needs for a successful transition to your new life in Canada. Contact us today to start your journey to Canada with confidence."
+  },
   "IntroductionExpressEntry": {
     "heading": "Overview of Express Entry",
     "subheading1": "How does Express Entry work?",
@@ -132,12 +137,12 @@
     "paragraph3": "The Express Entry system is the fastest way for skilled workers to move to Canada. It uses a points system called the Comprehensive Ranking System (CRS) to score candidates based on their age, education, work experience, and language skills. The higher your score, the better your chances of being invited to apply for permanent residence. The system also prioritizes those with job offers or provincial nominations, making it easier for them to get selected."
   },
   "IntroductionAtlantic": {
-    "heading": "Overview of Family Sponsorship",
+    "heading": "Overview of Overview of Atlantic Immigration Program -AIP",
     "subheading1": "How does Express Entry work?",
     "paragraph1": "The Express Entry system is the fastest way for skilled workers to move to Canada. It uses a points system called the Comprehensive Ranking System (CRS) to score candidates based on their age, education, work experience, and language skills. The higher your score, the better your chances of being invited to apply for permanent residence. The system also prioritizes those with job offers or provincial nominations, making it easier for them to get selected.",
     "subheading2": "What is the Express Entry System?",
     "paragraph2": "The Express Entry system is a streamlined immigration process designed to manage applications for permanent residence in Canada. It facilitates the selection of skilled workers most likely to succeed in the Canadian economy. As a Regulated Canadian Immigration Consultant (RCIC), Up Immigration provides expert guidance on navigating this system.",
-    "imageAlt": "Express Entry",
+    "imageAlt": "Atlantic Immigration Program",
     "subheading3": "How does Express Entry work?",
     "paragraph3": "The Express Entry system is the fastest way for skilled workers to move to Canada. It uses a points system called the Comprehensive Ranking System (CRS) to score candidates based on their age, education, work experience, and language skills. The higher your score, the better your chances of being invited to apply for permanent residence. The system also prioritizes those with job offers or provincial nominations, making it easier for them to get selected."
   },
