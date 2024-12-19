@@ -15,6 +15,7 @@ export const OurStory = () => {
         controls
         preload="none"
         className="rounded-xl w-[398px] h-[225px] xl:w-[1080px] xl:h-[610px]"
+        poster="/ourStory.png"
       >
         <source src="/OurStory.mp4" type="video/mp4" />
       </video>
