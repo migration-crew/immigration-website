@@ -2,11 +2,13 @@ import { ApplicationStepDesktop } from "@/components/common/ApplicationStepDeskt
 import { ApplicationStepMobile } from "@/components/common/ApplicationStepMobile";
 import { HeaderPicture } from "@/components/common/HeaderPicture";
 import caregiver from "@/public/caregiver.jpg";
+import { useTranslations } from "next-intl";
 import { EEPrograms } from "../_components/EEPrograms";
 import { IntroductionCaregiver } from "../_components/IntroductionCaregiver";
 import { EPSteps } from "../content/steps";
 
 export default function Caregiver() {
+  const t = useTranslations("ImmigrationEPSteps");
   return (
     <>
       <HeaderPicture
@@ -17,8 +19,13 @@ export default function Caregiver() {
 
       <IntroductionCaregiver />
 
-      <ApplicationStepDesktop steps={EPSteps} title="What is the process?" />
-      <ApplicationStepMobile steps={EPSteps} title="What is the process?" circleSpacing={110} height="h-[130px]" />
+      <ApplicationStepDesktop steps={EPSteps()} title={t("EPStepsHeading")} />
+      <ApplicationStepMobile
+        steps={EPSteps()}
+        title={t("EPStepsHeading")}
+        circleSpacing={110}
+        height="h-[130px]"
+      />
 
       <EEPrograms />
     </>
