@@ -193,5 +193,31 @@
     "subheading2": "Beneficios de los PNP",
     "paragraph2": "El sistema Express Entry es un proceso de inmigración simplificado. Los PNP ofrecen un camino más rápido hacia la residencia permanente, abordan las necesidades específicas del mercado laboral provincial y ofrecen una variedad de categorías para atraer trabajadores calificados, empresarios y graduados internacionales.",
     "imageAlt": "Programas de Nominación Provincial"
+  },
+  "ImmigrationSteps": {
+    "stepsHeading": "¿Por dónde empezar?",
+    "step1Title": "Agenda una consulta gratuita de 20 minutos",
+    "step1Description": "Cuéntanos sobre tus objetivos en Canadá y tu perfil.",
+    "step2Title": "Analiza tus opciones",
+    "step2Description": "Te proporcionaremos posibles vías y te enviaremos una cotización.",
+    "step3Title": "Haz tu pago",
+    "step3Description": "Puedes pagar por transferencia electrónica mediante pagos a plazos.",
+    "step4Title": "Reúne los documentos",
+    "step4Description": "Listaremos los documentos necesarios para tu solicitud.",
+    "step5Title": "Aplica",
+    "step5Description": "Uno de nuestros expertos enviará tu solicitud."
+  },
+  "ImmigrationEPSteps": {
+    "EPStepsHeading": "¿Por dónde empezar?",
+    "step1Title": "Agenda una consulta gratuita de 20 minutos",
+    "step1Description": "Cuéntanos sobre tus objetivos en Canadá y tu perfil.",
+    "step2Title": "Analiza tus opciones",
+    "step2Description": "Te proporcionaremos posibles vías y te enviaremos una cotización.",
+    "step3Title": "Haz tu pago",
+    "step3Description": "Puedes pagar por transferencia electrónica mediante pagos a plazos.",
+    "step4Title": "Reúne los documentos",
+    "step4Description": "Listaremos los documentos necesarios para tu solicitud.",
+    "step5Title": "Aplica",
+    "step5Description": "Uno de nuestros expertos enviará tu solicitud."
   }
 }
