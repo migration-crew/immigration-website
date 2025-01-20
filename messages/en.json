@@ -193,5 +193,31 @@
     "subheading2": "Benefits of PNPs",
     "paragraph2": "The Express Entry system is a streamlined immigration process PNPs provide a faster pathway to permanent residency, address specific provincial labor market needs, and offer a variety of categories to attract skilled workers, entrepreneurs, and international graduates.",
     "imageAlt": "Provincial Nominee Programs - PNPs"
+  },
+  "ImmigrationSteps": {
+    "stepsHeading": "Where to start?",
+    "step1Title": "Book a 20 min Free Consultation",
+    "step1Description": "Tell us about your goals in Canada and your profile.",
+    "step2Title": "Analyze your options",
+    "step2Description": "We'll provide possible pathways for you and send you a quote.",
+    "step3Title": "Make your payment",
+    "step3Description": "You can pay via e-transfer through installment payments",
+    "step4Title": "Gather the Documents",
+    "step4Description": "We'll list the documents required for your application.",
+    "step5Title": "Apply",
+    "step5Description": "One of our experts will submit your application."
+  },
+  "ImmigrationEPSteps": {
+    "EPStepsHeading": "Where to start?",
+    "step1Title": "Create an Express Entry Profile",
+    "step1Description": "Candidates create an online profile, providing information about their skills, work experience, language ability, and education. Based on this information, candidates receive a CRS score.",
+    "step2Title": "Enter the Express Entry Pool",
+    "step2Description": "Eligible profiles are entered into the Express Entry pool. Candidates are ranked based on their CRS scores. Higher scores increase the chances of receiving an Invitation to Apply (ITA) for permanent residence.",
+    "step3Title": "Receive an Invitation to Apply (ITA)",
+    "step3Description": "The Immigration, Refugees, and Citizenship Canada (IRCC) conducts regular draws from the pool, inviting the highest-ranked candidates to apply for permanent residence. Candidates have 60 days to submit a complete application.",
+    "step4Title": "Submit a Complete Application",
+    "step4Description": "After receiving an ITA, candidates must submit a complete application, including documents like police certificates, medical exams, and proof of funds. The IRCC reviews the application.",
+    "step5Title": "Application Processing and Approval",
+    "step5Description": "The IRCC aims to process most applications within six months. Successful candidates receive confirmation of permanent residence."
   }
 }

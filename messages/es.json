@@ -196,7 +196,7 @@
   },
   "ImmigrationSteps": {
     "stepsHeading": "¿Por dónde empezar?",
-    "step1Title": "Agenda una consulta gratuita de 20 minutos",
+    "step1Title": "Reserva una consulta gratuita de 20 minutos",
     "step1Description": "Cuéntanos sobre tus objetivos en Canadá y tu perfil.",
     "step2Title": "Analiza tus opciones",
     "step2Description": "Te proporcionaremos posibles vías y te enviaremos una cotización.",
@@ -209,15 +209,16 @@
   },
   "ImmigrationEPSteps": {
     "EPStepsHeading": "¿Por dónde empezar?",
-    "step1Title": "Agenda una consulta gratuita de 20 minutos",
-    "step1Description": "Cuéntanos sobre tus objetivos en Canadá y tu perfil.",
-    "step2Title": "Analiza tus opciones",
-    "step2Description": "Te proporcionaremos posibles vías y te enviaremos una cotización.",
-    "step3Title": "Haz tu pago",
-    "step3Description": "Puedes pagar por transferencia electrónica mediante pagos a plazos.",
-    "step4Title": "Reúne los documentos",
-    "step4Description": "Listaremos los documentos necesarios para tu solicitud.",
-    "step5Title": "Aplica",
-    "step5Description": "Uno de nuestros expertos enviará tu solicitud."
-  }
+    "step1Title": "Crea un perfil de Express Entry",
+    "step1Description": "Los candidatos crean un perfil en línea, proporcionando información sobre sus habilidades, experiencia laboral, dominio del idioma y educación. Basado en esta información, los candidatos reciben una puntuación CRS.",
+    "step2Title": "Ingresa al grupo de Express Entry",
+    "step2Description": "Los perfiles elegibles ingresan al grupo de Express Entry. Los candidatos son clasificados según sus puntuaciones CRS. Las puntuaciones más altas aumentan las posibilidades de recibir una Invitación para Aplicar (ITA) para residencia permanente.",
+    "step3Title": "Recibe una Invitación para Aplicar (ITA)",
+    "step3Description": "Immigration, Refugees, and Citizenship Canada (IRCC) realiza sorteos regulares del grupo, invitando a los candidatos mejor clasificados a aplicar para residencia permanente. Los candidatos tienen 60 días para enviar una solicitud completa.",
+    "step4Title": "Envía una solicitud completa",
+    "step4Description": "Después de recibir una ITA, los candidatos deben enviar una solicitud completa, incluyendo documentos como certificados policiales, exámenes médicos y pruebas de fondos. IRCC revisa la solicitud.",
+    "step5Title": "Procesamiento y aprobación de la solicitud",
+    "step5Description": "IRCC busca procesar la mayoría de las solicitudes en un plazo de seis meses. Los candidatos exitosos reciben una confirmación de residencia permanente."
+  },
+  "ImmigrationFAQ": {}
 }

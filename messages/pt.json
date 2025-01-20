@@ -204,5 +204,31 @@
     "subheading2": "Benefícios dos PNPs",
     "paragraph2": "O sistema Express Entry é um processo de imigração simplificado. Os PNPs oferecem um caminho mais rápido para a residência permanente, atendem às necessidades específicas do mercado de trabalho provincial e oferecem uma variedade de categorias para atrair trabalhadores qualificados, empreendedores e graduados internacionais.",
     "imageAlt": "Programas de Nomeação Provincial"
+  },
+  "ImmigrationSteps": {
+    "stepsHeading": "Por onde começar?",
+    "step1Title": "Agende uma consulta gratuita de 20 minutos",
+    "step1Description": "Conte-nos sobre seus objetivos no Canadá e seu perfil.",
+    "step2Title": "Analise suas opções",
+    "step2Description": "Forneceremos possíveis caminhos e enviaremos um orçamento.",
+    "step3Title": "Faça o pagamento",
+    "step3Description": "Você pode pagar por transferência eletrônica em parcelas.",
+    "step4Title": "Reúna os documentos",
+    "step4Description": "Faremos uma lista dos documentos necessários para sua aplicação.",
+    "step5Title": "Aplique",
+    "step5Description": "Um de nossos especialistas enviará sua aplicação."
+  },
+  "ImmigrationEPSteps": {
+    "EPStepsHeading": "Por onde começar?",
+    "step1Title": "Crie um perfil no Express Entry",
+    "step1Description": "Os candidatos criam um perfil online, fornecendo informações sobre suas habilidades, experiência de trabalho, proficiência no idioma e educação. Com base nessas informações, os candidatos recebem uma pontuação CRS.",
+    "step2Title": "Entre no pool do Express Entry",
+    "step2Description": "Perfis elegíveis são inseridos no pool do Express Entry. Os candidatos são classificados com base em suas pontuações CRS. Pontuações mais altas aumentam as chances de receber um Convite para Aplicar (ITA) para residência permanente.",
+    "step3Title": "Receba um Convite para Aplicar (ITA)",
+    "step3Description": "A Immigration, Refugees, and Citizenship Canada (IRCC) realiza sorteios regulares do pool, convidando os candidatos mais bem classificados a aplicar para residência permanente. Os candidatos têm 60 dias para enviar uma solicitação completa.",
+    "step4Title": "Envie uma solicitação completa",
+    "step4Description": "Após receber um ITA, os candidatos devem enviar uma solicitação completa, incluindo documentos como certidões policiais, exames médicos e comprovantes de fundos. O IRCC analisa a solicitação.",
+    "step5Title": "Processamento e aprovação da solicitação",
+    "step5Description": "O IRCC busca processar a maioria das solicitações em até seis meses. Os candidatos aprovados recebem a confirmação de residência permanente."
   }
 }

@@ -30,7 +30,7 @@ export const Steps = (): StepsType[] => {
 };
 
 export const EPSteps = (): StepsType[] => {
-  const t = useTranslations("ExpressEntrySteps");
+  const t = useTranslations("ImmigrationEPSteps");
 
   return [
     {
