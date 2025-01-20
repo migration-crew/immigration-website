@@ -194,6 +194,18 @@
     "paragraph2": "The Express Entry system is a streamlined immigration process PNPs provide a faster pathway to permanent residency, address specific provincial labor market needs, and offer a variety of categories to attract skilled workers, entrepreneurs, and international graduates.",
     "imageAlt": "Provincial Nominee Programs - PNPs"
   },
+  "ImmigrationEEPrograms": {
+    "heading": "Federal Immigration Programs Managed by Express Entry",
+    "paragraphHeading": "Express Entry operates through an online system that manages applications for three federal immigration programs:",
+    "subheading1": "1. Federal Skilled Worker Program (FSWP)",
+    "paragraph1": "The Federal Skilled Worker Program is for skilled workers who have work experience and want to become permanent residents.",
+    "subheading2": "2. Federal Skilled Trades Program (FSTP)",
+    "paragraph2": "The Federal Skilled Trades Program targets skilled tradespeople with qualifications in specific trades. This program emphasizes practical skills and work experience in trades such as electricians, plumbers, and chefs, among others.",
+    "subheading3": "3. Canadian Experience Class (CEC)",
+    "paragraph3": "The Canadian Experience Class is for individuals who have already gained skilled work experience in Canada. This program is ideal for temporary foreign workers or international graduates who have accumulated significant work experience in Canada and wish to transition to permanent residence.",
+    "subheading4": "Who is Eligible for Express Entry?",
+    "paragraph4": "Eligibility for Express Entry depends on several factors including age, education, work experience, and language proficiency. Detailed criteria are available on our Express Entry Work Experience Requirements page."
+  },
   "ImmigrationSteps": {
     "stepsHeading": "Where to start?",
     "step1Title": "Book a 20 min Free Consultation",

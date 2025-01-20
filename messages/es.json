@@ -194,6 +194,18 @@
     "paragraph2": "El sistema Express Entry es un proceso de inmigración simplificado. Los PNP ofrecen un camino más rápido hacia la residencia permanente, abordan las necesidades específicas del mercado laboral provincial y ofrecen una variedad de categorías para atraer trabajadores calificados, empresarios y graduados internacionales.",
     "imageAlt": "Programas de Nominación Provincial"
   },
+  "ImmigrationEEPrograms": {
+    "heading": "Programas Federales de Inmigración Gestionados por Express Entry",
+    "paragraphHeading": "Express Entry opera a través de un sistema en línea que gestiona aplicaciones para tres programas federales de inmigración:",
+    "subheading1": "1. Programa Federal de Trabajadores Calificados (FSWP)",
+    "paragraph1": "El Programa Federal de Trabajadores Calificados está diseñado para trabajadores calificados con experiencia laboral que desean convertirse en residentes permanentes.",
+    "subheading2": "2. Programa Federal de Oficios Calificados (FSTP)",
+    "paragraph2": "El Programa Federal de Oficios Calificados está dirigido a personas con habilidades prácticas y experiencia laboral en oficios específicos como electricistas, plomeros y chefs, entre otros.",
+    "subheading3": "3. Clase de Experiencia Canadiense (CEC)",
+    "paragraph3": "La Clase de Experiencia Canadiense está destinada a personas que ya han adquirido experiencia laboral calificada en Canadá. Este programa es ideal para trabajadores extranjeros temporales o graduados internacionales que han acumulado una experiencia laboral significativa en Canadá y desean hacer la transición a la residencia permanente.",
+    "subheading4": "¿Quién es Elegible para Express Entry?",
+    "paragraph4": "La elegibilidad para Express Entry depende de varios factores, incluidos la edad, la educación, la experiencia laboral y la competencia lingüística. Los criterios detallados están disponibles en nuestra página de Requisitos de Experiencia Laboral para Express Entry."
+  },
   "ImmigrationSteps": {
     "stepsHeading": "¿Por dónde empezar?",
     "step1Title": "Reserva una consulta gratuita de 20 minutos",

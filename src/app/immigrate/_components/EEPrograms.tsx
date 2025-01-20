@@ -4,9 +4,11 @@ import { Heading } from "@/components/common/text/Heading";
 import { Paragraph } from "@/components/common/text/Paragraph";
 import { SubHeading } from "@/components/common/text/SubHeading";
 import EEProgramsImage from "@/public/EEPrograms.jpg";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export const EEPrograms = () => {
+  const t = useTranslations("ImmigrationEEPrograms");
   return (
     <>
       <SectionContainer className="py-10">
@@ -18,50 +20,26 @@ export const EEPrograms = () => {
       </SectionContainer>
 
       <SectionContainer className="pb-[26px]">
-        <Heading className="pb-3">
-          Federal Immigration Programs Managed by Express Entry
-        </Heading>
+        <Heading className="pb-3">{t("heading")}</Heading>
 
-        <Paragraph className="pt-4">
-          Express Entry operates through an online system that manages
-          applications for three federal immigration programs:
-        </Paragraph>
+        <Paragraph className="pt-4">{t("paragraphHeading")}</Paragraph>
       </SectionContainer>
 
       <SectionContainer className="pb-[26px]">
-        <SubHeading>1. Federal Skilled Worker Program</SubHeading>
-        <Paragraph className="pt-4">
-          The Federal Skilled Worker Program is for skilled workers who have
-          work experience and want to become permanent residents.
-        </Paragraph>
+        <SubHeading>{t("subheading1")}</SubHeading>
+        <Paragraph className="pt-4">{t("paragraph1")}</Paragraph>
       </SectionContainer>
       <SectionContainer className="pb-[26px]">
-        <SubHeading>2. Federal Skilled Trades Program</SubHeading>
-        <Paragraph className="pt-4">
-          The Federal Skilled Trades Program targets skilled tradespeople with
-          qualifications in specific trades. This program emphasizes practical
-          skills and work experience in trades such as electricians, plumbers,
-          and chefs, among others.
-        </Paragraph>
+        <SubHeading>{t("subheading2")}</SubHeading>
+        <Paragraph className="pt-4">{t("paragraph2")}</Paragraph>
       </SectionContainer>
       <SectionContainer className="pb-[26px]">
-        <SubHeading>3. Canadian Experience Class</SubHeading>
-        <Paragraph className="pt-4">
-          The Canadian Experience Class is for individuals who have already
-          gained skilled work experience in Canada. This program is ideal for
-          temporary foreign workers or international graduates who have
-          accumulated significant work experience in Canada and wish to
-          transition to permanent residence.
-        </Paragraph>
+        <SubHeading>{t("subheading3")}</SubHeading>
+        <Paragraph className="pt-4">{t("paragraph3")}</Paragraph>
       </SectionContainer>
       <SectionContainer>
-        <SubHeading>Who is Eligible for Express Entry?</SubHeading>
-        <Paragraph className="pt-4">
-          Eligibility for Express Entry depends on several factors including
-          age, education, work experience, and language proficiency. Detailed
-          criteria are available on our Express Entry Work Experience
-          Requirements page.
-        </Paragraph>
+        <SubHeading>{t("subheading4")}</SubHeading>
+        <Paragraph className="pt-4">{t("paragraph4")}</Paragraph>
       </SectionContainer>
 
       <SectionContainer>
