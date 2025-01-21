@@ -257,5 +257,27 @@
     "answer5": "Depende do programa de imigração para o qual você está aplicando. Alguns programas, como certos fluxos do Express Entry, não exigem uma oferta de trabalho. Outros, como muitos Programas de Nomeação Provincial, exigem uma oferta de trabalho válida. Ter uma oferta de trabalho muitas vezes pode aumentar suas chances de ser selecionado, mesmo em programas onde não é obrigatório.",
     "question6": "Qual é o requisito mínimo de idioma para a imigração canadense?",
     "answer6": "O requisito mínimo de idioma varia de acordo com o programa de imigração. Para a maioria dos programas de trabalhadores qualificados, você precisa demonstrar proficiência linguística equivalente ao Benchmark de Idioma Canadense (CLB) 7, que é considerado 'proficiente intermediário adequado'. Isso pode ser demonstrado através de testes de idioma aprovados como IELTS ou CELPIP para inglês, ou TEF para francês."
+  },
+  "FAQGeneralData": {
+    "question1": "Qual é o candidato ideal para um PNP?",
+    "answer1": "O candidato ideal varia de acordo com a província, mas geralmente inclui pessoas com alta educação, experiência de trabalho relevante, boas habilidades linguísticas e vínculos com a província.",
+    "question2": "Preciso de um relatório ECA para os PNPs?",
+    "answer2": "A maioria dos PNPs exige uma Avaliação de Credenciais Educacionais (ECA) para verificar se sua educação estrangeira é equivalente a um diploma canadense.",
+    "question3": "Como posso aumentar minhas chances de receber uma indicação?",
+    "answer3": "Como posso aumentar minhas chances de receber uma indicação?"
+  },
+  "FAQPNPData": {
+    "question1": "Quantos PNPs existem no Canadá?",
+    "answer1": "O Canadá possui 11 PNPs, um para cada província e território, exceto Quebec e Nunavut. Cada programa possui múltiplos fluxos direcionados a diferentes tipos de imigrantes.",
+    "question2": "Requisitos do Programa de Nomeação Provincial",
+    "answer2": "Todos os requisitos do Programa de Nomeação Provincial variam de acordo com a província, mas geralmente incluem critérios como educação, experiência de trabalho, proficiência no idioma e uma oferta de trabalho válida na província.",
+    "question3": "Posso imigrar através de um PNP sem uma oferta de trabalho?",
+    "answer3": "Alguns fluxos do PNP não exigem uma oferta de trabalho e se concentram em fatores como educação, experiência de trabalho e capacidade de se estabelecer economicamente na província.",
+    "question4": "Sou elegível para um PNP canadense?",
+    "answer4": "Os critérios de elegibilidade variam de acordo com a província e o fluxo, mas geralmente incluem fatores como educação, experiência de trabalho, habilidades linguísticas e vínculos com a província.",
+    "question5": "Como são calculados os pontos do Programa de Nomeação Provincial?",
+    "answer5": "Os pontos são calculados com base em fatores como idade, educação, experiência de trabalho, proficiência no idioma e conexões com a província.",
+    "question6": "Como calcular seus pontos para o PNP?",
+    "answer6": "Cada província tem seu próprio sistema de pontos. Consulte o site específico da província para obter informações detalhadas sobre como os pontos são atribuídos."
   }
 }

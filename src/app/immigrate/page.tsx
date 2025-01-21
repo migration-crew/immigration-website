@@ -14,6 +14,7 @@ import { Introduction } from "./_components/Introduction";
 
 export default function ImmigratePage() {
   const t = useTranslations("ImmigrationSteps");
+  const tFAQ = useTranslations("FAQs");
   return (
     <>
       <HeaderPicture
@@ -38,7 +39,7 @@ export default function ImmigratePage() {
       <Testimonial testimonials={testimonialData} />
       <TestimonialMobile testimonials={testimonialData} />
 
-      <FAQ data={FAQs} title="Immigration Frequent Questions" />
+      <FAQ data={FAQs()} title={tFAQ("heading")} />
     </>
   );
 }

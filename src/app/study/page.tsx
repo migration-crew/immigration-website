@@ -14,6 +14,7 @@ import { StudyInCanada } from "./_components/StudyInCanada";
 
 export default function StudyPage() {
   const t = useTranslations("ImmigrationSteps");
+  const tFAQ = useTranslations("FAQs");
   return (
     <div className="flex flex-col h-full gap-10">
       <HeaderPicture
@@ -33,8 +34,8 @@ export default function StudyPage() {
       <Testimonial testimonials={testimonialData} />
       <TestimonialMobile testimonials={testimonialData} />
       <FAQ
-        data={FAQs}
-        title="Immigration Frequent Questions"
+        data={FAQs()}
+        title={tFAQ("heading")}
         className="bg-neutral-secondary-white w-full"
       />
     </div>

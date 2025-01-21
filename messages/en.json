@@ -247,6 +247,26 @@
     "question6": "What is the minimum language requirement for Canadian immigration?",
     "answer6": "The minimum language requirement varies depending on the immigration program. For most skilled worker programs, you need to demonstrate language proficiency equivalent to Canadian Language Benchmark (CLB) 7, which is considered 'adequate intermediate proficiency'. This can be demonstrated through approved language tests like IELTS or CELPIP for English, or TEF for French."
   },
-  "FAQGeneralData": {},
-  "FAQPNPData": {}
+  "FAQGeneralData": {
+    "question1": "What is the Ideal PNP Candidate?",
+    "answer1": "The ideal candidate varies by province but generally includes individuals with high education, relevant work experience, strong language skills, and ties to the province.",
+    "question2": "Do I Need an ECA Report for PNPs?",
+    "answer2": "Most PNPs require an Educational Credential Assessment (ECA) to verify that your foreign education is equivalent to a Canadian credential.",
+    "question3": "How Can I Increase My Chances of Receiving a Nomination?",
+    "answer3": "How Can I Increase My Chances of Receiving a Nomination?"
+  },
+  "FAQPNPData": {
+    "question1": "How Many PNPs are there in Canada?",
+    "answer1": "Canada has 11 PNPs, one for each province and territory except Quebec and Nunavut. Each program has multiple streams targeting different types of immigrants.",
+    "question2": "Provincial Nominee Program requirements",
+    "answer2": "All Provincial Nominee Program requirements vary by province but generally include criteria such as education, work experience, language proficiency, and a valid job offer in the province.",
+    "question3": "Can I Immigrate through a PNP without a Job Offer?",
+    "answer3": "Some PNP streams do not require a job offer and instead focus on factors such as education, work experience, and the ability to establish economically in the province.",
+    "question4": "Am I Eligible for a Canadian PNP?",
+    "answer4": "Eligibility criteria differ by province and stream but typically include factors like education, work experience, language skills, and ties to the province.",
+    "question5": "How are Provincial Nominee Program Points Calculated?",
+    "answer5": "Points are calculated based on factors such as age, education, work experience, language proficiency, and connections to the province.",
+    "question6": "How to Calculate Your PNP Points?",
+    "answer6": "Each province has its own points system. Check the specific provincial website for detailed information on how points are awarded."
+  }
 }

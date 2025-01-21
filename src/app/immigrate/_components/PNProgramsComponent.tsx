@@ -22,7 +22,7 @@ export const PNProgramsComponent = () => {
       </SectionContainer>
 
       <SectionContainer>
-        {PNPFAQs.map((pnpfaq) => (
+        {PNPFAQs().map((pnpfaq) => (
           <div key={pnpfaq.question}>
             <SubHeading>{pnpfaq.question}</SubHeading>
             <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
