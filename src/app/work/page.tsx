@@ -10,20 +10,22 @@ import workImage from "@/public/work.jpeg";
 import { Steps } from "../immigrate/content/steps";
 import { DiscoverOptions } from "./_components/DiscoverOptions";
 import { WorkInCanada } from "./_components/WorkInCanada";
+import { useTranslations } from "next-intl";
 
 export default function WorkPage() {
+  const t = useTranslations("ImmigrationEEPrograms");
   return (
     <div className="flex flex-col h-full gap-4 xl:gap-[100px]">
       <HeaderPicture alt="Image of work page" src={workImage} title={"Work"} />
       <WorkInCanada />
       <DiscoverOptions />
       <ApplicationStepMobile
-        steps={Steps}
-        title="Where to start?"
+        steps={Steps()}
+        title={t("heading")}
         circleSpacing={50}
         height="h-[70px]"
       />
-      <ApplicationStepDesktop steps={Steps} title="Where to Start?" />
+      <ApplicationStepDesktop steps={Steps()} title={t("heading")} />
       <Testimonial testimonials={testimonialData} />
       <TestimonialMobile testimonials={testimonialData} />
       <FAQ

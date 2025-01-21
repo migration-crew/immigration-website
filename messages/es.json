@@ -193,5 +193,58 @@
     "subheading2": "Beneficios de los PNP",
     "paragraph2": "El sistema Express Entry es un proceso de inmigración simplificado. Los PNP ofrecen un camino más rápido hacia la residencia permanente, abordan las necesidades específicas del mercado laboral provincial y ofrecen una variedad de categorías para atraer trabajadores calificados, empresarios y graduados internacionales.",
     "imageAlt": "Programas de Nominación Provincial"
+  },
+  "ImmigrationEEPrograms": {
+    "heading": "Programas Federales de Inmigración Gestionados por Express Entry",
+    "paragraphHeading": "Express Entry opera a través de un sistema en línea que gestiona aplicaciones para tres programas federales de inmigración:",
+    "subheading1": "1. Programa Federal de Trabajadores Calificados (FSWP)",
+    "paragraph1": "El Programa Federal de Trabajadores Calificados está diseñado para trabajadores calificados con experiencia laboral que desean convertirse en residentes permanentes.",
+    "subheading2": "2. Programa Federal de Oficios Calificados (FSTP)",
+    "paragraph2": "El Programa Federal de Oficios Calificados está dirigido a personas con habilidades prácticas y experiencia laboral en oficios específicos como electricistas, plomeros y chefs, entre otros.",
+    "subheading3": "3. Clase de Experiencia Canadiense (CEC)",
+    "paragraph3": "La Clase de Experiencia Canadiense está destinada a personas que ya han adquirido experiencia laboral calificada en Canadá. Este programa es ideal para trabajadores extranjeros temporales o graduados internacionales que han acumulado una experiencia laboral significativa en Canadá y desean hacer la transición a la residencia permanente.",
+    "subheading4": "¿Quién es Elegible para Express Entry?",
+    "paragraph4": "La elegibilidad para Express Entry depende de varios factores, incluidos la edad, la educación, la experiencia laboral y la competencia lingüística. Los criterios detallados están disponibles en nuestra página de Requisitos de Experiencia Laboral para Express Entry."
+  },
+  "ImmigrationSteps": {
+    "stepsHeading": "¿Por dónde empezar?",
+    "step1Title": "Reserva una consulta gratuita de 20 minutos",
+    "step1Description": "Cuéntanos sobre tus objetivos en Canadá y tu perfil.",
+    "step2Title": "Analiza tus opciones",
+    "step2Description": "Te proporcionaremos posibles vías y te enviaremos una cotización.",
+    "step3Title": "Haz tu pago",
+    "step3Description": "Puedes pagar por transferencia electrónica mediante pagos a plazos.",
+    "step4Title": "Reúne los documentos",
+    "step4Description": "Listaremos los documentos necesarios para tu solicitud.",
+    "step5Title": "Aplica",
+    "step5Description": "Uno de nuestros expertos enviará tu solicitud."
+  },
+  "ImmigrationEPSteps": {
+    "EPStepsHeading": "¿Por dónde empezar?",
+    "step1Title": "Crea un perfil de Express Entry",
+    "step1Description": "Los candidatos crean un perfil en línea, proporcionando información sobre sus habilidades, experiencia laboral, dominio del idioma y educación. Basado en esta información, los candidatos reciben una puntuación CRS.",
+    "step2Title": "Ingresa al grupo de Express Entry",
+    "step2Description": "Los perfiles elegibles ingresan al grupo de Express Entry. Los candidatos son clasificados según sus puntuaciones CRS. Las puntuaciones más altas aumentan las posibilidades de recibir una Invitación para Aplicar (ITA) para residencia permanente.",
+    "step3Title": "Recibe una Invitación para Aplicar (ITA)",
+    "step3Description": "Immigration, Refugees, and Citizenship Canada (IRCC) realiza sorteos regulares del grupo, invitando a los candidatos mejor clasificados a aplicar para residencia permanente. Los candidatos tienen 60 días para enviar una solicitud completa.",
+    "step4Title": "Envía una solicitud completa",
+    "step4Description": "Después de recibir una ITA, los candidatos deben enviar una solicitud completa, incluyendo documentos como certificados policiales, exámenes médicos y pruebas de fondos. IRCC revisa la solicitud.",
+    "step5Title": "Procesamiento y aprobación de la solicitud",
+    "step5Description": "IRCC busca procesar la mayoría de las solicitudes en un plazo de seis meses. Los candidatos exitosos reciben una confirmación de residencia permanente."
+  },
+  "FAQs": {
+    "heading": "Preguntas Frecuentes",
+    "question1": "¿Qué es una Visa de Inmigración a Canadá?",
+    "answer1": "Una Visa de Inmigración a Canadá (Residente Permanente) es un documento oficial emitido por el gobierno canadiense que permite a un extranjero vivir y trabajar permanentemente en Canadá. Otorga al titular la mayoría de los derechos y responsabilidades de los ciudadanos canadienses, excepto el derecho a votar en elecciones.",
+    "question2": "¿Cuál es la diferencia entre un Permiso de Trabajo y la Inmigración a Canadá?",
+    "answer2": "Un Permiso de Trabajo es un documento temporal que permite a un extranjero trabajar en Canadá por un período específico y, a menudo, para un empleador específico. La Inmigración a Canadá, en cambio, se refiere al proceso de convertirse en residente permanente, lo que te permite vivir y trabajar en cualquier lugar de Canadá de forma indefinida.",
+    "question3": "¿Puedo solicitar el estatus de Residente Permanente y el estatus Temporal al mismo tiempo?",
+    "answer3": "Sí, puedes solicitar tanto el estatus de residente permanente como el estatus temporal simultáneamente. Esto a menudo se denomina 'intención dual'. Por ejemplo, puedes solicitar un permiso de trabajo o de estudio mientras tu solicitud de residencia permanente está en proceso.",
+    "question4": "¿Cuánto tiempo tarda el proceso de inmigración?",
+    "answer4": "El tiempo de procesamiento de las solicitudes de inmigración puede variar mucho dependiendo del programa bajo el cual solicites, la integridad de tu solicitud y los volúmenes actuales de procesamiento. Puede variar desde unos pocos meses hasta varios años. Puedes verificar los tiempos de procesamiento actuales en el sitio web oficial del Gobierno de Canadá.",
+    "question5": "¿Necesito una oferta de trabajo para inmigrar a Canadá?",
+    "answer5": "Depende del programa de inmigración al que estés aplicando. Algunos programas, como ciertos flujos de Express Entry, no requieren una oferta de trabajo. Otros, como muchos Programas de Nominación Provincial, sí requieren una oferta de trabajo válida. Tener una oferta de trabajo a menudo puede aumentar tus posibilidades de ser seleccionado, incluso en programas donde no es obligatorio.",
+    "question6": "¿Cuál es el requisito mínimo de idioma para la inmigración canadiense?",
+    "answer6": "El requisito mínimo de idioma varía según el programa de inmigración. Para la mayoría de los programas de trabajadores calificados, necesitas demostrar competencia lingüística equivalente al Nivel de Referencia de Idioma Canadiense (CLB) 7, que se considera 'proficiencia intermedia adecuada'. Esto puede demostrarse a través de pruebas de idioma aprobadas como IELTS o CELPIP para inglés, o TEF para francés."
   }
 }

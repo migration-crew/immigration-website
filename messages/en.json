@@ -193,5 +193,60 @@
     "subheading2": "Benefits of PNPs",
     "paragraph2": "The Express Entry system is a streamlined immigration process PNPs provide a faster pathway to permanent residency, address specific provincial labor market needs, and offer a variety of categories to attract skilled workers, entrepreneurs, and international graduates.",
     "imageAlt": "Provincial Nominee Programs - PNPs"
-  }
+  },
+  "ImmigrationEEPrograms": {
+    "heading": "Federal Immigration Programs Managed by Express Entry",
+    "paragraphHeading": "Express Entry operates through an online system that manages applications for three federal immigration programs:",
+    "subheading1": "1. Federal Skilled Worker Program (FSWP)",
+    "paragraph1": "The Federal Skilled Worker Program is for skilled workers who have work experience and want to become permanent residents.",
+    "subheading2": "2. Federal Skilled Trades Program (FSTP)",
+    "paragraph2": "The Federal Skilled Trades Program targets skilled tradespeople with qualifications in specific trades. This program emphasizes practical skills and work experience in trades such as electricians, plumbers, and chefs, among others.",
+    "subheading3": "3. Canadian Experience Class (CEC)",
+    "paragraph3": "The Canadian Experience Class is for individuals who have already gained skilled work experience in Canada. This program is ideal for temporary foreign workers or international graduates who have accumulated significant work experience in Canada and wish to transition to permanent residence.",
+    "subheading4": "Who is Eligible for Express Entry?",
+    "paragraph4": "Eligibility for Express Entry depends on several factors including age, education, work experience, and language proficiency. Detailed criteria are available on our Express Entry Work Experience Requirements page."
+  },
+  "ImmigrationSteps": {
+    "stepsHeading": "Where to start?",
+    "step1Title": "Book a 20 min Free Consultation",
+    "step1Description": "Tell us about your goals in Canada and your profile.",
+    "step2Title": "Analyze your options",
+    "step2Description": "We'll provide possible pathways for you and send you a quote.",
+    "step3Title": "Make your payment",
+    "step3Description": "You can pay via e-transfer through installment payments",
+    "step4Title": "Gather the Documents",
+    "step4Description": "We'll list the documents required for your application.",
+    "step5Title": "Apply",
+    "step5Description": "One of our experts will submit your application."
+  },
+  "ImmigrationEPSteps": {
+    "EPStepsHeading": "Where to start?",
+    "step1Title": "Create an Express Entry Profile",
+    "step1Description": "Candidates create an online profile, providing information about their skills, work experience, language ability, and education. Based on this information, candidates receive a CRS score.",
+    "step2Title": "Enter the Express Entry Pool",
+    "step2Description": "Eligible profiles are entered into the Express Entry pool. Candidates are ranked based on their CRS scores. Higher scores increase the chances of receiving an Invitation to Apply (ITA) for permanent residence.",
+    "step3Title": "Receive an Invitation to Apply (ITA)",
+    "step3Description": "The Immigration, Refugees, and Citizenship Canada (IRCC) conducts regular draws from the pool, inviting the highest-ranked candidates to apply for permanent residence. Candidates have 60 days to submit a complete application.",
+    "step4Title": "Submit a Complete Application",
+    "step4Description": "After receiving an ITA, candidates must submit a complete application, including documents like police certificates, medical exams, and proof of funds. The IRCC reviews the application.",
+    "step5Title": "Application Processing and Approval",
+    "step5Description": "The IRCC aims to process most applications within six months. Successful candidates receive confirmation of permanent residence."
+  },
+  "FAQs": {
+    "heading": "Frequently Asked Questions",
+    "question1": "What is a Canada Immigration Visa?",
+    "answer1": "A Canada Immigration (Permanent Resident) Visa is an official document issued by the Canadian government that allows a foreign national to live and work permanently in Canada. It grants the holder most of the rights and responsibilities of Canadian citizens, except for the right to vote in elections.",
+    "question2": "What is the difference between a Work Permit and Canada Immigration?",
+    "answer2": "A Work Permit is a temporary document that allows a foreign national to work in Canada for a specific period and often for a specific employer. Canada Immigration, on the other hand, refers to the process of becoming a permanent resident, which allows you to live and work anywhere in Canada indefinitely.",
+    "question3": "Can I apply for Permanent Residence status and Temporary status at the same time?",
+    "answer3": "Yes, you can apply for both permanent residence and temporary status simultaneously. This is often referred to as 'dual intent'. For example, you can apply for a work permit or study permit while your permanent residence application is in process.",
+    "question4": "How long does the immigration process take?",
+    "answer4": "The processing time for immigration applications can vary greatly depending on the program you're applying under, the completeness of your application, and current processing volumes. It can range from a few months to several years. You can check current processing times on the official Government of Canada website.",
+    "question5": "Do I need a job offer to immigrate to Canada?",
+    "answer5": "It depends on the immigration program you're applying under. Some programs, like certain streams of Express Entry, don't require a job offer. Others, like many Provincial Nominee Programs, do require a valid job offer. Having a job offer can often increase your chances of being selected, even in programs where it's not mandatory.",
+    "question6": "What is the minimum language requirement for Canadian immigration?",
+    "answer6": "The minimum language requirement varies depending on the immigration program. For most skilled worker programs, you need to demonstrate language proficiency equivalent to Canadian Language Benchmark (CLB) 7, which is considered 'adequate intermediate proficiency'. This can be demonstrated through approved language tests like IELTS or CELPIP for English, or TEF for French."
+  },
+  "FAQGeneralData": {},
+  "FAQPNPData": {}
 }
