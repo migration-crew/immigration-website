@@ -1,9 +1,8 @@
 import { SectionContainer } from "@/components/common/SectionContainer";
 import { Heading } from "@/components/common/text/Heading";
 import { HeavySubHeader } from "@/components/common/text/HeavySubHeader";
-import { Button } from "@/components/ui/UpImmigrationButton";
 import { StepsType } from "@/types/StepsType";
-import Link from "next/link";
+import { BookFreeConsultation } from "./BookFreeConsultation";
 
 type Props = {
   steps: StepsType[];
@@ -40,11 +39,7 @@ export const ApplicationStepDesktop = ({ steps, title }: Props) => {
         </div>
       </div>
       <div className="flex justify-center">
-        <Button>
-          <Link href="/book-consultation">
-            Book a free initial consultation
-          </Link>
-        </Button>
+        <BookFreeConsultation />
       </div>
     </SectionContainer>
   );
