@@ -9,7 +9,7 @@ export function ContactForm() {
   };
 
   return (
-    <Card className="xl:w-full xl:w-3/5">
+    <Card className="w-full xl:w-3/5">
       <UpImmigrationForm
         title="Send us a message"
         className="min-h-[550px] xl:min-h-[500px]"
