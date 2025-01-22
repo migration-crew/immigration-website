@@ -299,6 +299,18 @@
     "NorthernImmigrationDescription": "For skilled workers to settle in smaller communities across Canada...",
     "NorthernImmigrationDetails": "The Rural and Northern Immigration Pilot Program (RNIP) offers a unique opportunity for skilled workers to settle in smaller communities across Canada. This program aims to support the economic development of rural and northern regions by attracting newcomers who can fill local labor market gaps. Participating communities, including those in Ontario, Western Canada, and the three territories, provide a welcoming environment for newcomers looking to build a new life."
   },
+  "EEPrograms": {
+    "heading": "Federal Immigration Programs Managed by Express Entry",
+    "subheading": "Express Entry operates through an online system that manages applications for three federal immigration programs:",
+    "subheading1": "1. Federal Skilled Worker Program",
+    "paragraph1": "O Programa Federal de Trabalhadores The Federal Skilled Worker Program is for skilled workers who have work experience and want to become permanent residents.",
+    "subheading2": "2. Federal Skilled Trades Program",
+    "paragraph2": "The Federal Skilled Trades Program targets skilled tradespeople with qualifications in specific trades. This program emphasizes practical skills and work experience in trades such as electricians, plumbers, and chefs, among others.",
+    "subheading3": "3. Canadian Experience Class",
+    "paragraph3": "The Canadian Experience Class is for individuals who have already gained skilled work experience in Canada. This program is ideal for temporary foreign workers or international graduates who have accumulated significant work experience in Canada and wish to transition to permanent residence.",
+    "subheading4": "Who is Eligible for Express Entry?",
+    "paragraph4": "Eligibility for Express Entry depends on several factors including age, education, work experience, and language proficiency. Detailed criteria are available on our Express Entry Work Experience Requirements page."
+  },
   "ProvincesAndTerritories": {
     "heading": "Provinces and Territories",
     "subheading": "Provincial Nominee Programs by Province",

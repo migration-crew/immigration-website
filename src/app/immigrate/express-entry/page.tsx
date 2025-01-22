@@ -8,7 +8,7 @@ import { IntroductionEE } from "../_components/IntroductionEE";
 import { EPSteps } from "../content/steps";
 
 export default function ExpressEntry() {
-  const t = useTranslations("ImmigrationsEPSteps");
+  const t = useTranslations("ImmigrationEPSteps");
   return (
     <>
       <HeaderPicture

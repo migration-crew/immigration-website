@@ -299,6 +299,18 @@
     "NorthernImmigrationDescription": "Para trabajadores calificados que deseen establecerse en comunidades más pequeñas en Canadá...",
     "NorthernImmigrationDetails": "El Programa Piloto de Inmigración Rural y del Norte (RNIP) ofrece una oportunidad única para que trabajadores calificados se establezcan en comunidades más pequeñas en Canadá. Este programa tiene como objetivo apoyar el desarrollo económico de las regiones rurales y del norte atrayendo a recién llegados que puedan llenar las brechas del mercado laboral local. Las comunidades participantes, incluidas aquellas en Ontario, el oeste de Canadá y los tres territorios, brindan un ambiente acogedor para los recién llegados que desean construir una nueva vida."
   },
+  "EEPrograms": {
+    "heading": "Programas de Inmigración Federal Gestionados por Express Entry",
+    "subheading": "Express Entry opera a través de un sistema en línea que gestiona solicitudes para tres programas federales de inmigración:",
+    "subheading1": "1. Programa Federal de Trabajadores Calificados",
+    "paragraph1": "El Programa Federal de Trabajadores Calificados está dirigido a trabajadores calificados con experiencia laboral que desean convertirse en residentes permanentes.",
+    "subheading2": "2. Programa Federal de Oficios Calificados",
+    "paragraph2": "El Programa Federal de Oficios Calificados se enfoca en trabajadores calificados en oficios específicos. Este programa enfatiza habilidades prácticas y experiencia laboral en oficios como electricistas, plomeros y chefs, entre otros.",
+    "subheading3": "3. Clase de Experiencia Canadiense",
+    "paragraph3": "La Clase de Experiencia Canadiense está dirigida a personas que ya han adquirido experiencia laboral calificada en Canadá. Este programa es ideal para trabajadores extranjeros temporales o graduados internacionales que han acumulado una experiencia laboral significativa en Canadá y desean obtener la residencia permanente.",
+    "subheading4": "¿Quién es Elegible para Express Entry?",
+    "paragraph4": "La elegibilidad para Express Entry depende de varios factores, incluyendo la edad, la educación, la experiencia laboral y el dominio del idioma. Los criterios detallados están disponibles en nuestra página de Requisitos de Experiencia Laboral de Express Entry."
+  },
   "ProvincesAndTerritories": {
     "heading": "Provincias y Territorios",
     "subheading": "Programas de Nominación Provincial por Provincia",
