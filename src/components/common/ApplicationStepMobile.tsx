@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/UpImmigrationButton";
 import { StepsType } from "@/types/StepsType";
-import Link from "next/link";
 import { ApplicationSteps } from "./ApplicationSteps";
+import { BookFreeConsultation } from "./BookFreeConsultation";
 import { SectionContainer } from "./SectionContainer";
 import { TimelineMobile } from "./TimeLineMobile";
 
@@ -9,7 +8,7 @@ export type Props = {
   steps: StepsType[];
   title: string;
   circleSpacing?: number;
-  height: string
+  height: string;
 };
 
 /**
@@ -23,7 +22,12 @@ export type Props = {
  * <ApplicationStepMobile steps={EPSteps} title="What is the process?" circleSpacing={120} height="h-[140px]"  />
  * ```
  */
-export function ApplicationStepMobile({ steps, title, circleSpacing, height }: Props) {
+export function ApplicationStepMobile({
+  steps,
+  title,
+  circleSpacing,
+  height,
+}: Props) {
   return (
     <SectionContainer className="flex flex-col gap-4 p-4 xl:hidden">
       <h2 className="text-xl font-bold">{title}</h2>
@@ -35,9 +39,7 @@ export function ApplicationStepMobile({ steps, title, circleSpacing, height }: P
         <ApplicationSteps steps={steps} height={height} />
       </div>
       <div>
-        <Button className="w-full">
-          <Link href="/book-consultation">Book a consultation</Link>
-        </Button>
+        <BookFreeConsultation />
       </div>
     </SectionContainer>
   );
