@@ -6,18 +6,22 @@ import { Testimonial } from "@/components/common/Testimonial";
 import TestimonialMobile from "@/components/common/TestimonialMobile";
 import { FAQs } from "@/data/FAQData";
 import immigratePage from "@/public/immigratePage.png";
+import { useTranslations } from "next-intl";
 import { ApplicationStepDesktop } from "../../components/common/ApplicationStepDesktop";
 import { testimonialData } from "../../data/testimonials";
 import { DiscorverOptionsIP } from "./_components/DiscorverOptionsIP";
 import { Introduction } from "./_components/Introduction";
 
 export default function ImmigratePage() {
+  const t = useTranslations("ImmigrationSteps");
+  const tFAQ = useTranslations("FAQs");
+  const t2 = useTranslations("IntroductionImmigrate");
   return (
     <>
       <HeaderPicture
-        alt="Immigrate Image"
+        alt={t2("title")}
         src={immigratePage}
-        title="Immigrate"
+        title={t2("title")}
       />
 
       <Introduction />
@@ -25,13 +29,18 @@ export default function ImmigratePage() {
       {/* <CardsPrograms /> */}
       <DiscorverOptionsIP />
 
-      <ApplicationStepDesktop steps={Steps} title="Where to start?" />
-      <ApplicationStepMobile steps={Steps} title="Where to start?" circleSpacing={54} height="h-[75px]" />
+      <ApplicationStepDesktop steps={Steps()} title={t("stepsHeading")} />
+      <ApplicationStepMobile
+        steps={Steps()}
+        title={t("stepsHeading")}
+        circleSpacing={54}
+        height="h-[75px]"
+      />
 
       <Testimonial testimonials={testimonialData} />
       <TestimonialMobile testimonials={testimonialData} />
 
-      <FAQ data={FAQs} title="Immigration Frequent Questions" />
+      <FAQ data={FAQs()} title={tFAQ("heading")} />
     </>
   );
 }

@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { DiscoverOptionsItemIP } from "./DiscoverOptionsItemIP";
 
 interface Props {
@@ -11,58 +12,61 @@ interface Props {
   };
 }
 
-const discoverItems = [
-  {
-    href: "#express-entry",
-    label: "Express Entry",
-    refKey: "expressEntryRef",
-  },
-  {
-    href: "#pnp",
-    label: "Provincial Nominee Programs - PNP",
-    refKey: "pnpRef",
-  },
-  {
-    href: "#family",
-    label: "Family Sponsorship",
-    refKey: "familyRef",
-  },
-  {
-    href: "#caregiver",
-    label: "Caregiver Programs",
-    refKey: "caregiverRef",
-  },
-  {
-    href: "#start-up",
-    label: "Start-Up Visa Program",
-    refKey: "start-upRef",
-  },
-  {
-    href: "#self-employed",
-    label: "Self-Employed Program",
-    refKey: "self-employedRef",
-  },
-  {
-    href: "#humanitarian",
-    label: "Humanitarian and Compassionate - H&C",
-    refKey: "humanitarianRef",
-  },
-  {
-    href: "#atlantic",
-    label: "Atlantic Immigration Program -AIP",
-    refKey: "atlanticRef",
-  },
-  {
-    href: "#rnip",
-    label: "Northern Immigration Program - RNIP",
-    refKey: "rnipRef",
-  },
-];
+const DiscoverItems = () => {
+  const t = useTranslations("ImmigrationPrograms");
+  return [
+    {
+      href: "#express-entry",
+      label: t("ExpressEntry"),
+      refKey: "expressEntryRef",
+    },
+    {
+      href: "#pnp",
+      label: t("ProvincialNomineeProgram"),
+      refKey: "pnpRef",
+    },
+    {
+      href: "#family",
+      label: t("FamilySponsorship"),
+      refKey: "familyRef",
+    },
+    {
+      href: "#caregiver",
+      label: t("CaregiversPrograms"),
+      refKey: "caregiverRef",
+    },
+    {
+      href: "#start-up",
+      label: t("StartUpVisa"),
+      refKey: "start-upRef",
+    },
+    {
+      href: "#self-employed",
+      label: t("SelfEmployedProgram"),
+      refKey: "self-employedRef",
+    },
+    {
+      href: "#humanitarian",
+      label: t("HumanitarianAndCompassionate"),
+      refKey: "humanitarianRef",
+    },
+    {
+      href: "#atlantic",
+      label: t("AtlanticImmigrationProgram"),
+      refKey: "atlanticRef",
+    },
+    {
+      href: "#rnip",
+      label: t("NorthernImmigrationProgram"),
+      refKey: "rnipRef",
+    },
+  ];
+};
 
 export function DiscoverOptionsListIP({ scrollToRef, refs }: Props) {
   return (
     <div className="flex flex-wrap gap-3 mb-7">
-      {discoverItems.map((item) => (
+      {DiscoverItems().map((item) => (
         <DiscoverOptionsItemIP
           key={item.href}
           href={item.href}
