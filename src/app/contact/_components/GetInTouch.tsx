@@ -9,7 +9,7 @@ import {
 
 export function GetInTouch() {
   return (
-    <Card className="min-h-[280px] xl:min-h-[280px] xl:w-full xl:w-2/5 p-6 flex flex-col h-full justify-between">
+    <Card className="min-h-[280px] xl:min-h-[280px] w-full xl:w-2/5 p-6 flex flex-col h-full justify-between">
       <div>
         <Heading className="mb-7">Get in touch</Heading>
         <div className="space-y-3">
