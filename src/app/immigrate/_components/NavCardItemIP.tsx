@@ -75,9 +75,11 @@ export const NavCardItemIP = forwardRef<HTMLDivElement, Props>(
         </div>
         {buttonLink &&
           (isExpanded === true ? (
-            <Link href={buttonLink}>
-              <Button>Read more</Button>
-            </Link>
+            // <div className="flex justify-center">
+            <Button asChild>
+              <Link href={buttonLink}>Read more</Link>
+            </Button>
+            // </div>
           ) : (
             ""
           ))}
