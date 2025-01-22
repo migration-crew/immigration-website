@@ -360,5 +360,15 @@
     "YukonDescription": "Los candidatos crean un perfil en línea, proporcionando información sobre sus habilidades, experiencia laboral, capacidad lingüística y educación. Con base en esta información, los candidatos reciben una puntuación CRS.",
     "Nunavut": "PNP de Nunavut",
     "NunavutDescription": "Los candidatos crean un perfil en línea, proporcionando información sobre sus habilidades, experiencia laboral, capacidad lingüística y educación. Con base en esta información, los candidatos reciben una puntuación CRS."
+  },
+  "ContactPage": {
+    "title": "Contáctenos",
+    "subheading": "Ponte en contacto",
+    "subheading1": "Envíanos un mensaje",
+    "onSubmit": "Formulario enviado",
+    "heading": "¿Cómo podemos ayudarte hoy?",
+    "consultant": "Larissa Castelluber",
+    "salutation": "Hola,",
+    "consultantDescription": "Soy Larissa Castelluber, y estoy dedicada a ayudarte a alcanzar tu sueño canadiense. Entiendo los desafíos del proceso de inmigración y estoy aquí para brindarte el apoyo y la orientación que necesitas. ¡Hagamos que tu viaje a Canadá sea exitoso y gratificante!"
   }
 }

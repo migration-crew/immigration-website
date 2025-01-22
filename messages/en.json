@@ -360,5 +360,15 @@
     "YukonDescription": "Candidates create an online profile, providing information about their skills, work experience, language ability, and education. Based on this information, candidates receive a CRS score.",
     "Nunavut": "Nunavut PNP",
     "NunavutDescription": "Candidates create an online profile, providing information about their skills, work experience, language ability, and education. Based on this information, candidates receive a CRS score."
+  },
+  "ContactPage": {
+    "title": "Contact Us",
+    "subheading": "Get in touch",
+    "subheading1": "Send us a message",
+    "onSubmit": "Form submitted",
+    "heading": "How Can We Help You Today?",
+    "consultant": "Larissa Castelluber",
+    "salutation": "Hi there,",
+    "consultantDescription": "I'm Larissa Castelluber, and I'm dedicated to helping you achieve your Canadian dream. I understand the challenges of the immigration process and am here to provide you with the support and guidance you need. Let's make your journey to Canada a successful and fulfilling one!"
   }
 }
