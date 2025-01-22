@@ -1,24 +1,34 @@
-import { QuizType } from "./QuizDialog";
+import { QuizType } from './QuizDialog';
 
 export const quizData: QuizType[] = [
     {
         id: 1,
-        question: "What would you like to do in Canada?",
-        answers: ["Visit", "Study", "Work", "Move There"]
+        question: 'question1',
+        answers: [
+            'question1Answer1',
+            'question1Answer2',
+            'question1Answer3',
+            'question1Answer4',
+        ],
     },
     {
         id: 2,
-        question: "What's your overall ability in English?",
-        answers: ["No ability", "Basic", "Moderate", "Advanced"]
+        question: 'question2',
+        answers: [
+            'question2Answer1',
+            'question2Answer2',
+            'question2Answer3',
+            'question2Answer4',
+        ],
     },
     {
         id: 3,
-        question: "Do you have a family member who is a Canadian citizen or permanent resident?",
-        answers: ["Yes", "No"]
+        question: 'question3',
+        answers: ['question3Answer1', 'question3Answer2'],
     },
     {
         id: 4,
-        question: "Do you have at least 1 year or full-time skilled work experience?",
-        answers: ["Yes, I do.", "No, I don't."]
-    }
-]
+        question: 'question4',
+        answers: ['question4Answer1', 'question4Answer2'],
+    },
+];
