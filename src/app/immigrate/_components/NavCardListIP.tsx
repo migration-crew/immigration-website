@@ -135,7 +135,7 @@ export const NavCardListIP = forwardRef<HTMLDivElement, Props>(
             alt={item.alt}
             description={item.description}
             image={item.image}
-            isLast={index === NavCardItems.length - 1}
+            isLast={index === NavCardItems().length - 1}
             buttonLink={item.buttonLink}
           />
         ))}
