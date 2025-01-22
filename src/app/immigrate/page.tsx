@@ -15,12 +15,13 @@ import { Introduction } from "./_components/Introduction";
 export default function ImmigratePage() {
   const t = useTranslations("ImmigrationSteps");
   const tFAQ = useTranslations("FAQs");
+  const t2 = useTranslations("IntroductionImmigrate");
   return (
     <>
       <HeaderPicture
-        alt="Immigrate Image"
+        alt={t2("title")}
         src={immigratePage}
-        title="Immigrate"
+        title={t2("title")}
       />
 
       <Introduction />

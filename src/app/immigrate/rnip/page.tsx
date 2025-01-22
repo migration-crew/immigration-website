@@ -9,22 +9,19 @@ import { EPSteps } from "../content/steps";
 
 export default function NorthernImmigrationRNIP() {
   const t = useTranslations("ImmigrationEPSteps");
+  const t2 = useTranslations("IntroductionRNIP");
   return (
     <>
-      <HeaderPicture
-        alt="Northern Immigration Program - RNIP Image"
-        src={RNIP}
-        title="Northern Immigration Program - RNIP Program"
-      />
+      <HeaderPicture alt={t2("title")} src={RNIP} title={t2("title")} />
 
       <IntoductionRNIP />
 
       <ApplicationStepDesktop steps={EPSteps()} title={t("EPStepsHeading")} />
       <ApplicationStepMobile
         steps={EPSteps()}
-        title="What is the process?"
-        circleSpacing={110}
-        height="h-[130px]"
+        title={t("EPStepsHeading")}
+        circleSpacing={130}
+        height="h-[150px]"
       />
 
       <EEPrograms />

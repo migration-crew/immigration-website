@@ -9,13 +9,10 @@ import { EPSteps } from "../content/steps";
 
 export default function Caregiver() {
   const t = useTranslations("ImmigrationEPSteps");
+  const t2 = useTranslations("IntroductionCaregiver");
   return (
     <>
-      <HeaderPicture
-        alt="Caregiver Image"
-        src={caregiver}
-        title="Caregiver Program"
-      />
+      <HeaderPicture alt={t2("title")} src={caregiver} title={t2("title")} />
 
       <IntroductionCaregiver />
 

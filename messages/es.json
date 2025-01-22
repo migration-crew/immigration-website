@@ -112,11 +112,13 @@
     "reviewsButton": "Explora las reseñas de Google"
   },
   "IntroductionImmigrate": {
+    "title": "Emigrar a Canadá",
     "heading": "¿Quieres inmigrar a Canadá?",
     "paragraph1": "Canadá es un destino principal para individuos y familias que buscan nuevas oportunidades. Con más de 80 programas de inmigración disponibles, incluyendo opciones para trabajadores calificados, Evaluaciones de Impacto en el Mercado Laboral (LMIA), Programas de Nominación Provincial (PNP) y reunificación familiar, existen numerosos caminos para convertirse en residente permanente.",
     "paragraph2": "Nuestro equipo en Up Immigration está aquí para guiarlo en el proceso, ayudándole a encontrar el programa que mejor se adapte a sus necesidades para una transición exitosa a su nueva vida en Canadá. Contáctenos hoy para comenzar su viaje a Canadá con confianza."
   },
   "IntroductionExpressEntry": {
+    "title": "Express Entry",
     "heading": "Visión General del Express Entry",
     "subheading1": "¿Cómo funciona el Express Entry?",
     "paragraph1": "El sistema Express Entry es la forma más rápida para que los trabajadores calificados se muden a Canadá. Utiliza un sistema de puntos llamado Sistema de Clasificación Integral (CRS) para puntuar a los candidatos según su edad, educación, experiencia laboral y habilidades lingüísticas. Cuanto mayor sea su puntuación, mayores serán sus posibilidades de ser invitado a solicitar la residencia permanente. El sistema también prioriza a aquellos con ofertas de trabajo o nominaciones provinciales, lo que facilita su selección.",
@@ -127,6 +129,7 @@
     "paragraph3": "El sistema Express Entry es la forma más rápida para que los trabajadores calificados se muden a Canadá. Utiliza un sistema de puntos llamado Sistema de Clasificación Integral (CRS) para puntuar a los candidatos según su edad, educación, experiencia laboral y habilidades lingüísticas. Cuanto mayor sea su puntuación, mayores serán sus posibilidades de ser invitado a solicitar la residencia permanente. El sistema también prioriza a aquellos con ofertas de trabajo o nominaciones provinciales, lo que facilita su selección."
   },
   "IntroductionFamily": {
+    "title": "Patrocinio Familiar",
     "heading": "Visión General del Patrocinio Familiar",
     "subheading1": "¿Cómo funciona el Express Entry?",
     "paragraph1": "El sistema Express Entry es la forma más rápida para que los trabajadores calificados se muden a Canadá. Utiliza un sistema de puntos llamado Sistema de Clasificación Integral (CRS) para puntuar a los candidatos según su edad, educación, experiencia laboral y habilidades lingüísticas. Cuanto mayor sea su puntuación, mayores serán sus posibilidades de ser invitado a solicitar la residencia permanente. El sistema también prioriza a aquellos con ofertas de trabajo o nominaciones provinciales, lo que facilita su selección.",
@@ -136,7 +139,19 @@
     "subheading3": "¿Cómo funciona el Express Entry?",
     "paragraph3": "El sistema Express Entry es la forma más rápida para que los trabajadores calificados se muden a Canadá. Utiliza un sistema de puntos llamado Sistema de Clasificación Integral (CRS) para puntuar a los candidatos según su edad, educación, experiencia laboral y habilidades lingüísticas. Cuanto mayor sea su puntuación, mayores serán sus posibilidades de ser invitado a solicitar la residencia permanente. El sistema también prioriza a aquellos con ofertas de trabajo o nominaciones provinciales, lo que facilita su selección."
   },
+  "IntroductionRNIP": {
+    "title": "Programa de Inmigración del Norte - RNIP",
+    "heading": "Descripción general del Programa de Inmigración del Norte - RNIP",
+    "subheading1": "¿Cómo funciona Express Entry?",
+    "paragraph1": "El sistema Express Entry es la forma más rápida para que los trabajadores calificados se muden a Canadá. Utiliza un sistema de puntos llamado Sistema de Clasificación Integral (CRS) para calificar a los candidatos según su edad, educación, experiencia laboral y habilidades lingüísticas. Cuanto mayor sea tu puntuación, mejores serán tus posibilidades de ser invitado a solicitar la residencia permanente. El sistema también prioriza a aquellos con ofertas de empleo o nominaciones provinciales, facilitando su selección.",
+    "subheading2": "¿Qué es el sistema Express Entry?",
+    "paragraph2": "El sistema Express Entry es un proceso de inmigración simplificado diseñado para gestionar solicitudes de residencia permanente en Canadá. Facilita la selección de trabajadores calificados con más probabilidades de tener éxito en la economía canadiense. Como Consultor de Inmigración Canadiense Regulado (RCIC), Up Immigration brinda orientación experta sobre cómo navegar por este sistema.",
+    "imageAlt": "Programa de Inmigración del Norte - RNIP",
+    "subheading3": "¿Cómo funciona Express Entry?",
+    "paragraph3": "El sistema Express Entry es la forma más rápida para que los trabajadores calificados se muden a Canadá. Utiliza un sistema de puntos llamado Sistema de Clasificación Integral (CRS) para calificar a los candidatos según su edad, educación, experiencia laboral y habilidades lingüísticas. Cuanto mayor sea tu puntuación, mejores serán tus posibilidades de ser invitado a solicitar la residencia permanente. El sistema también prioriza a aquellos con ofertas de empleo o nominaciones provinciales, facilitando su selección."
+  },
   "IntroductionAtlantic": {
+    "title": "Programa de Inmigración del Atlántico",
     "heading": "Visión General del Programa Inmigración Atlántica",
     "subheading1": "¿Cómo funciona el Express Entry?",
     "paragraph1": "El sistema Express Entry es la forma más rápida para que los trabajadores calificados se muden a Canadá. Utiliza un sistema de puntos llamado Sistema de Clasificación Integral (CRS) para puntuar a los candidatos según su edad, educación, experiencia laboral y habilidades lingüísticas. Cuanto mayor sea su puntuación, mayores serán sus posibilidades de ser invitado a solicitar la residencia permanente. El sistema también prioriza a aquellos con ofertas de trabajo o nominaciones provinciales, lo que facilita su selección.",
@@ -147,6 +162,7 @@
     "paragraph3": "El sistema Express Entry es la forma más rápida para que los trabajadores calificados se muden a Canadá. Utiliza un sistema de puntos llamado Sistema de Clasificación Integral (CRS) para puntuar a los candidatos según su edad, educación, experiencia laboral y habilidades lingüísticas. Cuanto mayor sea su puntuación, mayores serán sus posibilidades de ser invitado a solicitar la residencia permanente. El sistema también prioriza a aquellos con ofertas de trabajo o nominaciones provinciales, lo que facilita su selección."
   },
   "IntroductionCaregiver": {
+    "title": "Programas para Cuidadores",
     "heading": "Visión General del Cuidadores",
     "subheading1": "¿Cómo funciona el Express Entry?",
     "paragraph1": "El sistema Express Entry es la forma más rápida para que los trabajadores calificados se muden a Canadá. Utiliza un sistema de puntos llamado Sistema de Clasificación Integral (CRS) para puntuar a los candidatos según su edad, educación, experiencia laboral y habilidades lingüísticas. Cuanto mayor sea su puntuación, mayores serán sus posibilidades de ser invitado a solicitar la residencia permanente. El sistema también prioriza a aquellos con ofertas de trabajo o nominaciones provinciales, lo que facilita su selección.",
@@ -157,6 +173,7 @@
     "paragraph3": "El sistema Express Entry es la forma más rápida para que los trabajadores calificados se muden a Canadá. Utiliza un sistema de puntos llamado Sistema de Clasificación Integral (CRS) para puntuar a los candidatos según su edad, educación, experiencia laboral y habilidades lingüísticas. Cuanto mayor sea su puntuación, mayores serán sus posibilidades de ser invitado a solicitar la residencia permanente. El sistema también prioriza a aquellos con ofertas de trabajo o nominaciones provinciales, lo que facilita su selección."
   },
   "IntroductionHumanitarian": {
+    "title": "Programa Humanitario y de Compasión",
     "heading": "Visión General del Humanitario y Compasivo",
     "subheading1": "¿Cómo funciona el Express Entry?",
     "paragraph1": "El sistema Express Entry es la forma más rápida para que los trabajadores calificados se muden a Canadá. Utiliza un sistema de puntos llamado Sistema de Clasificación Integral (CRS) para puntuar a los candidatos según su edad, educación, experiencia laboral y habilidades lingüísticas. Cuanto mayor sea su puntuación, mayores serán sus posibilidades de ser invitado a solicitar la residencia permanente. El sistema también prioriza a aquellos con ofertas de trabajo o nominaciones provinciales, lo que facilita su selección.",
@@ -167,6 +184,7 @@
     "paragraph3": "El sistema Express Entry es la forma más rápida para que los trabajadores calificados se muden a Canadá. Utiliza un sistema de puntos llamado Sistema de Clasificación Integral (CRS) para puntuar a los candidatos según su edad, educación, experiencia laboral y habilidades lingüísticas. Cuanto mayor sea su puntuación, mayores serán sus posibilidades de ser invitado a solicitar la residencia permanente. El sistema también prioriza a aquellos con ofertas de trabajo o nominaciones provinciales, lo que facilita su selección."
   },
   "IntroductionSelfEmployed": {
+    "title": "Programa para Trabajadores Autónomos",
     "heading": "Visión General del Trabajadores Autónomos",
     "subheading1": "¿Cómo funciona el Express Entry?",
     "paragraph1": "El sistema Express Entry es la forma más rápida para que los trabajadores calificados se muden a Canadá. Utiliza un sistema de puntos llamado Sistema de Clasificación Integral (CRS) para puntuar a los candidatos según su edad, educación, experiencia laboral y habilidades lingüísticas. Cuanto mayor sea su puntuación, mayores serán sus posibilidades de ser invitado a solicitar la residencia permanente. El sistema también prioriza a aquellos con ofertas de trabajo o nominaciones provinciales, lo que facilita su selección.",
@@ -177,6 +195,7 @@
     "paragraph3": "El sistema Express Entry es la forma más rápida para que los trabajadores calificados se muden a Canadá. Utiliza un sistema de puntos llamado Sistema de Clasificación Integral (CRS) para puntuar a los candidatos según su edad, educación, experiencia laboral y habilidades lingüísticas. Cuanto mayor sea su puntuación, mayores serán sus posibilidades de ser invitado a solicitar la residencia permanente. El sistema también prioriza a aquellos con ofertas de trabajo o nominaciones provinciales, lo que facilita su selección."
   },
   "IntroductionStartUp": {
+    "title": "Programa de Visa Start-Up",
     "heading": "Visión General del Start-Up",
     "subheading1": "¿Cómo funciona el Express Entry?",
     "paragraph1": "El sistema Express Entry es la forma más rápida para que los trabajadores calificados se muden a Canadá. Utiliza un sistema de puntos llamado Sistema de Clasificación Integral (CRS) para puntuar a los candidatos según su edad, educación, experiencia laboral y habilidades lingüísticas. Cuanto mayor sea su puntuación, mayores serán sus posibilidades de ser invitado a solicitar la residencia permanente. El sistema también prioriza a aquellos con ofertas de trabajo o nominaciones provinciales, lo que facilita su selección.",
@@ -187,6 +206,7 @@
     "paragraph3": "El sistema Express Entry es la forma más rápida para que los trabajadores calificados se muden a Canadá. Utiliza un sistema de puntos llamado Sistema de Clasificación Integral (CRS) para puntuar a los candidatos según su edad, educación, experiencia laboral y habilidades lingüísticas. Cuanto mayor sea su puntuación, mayores serán sus posibilidades de ser invitado a solicitar la residencia permanente. El sistema también prioriza a aquellos con ofertas de trabajo o nominaciones provinciales, lo que facilita su selección."
   },
   "IntroductionPNP": {
+    "title": "Programa de Nominados Provinciales - PNP",
     "heading": "Resumen de los Programas de Nominación Provincial",
     "subheading1": "¿Qué son los Programas de Nominación Provincial?",
     "paragraph1": "Los Programas de Nominación Provincial (PNP) permiten a las provincias y territorios canadienses nominar a personas que deseen inmigrar a Canadá y establecerse en una provincia específica. Estos programas están diseñados para satisfacer las necesidades únicas del mercado laboral de cada provincia y territorio.",

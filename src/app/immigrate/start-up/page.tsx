@@ -8,13 +8,10 @@ import { IntroductionStartUp } from "../_components/IntroductionStartUp";
 import { EPSteps } from "../content/steps";
 export default function StartUp() {
   const t = useTranslations("ImmigrationEPSteps");
+  const t2 = useTranslations("IntroductionStartUp");
   return (
     <>
-      <HeaderPicture
-        alt="Start-Up Visa Image"
-        src={startUP}
-        title="Start-Up Visa Program"
-      />
+      <HeaderPicture alt={t2("title")} src={startUP} title={t2("title")} />
 
       <IntroductionStartUp />
 
@@ -22,8 +19,8 @@ export default function StartUp() {
       <ApplicationStepMobile
         steps={EPSteps()}
         title={t("EPStepsHeading")}
-        circleSpacing={110}
-        height="h-[130px]"
+        circleSpacing={130}
+        height="h-[150px]"
       />
       <EEPrograms />
     </>

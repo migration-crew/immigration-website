@@ -9,22 +9,19 @@ import { EPSteps } from "../content/steps";
 
 export default function ExpressEntry() {
   const t = useTranslations("ImmigrationEPSteps");
+  const t2 = useTranslations("IntroductionExpressEntry");
   return (
     <>
-      <HeaderPicture
-        alt="Express Entry Image"
-        src={expressEntry}
-        title="Express Entry"
-      />
+      <HeaderPicture alt={t2("title")} src={expressEntry} title={t2("title")} />
 
       <IntroductionEE />
 
       <ApplicationStepDesktop steps={EPSteps()} title={t("EPStepsHeading")} />
       <ApplicationStepMobile
-        circleSpacing={110}
+        circleSpacing={130}
         steps={EPSteps()}
         title={t("EPStepsHeading")}
-        height="h-[130px]"
+        height="h-[150px]"
       />
 
       <EEPrograms />

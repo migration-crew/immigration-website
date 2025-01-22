@@ -9,13 +9,10 @@ import { EPSteps } from "../content/steps";
 
 export default function Humanitarian() {
   const t = useTranslations("ImmigrationEPSteps");
+  const t2 = useTranslations("IntroductionHumanitarian");
   return (
     <>
-      <HeaderPicture
-        alt="Humanitarian and Compassionate Image"
-        src={humanitarian}
-        title="Humanitarian and Compassionate  Program"
-      />
+      <HeaderPicture alt={t2("title")} src={humanitarian} title={t2("title")} />
 
       <IntroductionHumanitarian />
 
@@ -23,8 +20,8 @@ export default function Humanitarian() {
       <ApplicationStepMobile
         steps={EPSteps()}
         title={t("EPStepsHeading")}
-        circleSpacing={110}
-        height="h-[130px]"
+        circleSpacing={130}
+        height="h-[150px]"
       />
 
       <EEPrograms />

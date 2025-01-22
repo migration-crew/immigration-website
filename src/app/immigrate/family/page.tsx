@@ -7,15 +7,12 @@ import { EEPrograms } from "../_components/EEPrograms";
 import { IntroductionFamily } from "../_components/IntroductionFamily";
 import { EPSteps } from "../content/steps";
 
-export default function ExpressEntry() {
+export default function Family() {
   const t = useTranslations("ImmigrationEPSteps");
+  const t2 = useTranslations("IntroductionFamily");
   return (
     <>
-      <HeaderPicture
-        alt="Family Sponsorship Image"
-        src={familySP}
-        title="Family Sponsorship"
-      />
+      <HeaderPicture alt={t2("title")} src={familySP} title={t2("title")} />
 
       <IntroductionFamily />
 
@@ -23,8 +20,8 @@ export default function ExpressEntry() {
       <ApplicationStepMobile
         steps={EPSteps()}
         title={t("EPStepsHeading")}
-        circleSpacing={110}
-        height="h-[130px]"
+        circleSpacing={130}
+        height="h-[150px]"
       />
 
       <EEPrograms />

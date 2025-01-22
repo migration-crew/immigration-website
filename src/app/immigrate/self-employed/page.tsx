@@ -9,13 +9,10 @@ import { EPSteps } from "../content/steps";
 
 export default function SelfEmployed() {
   const t = useTranslations("ImmigrationEPSteps");
+  const t2 = useTranslations("IntroductionSelfEmployed");
   return (
     <>
-      <HeaderPicture
-        alt="Self-Employed Image"
-        src={selfEmployed}
-        title="Self-Employed Program"
-      />
+      <HeaderPicture alt={t2("title")} src={selfEmployed} title={t2("title")} />
 
       <IntroductionSelfEmployed />
 
@@ -23,8 +20,8 @@ export default function SelfEmployed() {
       <ApplicationStepMobile
         steps={EPSteps()}
         title={t("EPStepsHeading")}
-        circleSpacing={110}
-        height="h-[130px]"
+        circleSpacing={130}
+        height="h-[150px]"
       />
 
       <EEPrograms />

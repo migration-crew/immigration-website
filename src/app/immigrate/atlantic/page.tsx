@@ -9,13 +9,10 @@ import { EPSteps } from "../content/steps";
 
 export default function AtlanticImmigration() {
   const t = useTranslations("ImmigrationEPSteps");
+  const t2 = useTranslations("IntroductionAtlantic");
   return (
     <>
-      <HeaderPicture
-        alt="AIP Image"
-        src={atlanticIP}
-        title="Atlantic Immigration Program"
-      />
+      <HeaderPicture alt={t2("title")} src={atlanticIP} title={t2("title")} />
 
       <IntroductionAtlantic />
 
@@ -23,8 +20,8 @@ export default function AtlanticImmigration() {
       <ApplicationStepMobile
         steps={EPSteps()}
         title={t("EPStepsHeading")}
-        circleSpacing={110}
-        height="h-[130px]"
+        circleSpacing={130}
+        height="h-[150px]"
       />
 
       <EEPrograms />
