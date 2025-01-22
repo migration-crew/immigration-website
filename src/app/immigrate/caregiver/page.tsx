@@ -2,13 +2,13 @@ import { ApplicationStepDesktop } from "@/components/common/ApplicationStepDeskt
 import { ApplicationStepMobile } from "@/components/common/ApplicationStepMobile";
 import { HeaderPicture } from "@/components/common/HeaderPicture";
 import caregiver from "@/public/caregiver.jpg";
+import { useTranslations } from "next-intl";
 import { EEPrograms } from "../_components/EEPrograms";
 import { IntroductionCaregiver } from "../_components/IntroductionCaregiver";
 import { EPSteps } from "../content/steps";
-import { useTranslations } from "next-intl";
 
 export default function Caregiver() {
-  const t = useTranslations("ImmigrationsEPSteps");
+  const t = useTranslations("ImmigrationEPSteps");
   return (
     <>
       <HeaderPicture

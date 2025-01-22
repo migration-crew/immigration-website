@@ -8,7 +8,7 @@ import { IntroductionAtlantic } from "../_components/IntroductionAtlantic";
 import { EPSteps } from "../content/steps";
 
 export default function AtlanticImmigration() {
-  const t = useTranslations("ImmigrationsEPSteps");
+  const t = useTranslations("ImmigrationEPSteps");
   return (
     <>
       <HeaderPicture
