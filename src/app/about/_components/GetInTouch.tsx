@@ -16,7 +16,7 @@ export const GetInTouch = () => {
             <Heading>{t('section5Title')}</Heading>
             <Paragraph className='py-4 xl:pt-5'>{t('section5P1')}</Paragraph>
             <Button className='w-full xl:w-fit py-3 px-4'>
-                <Link href='/book-consultation'>Book a free consultation</Link>
+                <Link href='/book-consultation'>{t('consultationButton')}</Link>
             </Button>
         </SectionContainer>
     );
