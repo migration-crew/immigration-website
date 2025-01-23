@@ -16,7 +16,7 @@ export const OurStory = () => {
                   controls
                   preload='none'
                   poster='/ourStory.png'
-                  className='rounded-xl w-full h-fit'
+                  className='rounded-xl w-full h-full object-cover'
               >
                   <source src='/OurStory.mp4' type='video/mp4' />
               </video>
