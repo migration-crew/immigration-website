@@ -10,6 +10,7 @@ import {
 import { cn } from "@/lib/utils";
 import googleReview from "@/public/googleReview.png";
 import { TestimonialsType } from "@/types/TestimonialsType";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
@@ -39,6 +40,7 @@ export default function TestimonialMobile({ testimonials, className }: Props) {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
+  const t = useTranslations("Home");
 
   React.useEffect(() => {
     if (!api) {
@@ -55,7 +57,7 @@ export default function TestimonialMobile({ testimonials, className }: Props) {
 
   return (
     <SectionContainer className={cn("lg:hidden", className)}>
-      <Heading>Success stories</Heading>
+      <Heading>{t("testimonialsTitle")}</Heading>
       <div className="flex justify-between">
         <Image
           className="flex justify-center"
@@ -96,7 +98,7 @@ export default function TestimonialMobile({ testimonials, className }: Props) {
                       </div>
                       <Caption>{testimonial.status}</Caption>
                       <HeavyBody className="align-bottom text-justify mt-6 pt-4">
-                        &quot;{testimonial.text}&quot;
+                        &quot;{t("testimonialDescription")}&quot;
                       </HeavyBody>
                     </div>
                   </div>
@@ -117,15 +119,9 @@ export default function TestimonialMobile({ testimonials, className }: Props) {
             />
           ))}
         </div>
-        <Paragraph>
-          {
-            "Explore more of our Google Reviews for top-rated immigration services."
-          }
-        </Paragraph>
+        <Paragraph>{t("googleReviews")}</Paragraph>
         <Link href="https://www.google.com/search?q=Up+immigration&client=opera-gx&hs=dC0&sca_esv=db3f177c98a4bf7a&sxsrf=ADLYWIKchpWGpCthIu-52xqY_0D914VxfQ%3A1730482678099&ei=9hElZ9LcBbrTp84PlLH0oAQ&ved=0ahUKEwjSr8Wq1ruJAxW66ckDHZQYHUQQ4dUDCBA&uact=5&oq=Up+immigration&gs_lp=Egxnd3Mtd2l6LXNlcnAiDlVwIGltbWlncmF0aW9uMgQQIxgnMgwQIxiABBgTGCcYigUyDBAjGIAEGBMYJxiKBTIOEC4YgAQYxwEYywEYrwEyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IuAlQ6wVYiwdwAHgCkAEAmAHOAaABlgOqAQMyLTK4AQPIAQD4AQGYAgKgAtABwgIEEAAYR5gDAOIDBRIBMSBAiAYBkAYIkgcFMS4wLjGgB8gW&sclient=gws-wiz-serp#">
-          <Button className="w-full xl:w-fit">
-            {"Explore Google Reviews"}
-          </Button>
+          <Button className="w-full xl:w-fit">{t("reviewsButton")}</Button>
         </Link>
       </div>
     </SectionContainer>
