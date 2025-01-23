@@ -15,25 +15,31 @@ import { WorkInCanada } from "./_components/WorkInCanada";
 export default function WorkPage() {
   const t = useTranslations("ImmigrationEEPrograms");
   const tFAQ = useTranslations("FAQs");
+  const tWork = useTranslations('Work');
+
   return (
-    <div className="flex flex-col h-full gap-4 xl:gap-[100px]">
-      <HeaderPicture alt="Image of work page" src={workImage} title={"Work"} />
-      <WorkInCanada />
-      <DiscoverOptions />
-      <ApplicationStepMobile
-        steps={Steps()}
-        title={t("heading")}
-        circleSpacing={50}
-        height="h-[70px]"
-      />
-      <ApplicationStepDesktop steps={Steps()} title={t("heading")} />
-      <Testimonial testimonials={testimonialData} />
-      <TestimonialMobile testimonials={testimonialData} />
-      <FAQ
-        data={FAQs()}
-        title={tFAQ("heading")}
-        bgColor="bg-neutral-secondary-white"
-      />
-    </div>
+      <div className='flex flex-col h-full gap-4 xl:gap-[100px]'>
+          <HeaderPicture
+              alt='Image of work page'
+              src={workImage}
+              title={tWork('headerPictureTitle')}
+          />
+          <WorkInCanada />
+          <DiscoverOptions />
+          <ApplicationStepMobile
+              steps={Steps()}
+              title={t('heading')}
+              circleSpacing={50}
+              height='h-[70px]'
+          />
+          <ApplicationStepDesktop steps={Steps()} title={t('heading')} />
+          <Testimonial testimonials={testimonialData} />
+          <TestimonialMobile testimonials={testimonialData} />
+          <FAQ
+              data={FAQs()}
+              title={tFAQ('heading')}
+              bgColor='bg-neutral-secondary-white'
+          />
+      </div>
   );
 }
