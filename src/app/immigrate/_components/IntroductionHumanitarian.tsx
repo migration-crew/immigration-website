@@ -3,8 +3,8 @@ import { Heading } from "@/components/common/text/Heading";
 import { Paragraph } from "@/components/common/text/Paragraph";
 import { SubHeading } from "@/components/common/text/SubHeading";
 import howEEworks from "@/public/howEEworks.jpg";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useTranslations } from "use-intl";
 
 export const IntroductionHumanitarian = () => {
   const t = useTranslations("IntroductionHumanitarian");
@@ -16,7 +16,7 @@ export const IntroductionHumanitarian = () => {
         <SectionContainer className="pb-10">
           <SubHeading className="pb-3">{t("subheading1")}</SubHeading>
           <div className="bg-primary-red w-[50px] h-[2.5px]"></div>
-          <Paragraph className="pt-4 text-justify">{t("paragraph")}</Paragraph>
+          <Paragraph className="pt-4 text-justify">{t("paragraph1")}</Paragraph>
         </SectionContainer>
 
         <SectionContainer className="pb-10">
