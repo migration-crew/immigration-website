@@ -10,7 +10,7 @@ export default function BookConsultationPage() {
   return (
     <>
       <HeaderPicture alt="book consultation" src={BookConsultationImage} title={`${t("bookAConsultation")}`}/>
-      <SectionContainer className="mt-[60px]">
+      <SectionContainer className="my-[60px]">
         <BookFreeConsultationForm />
       </SectionContainer>
     </>
