@@ -3,6 +3,7 @@ import OpenWorkPermit from "@/public/open-work-permit.png";
 import Pgwp from "@/public/pgwp.png";
 import Sowp from "@/public/sowp.png";
 import WorkPermitExtensions from "@/public/work-permit-extensions.png";
+import { useTranslations } from 'next-intl';
 import { StaticImageData } from "next/image";
 import { forwardRef } from "react";
 import { NavCardItem } from "../../app/work/_components/NavCardItem";
@@ -28,74 +29,72 @@ type navCardItemsType = {
 };
 
 const navCardItems: navCardItemsType[] = [
-  {
-    ref: "workPermitRef",
-    id: "work-permit-extensions",
-    title: "Work Permit / Extensions",
-    alt: "Work Permit Extensions",
-    description:
-      "Canadian employers may hire temporary foreign workers when suitable candidates can't be found among Canadian residents (permanent residents or citizens). Employers seeking to hire foreign workers must apply for a document called a Labour Market Impact Assessment (LMIA) if they meet the eligibility criteria. A positive LMIA demonstrates the need for a foreign worker to fill the position.",
-    image: WorkPermitExtensions,
-  },
-  {
-    ref: "openWorkPermitRef",
-    id: "open-work-permit",
-    title: "Open Work Permit",
-    alt: "Open Work Permit",
-    description:
-      "Document issued within Canada that allows certain foreigners to work for any Canadian company. To be eligible you must be the spouse of an international student enrolled full-time at a Canadian college (mostly public) or university, or be the spouse of a person who has worker status with job offer at NOC 0, A or B. You can also obtain an open work permit, if you are part of a International Experience Canada program.",
-    image: OpenWorkPermit,
-  },
-  {
-    ref: "pgwpRef",
-    id: "pgwp",
-    title: "Post-Graduation Work Permit (PGWP)",
-    alt: "Post-Graduation Work Permit (PGWP)",
-    description:
-      "For individuals with relevant experience in cultural or athletic activities to gain permanent residency in Canada. This program is ideal for those who have demonstrated their ability to be self-employed in fields such as music, writing, visual arts, or professional athletics. By contributing their unique talents, self-employed individuals help enrich Canada’s cultural and athletic landscape.",
-    image: Pgwp,
-  },
-  {
-    ref: "lmiaRef",
-    id: "lmia",
-    title: "Labour Market Impact Assessment (LMIA)",
-    alt: "Labour Market Impact Assessment (LMIA)",
-    description:
-      "For skilled foreign workers and international graduates to build a new life in one of Canada's vibrant Atlantic provinces: New Brunswick, Nova Scotia, Newfoundland and Labrador, and Prince Edward Island. This program makes it easier for newcomers to settle and contribute to the growth of these welcoming communities.",
-    image: Lmia,
-  },
-  {
-    ref: "sowpRef",
-    id: "sowp",
-    title: "Spousal/ Common-Law Partner Open Work Permit (SOWP)",
-    alt: "Spousal/ Common-Law Partner Open Work Permit (SOWP)",
-    description:
-      "Spouse, common-law partner or conjugal partner living in Canada who’s being sponsored for permanent residence an accompanying dependent child of the principal applicant",
-    image: Sowp,
-  },
+    {
+        ref: 'workPermitRef',
+        id: 'work-permit-extensions',
+        title: 'navCard1Title',
+        alt: 'Work Permit Extensions',
+        description: 'navCard1Description',
+        image: WorkPermitExtensions,
+    },
+    {
+        ref: 'openWorkPermitRef',
+        id: 'open-work-permit',
+        title: 'navCard2Title',
+        alt: 'Open Work Permit',
+        description: 'navCard2Description',
+        image: OpenWorkPermit,
+    },
+    {
+        ref: 'pgwpRef',
+        id: 'pgwp',
+        title: 'navCard3Title',
+        alt: 'Post-Graduation Work Permit (PGWP)',
+        description: 'navCard3Description',
+        image: Pgwp,
+    },
+    {
+        ref: 'lmiaRef',
+        id: 'lmia',
+        title: 'navCard4Title',
+        alt: 'Labour Market Impact Assessment (LMIA)',
+        description: 'navCard4Description',
+        image: Lmia,
+    },
+    {
+        ref: 'sowpRef',
+        id: 'sowp',
+        title: 'navCard5Title',
+        alt: 'Spousal/ Common-Law Partner Open Work Permit (SOWP)',
+        description: 'navCard5Description',
+        image: Sowp,
+    },
 ];
 
 export const NavCardList = forwardRef<HTMLDivElement, Props>(
   function NavCardList({ refs }: Props, ref) {
+
+    const t = useTranslations("Work");
+
     return (
-      <div
-        className="flex flex-col xl:grid xl:grid-cols-3 gap-4 flex-shrink-0"
-        ref={ref}
-      >
-        {navCardItems.map((item, index) => (
-          <NavCardItem
-            key={item.id}
-            ref={refs[item.ref as keyof typeof refs]}
-            id={item.id}
-            title={item.title}
-            alt={item.alt}
-            description={item.description}
-            image={item.image}
-            isLast={index === navCardItems.length - 1}
-            buttonLink={item.buttonLink}
-          />
-        ))}
-      </div>
+        <div
+            className='flex flex-col xl:grid xl:grid-cols-3 gap-4 flex-shrink-0'
+            ref={ref}
+        >
+            {navCardItems.map((item, index) => (
+                <NavCardItem
+                    key={item.id}
+                    ref={refs[item.ref as keyof typeof refs]}
+                    id={item.id}
+                    title={t(item.title)}
+                    alt={item.alt}
+                    description={t(item.description)}
+                    image={item.image}
+                    isLast={index === navCardItems.length - 1}
+                    buttonLink={item.buttonLink}
+                />
+            ))}
+        </div>
     );
   }
 );
