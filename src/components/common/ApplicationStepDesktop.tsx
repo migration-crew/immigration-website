@@ -30,10 +30,12 @@ export const ApplicationStepDesktop = ({ steps, title }: Props) => {
               <div className="w-7 h-7 bg-secondary-blue text-white rounded-full flex items-center justify-center font-bold mb-6 relative mx-auto">
                 {index + 1}
               </div>
-              <HeavySubHeader className="mb-[17px]">
-                {step.title}
-              </HeavySubHeader>
-              <p className="text-base">{step.description}</p>
+              <div className="flex flex-col justify-between gap-5">
+                <HeavySubHeader className="flex justify-center items-center">
+                  {step.title}
+                </HeavySubHeader>
+                <p className="text-base">{step.description}</p>
+              </div>
             </div>
           ))}
         </div>
