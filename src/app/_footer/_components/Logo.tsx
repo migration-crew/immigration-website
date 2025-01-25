@@ -1,14 +1,18 @@
-import logoWhite from '@/public/logoWhite.png'
-import Image from 'next/image';
+import logoWhite from "@/public/logoWhite.png";
+import Image from "next/image";
 
 export default function Logo() {
-    return (
-        <Image
-            src={logoWhite}
-            alt="logo image"
-            quality={100}
-            priority
-            className="w-36 lg:w-56 lg:h-32"
-        />
-    );
+  return (
+    <div className="flex-shrink-0 mb-6 md:mb-0 ">
+      <Image
+        src={logoWhite}
+        alt="logo image"
+        quality={100}
+        width={200}
+        height={100}
+        priority
+        //   className="w-36 lg:w-56 lg:h-32"
+      />
+    </div>
+  );
 }
