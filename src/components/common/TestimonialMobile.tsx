@@ -79,7 +79,7 @@ export default function TestimonialMobile({ testimonials, className }: Props) {
                   <div className="flex gap-3">
                     <div className="relative flex-1 h-[260px] rounded-l-lg">
                       <Image
-                        src={testimonial.image}
+                        src={testimonial.imageMobile}
                         alt={`${testimonial.name}'s testimonial`}
                         layout="fill"
                         objectFit="cover"
