@@ -35,7 +35,7 @@ export default function QuizResult({ onClose }: Props) {
         <ResponsiveImage
           alt="expressEntry"
           src={expressEntry}
-          divClassName="h-[220px] w-full max-w-[400px]lg:w-full md:w-full sm:w-full"
+          divClassName="h-[220px] w-full"
         />
       </div>
       <DialogFooter className="sm:justify-start">

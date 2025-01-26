@@ -20,5 +20,5 @@ export const CtaButton = ({
   className?: string | undefined;
   children: React.ReactNode;
 }) => {
-  return <p className={cn("text-cta-buttons-mobile xl:text-cta-buttons", className)}>{children}</p>;
+  return <p className={cn(" text-cta-buttons", className)}>{children}</p>;
 };
