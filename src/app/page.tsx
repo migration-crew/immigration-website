@@ -24,8 +24,8 @@ export default function Home() {
       <ApplicationStepMobile
         title={t("stepsHeading")}
         steps={Steps()}
-        circleSpacing={50}
-        height="h-[70px]"
+        circleSpacing={70}
+        height="h-[90px]"
       />
       <Testimonial
         testimonials={testimonialData}

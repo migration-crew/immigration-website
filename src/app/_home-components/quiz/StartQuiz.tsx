@@ -40,7 +40,7 @@ export const StartQuiz = () => {
             divClassName="h-[300px] w-[350px] xl:h-[400px] xl:w-[500px]"
           ></ResponsiveImage>
         </CardHeader>
-        <CardFooter className="bg-primary-red flex-1 rounded-b-xl p-4 xl:p-6 flex justify-between xl:justify-center text-primary-white">
+        <CardFooter className="bg-primary-red flex-1 rounded-b-xl p-2 xl:p-6 flex justify-between xl:justify-center text-primary-white">
           <button onClick={handleOpenDialog}>
             <Title className="cursor-pointer">{t("startQuizButton")}</Title>
           </button>
