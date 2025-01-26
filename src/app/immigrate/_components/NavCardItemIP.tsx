@@ -73,14 +73,11 @@ export const NavCardItemIP = forwardRef<HTMLDivElement, Props>(
             className="w-full h-full rounded-[10px] opacity-0"
           />
         </div>
-        {buttonLink &&
-          (isExpanded === true ? (
-            <Link href={buttonLink}>
-              <Button>Read more</Button>
-            </Link>
-          ) : (
-            ""
-          ))}
+        {buttonLink && isExpanded && (
+          <Button asChild>
+            <Link href={buttonLink}>Read more</Link>
+          </Button>
+        )}
       </Card>
     );
   }
