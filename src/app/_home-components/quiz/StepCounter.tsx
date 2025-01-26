@@ -28,7 +28,7 @@ export default function StepCounter({ currentStep, totalSteps }: Props) {
               {index + 1}
             </div>
             {index < totalSteps - 1 && (
-              <div className="flex-1 h-0.5 w-[77px] sm:w-[103px] bg-disabled-black m-0"></div>
+              <div className="flex-1 h-0.5 w-[77px] xl:w-[103px] bg-disabled-black m-0"></div>
             )}
           </div>
         ))}
