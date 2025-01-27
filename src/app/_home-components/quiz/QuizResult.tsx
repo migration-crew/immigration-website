@@ -29,7 +29,7 @@ export default function QuizResult({ onClose }: Props) {
         </DialogTitle>
       </DialogHeader>
       <div className="space-y-3">
-        <SubHeading className="">{t("pathwayOption")}</SubHeading>
+        <SubHeading>{t("pathwayOption")}</SubHeading>
         <Heading>{t("expressEntry")}</Heading>
         <HeavyBody>{t("pathwayDescription")}</HeavyBody>
         <ResponsiveImage
