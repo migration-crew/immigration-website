@@ -21,7 +21,7 @@ export const CtaButton = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p className={cn("text-cta-buttons-mobile xl:text-cta-buttons", className)}>
+    <p className={cn("text-cta-buttons-mobile sm:text-cta-buttons", className)}>
       {children}
     </p>
   );
