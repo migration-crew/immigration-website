@@ -22,7 +22,7 @@ export default function AnswerButtons({ answers }: Props) {
         <Button
           variant={selectedIndex === index ? "default" : "outline"}
           key={index}
-          className="xl:w-40 mt-2 w-40"
+          className="mt-2 w-32"
           onClick={() => handleClick(index)}
         >
           {t(answer)}
