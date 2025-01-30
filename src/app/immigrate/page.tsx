@@ -33,8 +33,8 @@ export default function ImmigratePage() {
       <ApplicationStepMobile
         steps={Steps()}
         title={t("stepsHeading")}
-        circleSpacing={54}
-        height="h-[75px]"
+        circleSpacing={65}
+        height="h-[85px]"
       />
 
       <Testimonial testimonials={testimonialData} />

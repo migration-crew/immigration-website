@@ -77,9 +77,9 @@ export default function TestimonialMobile({ testimonials, className }: Props) {
               <CarouselItem key={index}>
                 <Card className="border-none shadow-testimonials-card rounded-[20px] overflow-hidden">
                   <div className="flex gap-3">
-                    <div className="relative flex-1 h-[260px] rounded-l-lg">
+                    <div className="relative w-[50%] rounded-l-lg">
                       <Image
-                        src={testimonial.image}
+                        src={testimonial.imageMobile}
                         alt={`${testimonial.name}'s testimonial`}
                         layout="fill"
                         objectFit="cover"
