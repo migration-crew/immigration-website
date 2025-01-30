@@ -29,13 +29,13 @@ export default function QuizResult({ onClose }: Props) {
         </DialogTitle>
       </DialogHeader>
       <div className="space-y-3">
-        <SubHeading className="">{t("pathwayOption")}</SubHeading>
+        <SubHeading>{t("pathwayOption")}</SubHeading>
         <Heading>{t("expressEntry")}</Heading>
         <HeavyBody>{t("pathwayDescription")}</HeavyBody>
         <ResponsiveImage
           alt="expressEntry"
           src={expressEntry}
-          divClassName="h-[220px] w-full max-w-[400px]lg:w-full md:w-full sm:w-full"
+          divClassName="h-[220px] w-full"
         />
       </div>
       <DialogFooter className="sm:justify-start">
