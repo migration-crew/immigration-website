@@ -4,17 +4,19 @@ import { Paragraph } from "@/components/common/text/Paragraph";
 import { SubHeading } from "@/components/common/text/SubHeading";
 import { PNPFAQs } from "@/data/FAQData";
 import PNPrograms from "@/public/Provincial-Nominee-Programs.jpg";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export const PNProgramsComponent = () => {
+  const t = useTranslations("ProvincesAndTerritories");
   return (
     <>
       <SectionContainer>
-        <Heading>Provincial Nominee Programs</Heading>
+        <Heading>{t("headingPNP")}</Heading>
         <div className="py-8">
           <Image
             src={PNPrograms}
-            alt="Provincial Nominee Programs"
+            alt={t("headingPNP")}
             width={1200}
             height={400}
           />
@@ -22,7 +24,7 @@ export const PNProgramsComponent = () => {
       </SectionContainer>
 
       <SectionContainer>
-        {PNPFAQs.map((pnpfaq) => (
+        {PNPFAQs().map((pnpfaq) => (
           <div key={pnpfaq.question}>
             <SubHeading>{pnpfaq.question}</SubHeading>
             <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
@@ -32,98 +34,51 @@ export const PNProgramsComponent = () => {
       </SectionContainer>
 
       <SectionContainer className="py-16">
-        <Heading>Cost and Processing Time</Heading>
+        <Heading>{t("heading1")}</Heading>
 
-        <SubHeading className="pt-8">
-          How Much Does it Cost to Immigrate through a PNP?
-        </SubHeading>
+        <SubHeading className="pt-8">{t("subheading1")}</SubHeading>
         <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
-        <Paragraph className="text-justify">
-          Costs vary by province and include application fees for both the
-          provincial nomination and the federal permanent residence application.
-          Fees can range from a few hundred to over a thousand dollars.
-        </Paragraph>
+        <Paragraph className="text-justify">{t("paragraph1")}</Paragraph>
 
-        <SubHeading className="pt-8">
-          What is the Processing Time for a PNP Application?
-        </SubHeading>
+        <SubHeading className="pt-8">{t("subheading1a")}</SubHeading>
         <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
-        <Paragraph className="text-justify">
-          Processing times vary by province and stream but generally range from
-          a few months to over a year.
-        </Paragraph>
+        <Paragraph className="text-justify">{t("paragraph1a")}</Paragraph>
       </SectionContainer>
 
       <SectionContainer className="pb-16">
-        <Heading>Increasing Your Chances of Receiving a Nomination</Heading>
+        <Heading>{t("heading2")}</Heading>
 
-        <SubHeading className="pt-8">
-          What is the Ideal PNP Candidate?
-        </SubHeading>
+        <SubHeading className="pt-8">{t("subheading2")}</SubHeading>
         <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
-        <Paragraph className="text-justify">
-          The ideal candidate varies by province but generally includes
-          individuals with high education, relevant work experience, strong
-          language skills, and ties to the province.
-        </Paragraph>
+        <Paragraph className="text-justify">{t("paragraph2")}</Paragraph>
 
-        <SubHeading className="pt-8">
-          Do I Need an ECA Report for PNPs?
-        </SubHeading>
+        <SubHeading className="pt-8">{t("subheading2a")}</SubHeading>
         <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
-        <Paragraph className="text-justify">
-          Most PNPs require an Educational Credential Assessment (ECA) to verify
-          that your foreign education is equivalent to a Canadian credential.
-        </Paragraph>
+        <Paragraph className="text-justify">{t("paragraph2a")}</Paragraph>
 
-        <SubHeading className="pt-8">
-          How Can I Increase My Chances of Receiving a Nomination?
-        </SubHeading>
+        <SubHeading className="pt-8">{t("subheading2b")}</SubHeading>
         <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
-        <Paragraph className="text-justify">
-          How Can I Increase My Chances of Receiving a Nomination?
-        </Paragraph>
+        <Paragraph className="text-justify">{t("paragraph2b")}</Paragraph>
       </SectionContainer>
 
       <SectionContainer className="mb-10">
-        <Heading>Special PNP Categories</Heading>
+        <Heading>{t("heading3")}</Heading>
 
-        <SubHeading className="pt-8">
-          Canadian PNPs for Healthcare Professionals
-        </SubHeading>
+        <SubHeading className="pt-8">{t("subheading3")}</SubHeading>
         <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
-        <Paragraph className="text-justify">
-          Several provinces have streams dedicated to attracting healthcare
-          professionals to address labor shortages in the healthcare sector.
-        </Paragraph>
+        <Paragraph className="text-justify">{t("paragraph3")}</Paragraph>
 
-        <SubHeading className="pt-8">
-          Canadian PNPs for International Students
-        </SubHeading>
+        <SubHeading className="pt-8">{t("subheading3a")}</SubHeading>
         <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
-        <Paragraph className="text-justify">
-          Many provinces have streams that facilitate the transition from
-          international student to permanent resident, focusing on graduates
-          from designated learning institutions.
-        </Paragraph>
+        <Paragraph className="text-justify">{t("paragraph3a")}</Paragraph>
 
-        <SubHeading className="pt-8">
-          Canadian PNPs for IT Professionals
-        </SubHeading>
+        <SubHeading className="pt-8">{t("subheading3b")}</SubHeading>
         <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
-        <Paragraph className="text-justify">
-          Provinces with strong tech industries, such as Ontario and British
-          Columbia, have streams specifically for IT professionals.
-        </Paragraph>
+        <Paragraph className="text-justify">{t("paragraph3b")}</Paragraph>
 
-        <SubHeading className="pt-8">
-          Canadian PNPs for Entrepreneurs
-        </SubHeading>
+        <SubHeading className="pt-8">{t("subheading3c")}</SubHeading>
         <div className="bg-primary-red w-[50px] h-[2.5px] mt-3 mb-4"></div>
-        <Paragraph className="text-justify">
-          Entrepreneurial streams are available in several provinces, targeting
-          individuals who can start or invest in businesses in the province.
-        </Paragraph>
+        <Paragraph className="text-justify">{t("paragraph3c")}</Paragraph>
       </SectionContainer>
     </>
   );

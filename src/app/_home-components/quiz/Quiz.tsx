@@ -3,12 +3,13 @@ import {
     DialogFooter,
     DialogHeader,
     DialogTitle,
+
 } from "@/components/ui/QuizDialog";
-import { Cross2Icon } from "@radix-ui/react-icons";
-import StepCounter from "./StepCounter";
-import AnswerButtons from "./AnswerButtons";
-import QuizPagination from "./QuizPagination";
 import { CtaButton } from "@/components/common/text/CtaButton";
+import { Cross2Icon } from '@radix-ui/react-icons';
+import AnswerButtons from './AnswerButtons';
+import QuizPagination from './QuizPagination';
+import StepCounter from './StepCounter';
 
 type Props = {
     quiz: QuizType[];
@@ -20,7 +21,6 @@ type Props = {
 }
 
 export default function Quiz({ quiz, currentStep, onClose, onNext, onBack, onGoLast }: Props) {
-
     return (
         <>
             <DialogHeader>

@@ -3,10 +3,12 @@
 import { NavCardListIP } from "@/app/immigrate/_components/NavCardListIP";
 import { SectionContainer } from "@/components/common/SectionContainer";
 import { Heading } from "@/components/common/text/Heading";
+import { useTranslations } from "next-intl";
 import { useRef } from "react";
 import { DiscoverOptionsListIP } from "./DiscoverOptionsListIP";
 
 export const DiscorverOptionsIP = () => {
+  const t = useTranslations("ImmigrationPrograms");
   const workPermitRef = useRef<HTMLDivElement>(null);
   const openWorkPermitRef = useRef<HTMLDivElement>(null);
   const pgwpRef = useRef<HTMLDivElement>(null);
@@ -29,9 +31,7 @@ export const DiscorverOptionsIP = () => {
 
   return (
     <SectionContainer className="flex flex-col gap-4">
-      <Heading className="text-2xl font-bold">
-        Discover all your options
-      </Heading>
+      <Heading className="text-2xl font-bold">{t("heading")}</Heading>
       <DiscoverOptionsListIP scrollToRef={scrollToRef} refs={refs} />
       <NavCardListIP refs={refs} />
     </SectionContainer>
