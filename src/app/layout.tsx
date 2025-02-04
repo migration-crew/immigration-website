@@ -27,7 +27,7 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider messages={messages}>
           <Header />
-          <main className="flex-grow">{children}</main>
+          <main className="mt-[72px] flex-grow">{children}</main>
           <Footer />
         </NextIntlClientProvider>
         <Toaster />
