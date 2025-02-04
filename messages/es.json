@@ -45,7 +45,13 @@
     "email": "Correo electrónico",
     "message": "Mensaje",
     "send": "Enviar",
-    "submitMessage": "Gracias por contactarnos. Nos pondremos en contacto contigo lo antes posible."
+    "sending": "Enviando...",
+    "submitMessage": "Gracias por contactarnos. Nos pondremos en contacto contigo lo antes posible.",
+    "errorMessage": "Lo siento, algo salió mal. Por favor, inténtelo de nuevo.",
+    "firstNameAlert": "El nombre es obligatorio",
+    "lastNameAlert": "El apellido es obligatorio",
+    "emailAlert": "Dirección de correo electrónico no válida",
+    "messageAlert": "El mensaje debe tener al menos 10 caracteres"
   },
   "Home": {
     "title": "Comienza tu viaje a Canadá con nosotros",
