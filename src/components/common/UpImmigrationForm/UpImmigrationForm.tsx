@@ -4,6 +4,7 @@ import { Form } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Heading } from "../../common/text/Heading";
@@ -14,8 +15,8 @@ import { MessageField } from "./_components/MessageField";
 import { SendButton } from "./_components/SendButton";
 
 const formSchema = z.object({
-  firstname: z.string().trim(),
-  lastname: z.string().trim(),
+  firstName: z.string().trim(),
+  lastName: z.string().trim(),
   email: z.string().trim(),
   message: z.string().trim(),
 });
@@ -36,25 +37,51 @@ export function UpImmigrationForm({
   const { toast } = useToast();
   const t = useTranslations("Form");
 
+  const [status, setStatus] = useState<
+    "idle" | "sending" | "success" | "error"
+  >("idle");
+
   // 1. Here I define a form using react-hook-form.
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      firstname: "",
-      lastname: "",
+      firstName: "",
+      lastName: "",
       email: "",
       message: "",
     },
   });
 
   // 2. Here I define a submit handler.
-  function onSubmit(values: FormValues) {
-    onSubmitCallback();
-    console.log(values);
-    toast({
-      description: t("submitMessage"),
-    });
-    form.reset();
+  async function onSubmit(values: FormValues) {
+    setStatus("sending");
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      onSubmitCallback();
+      toast({
+        description: t("submitMessage"),
+      });
+      setStatus("success");
+      form.reset();
+    } catch (error) {
+      console.error("Error sending form:", error);
+      setStatus("error");
+      toast({
+        variant: "destructive",
+        description: t("errorMessage"),
+      });
+    }
   }
 
   return (
@@ -71,7 +98,7 @@ export function UpImmigrationForm({
           <LastNameField control={form.control} />
           <EmailField control={form.control} />
           <MessageField control={form.control} />
-          <SendButton />
+          <SendButton status={status} />
         </form>
       </Form>
     </div>

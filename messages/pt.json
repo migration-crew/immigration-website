@@ -45,7 +45,13 @@
     "email": "E-mail",
     "message": "Mensagem",
     "send": "Enviar",
-    "submitMessage": "Obrigado pela sua mensagem! Entraremos em contato em breve."
+    "sending": "Enviando...",
+    "submitMessage": "Obrigado pela sua mensagem! Entraremos em contato em breve.",
+    "errorMessage": "Desculpe, algo deu errado. Por favor, tente novamente.",
+    "firstNameAlert": "O nome é obrigatório",
+    "lastNameAlert": "O sobrenome é obrigatório",
+    "emailAlert": "Endereço de e-mail inválido",
+    "messageAlert": "A mensagem deve ter pelo menos 10 caracteres"
   },
   "Home": {
     "title": "Comece sua Jornada para o Canadá conosco",
