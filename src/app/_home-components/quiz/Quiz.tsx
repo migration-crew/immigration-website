@@ -21,6 +21,8 @@ type Props = {
 }
 
 export default function Quiz({ quiz, currentStep, onClose, onNext, onBack, onGoLast }: Props) {
+    console.log(quiz);
+    
     return (
         <>
             <DialogHeader>
@@ -34,7 +36,7 @@ export default function Quiz({ quiz, currentStep, onClose, onNext, onBack, onGoL
                     />
                 </DialogTitle>
             </DialogHeader>
-            <CtaButton className="mt-5">
+            <CtaButton className="mt-5 text-center">
                 {quiz[currentStep - 1]?.question}
             </CtaButton>
             <AnswerButtons answers={quiz[currentStep - 1]?.answers || []} />

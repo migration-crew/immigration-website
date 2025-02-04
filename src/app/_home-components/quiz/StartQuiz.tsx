@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import QuizDialog from "./QuizDialog";
-import { quizData } from "./quizData";
+import { QuizData } from "./quizData";
 
 export const StartQuiz = () => {
   const t = useTranslations("Home");
@@ -53,7 +53,7 @@ export const StartQuiz = () => {
         </CardFooter>
       </Card>
       <QuizDialog
-        quiz={quizData()}
+        quiz={QuizData()}
         isOpen={isDialogOpen}
         onClose={handleCloseDialog}
       />
