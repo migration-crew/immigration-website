@@ -1,17 +1,19 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import logo from '../../../public/logo.png'
+import Image from "next/image";
+import Link from "next/link";
+import logo from "../../../public/logo.png";
 
 export default function LogoButton() {
-    return (
-        <Link href="/">
-            <Image
-                src={logo}
-                alt="logo image"
-                quality={100}
-                priority
-                className="w-32 lg:w-48"
-            />
-        </Link>
-    )
+  return (
+    <Link href="/">
+      <Image
+        src={logo}
+        alt="logo image"
+        quality={100}
+        width={200}
+        height={100}
+        priority
+        className="w-32 lg:w-32"
+      />
+    </Link>
+  );
 }

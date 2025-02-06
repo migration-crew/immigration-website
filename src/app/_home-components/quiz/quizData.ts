@@ -1,24 +1,39 @@
+import { useTranslations } from "next-intl";
 import { QuizType } from "./QuizDialog";
 
-export const quizData: QuizType[] = [
+//function name should be uppercase
+export const QuizData = (): QuizType[] => {
+  const t = useTranslations("Home");
+  return [
     {
-        id: 1,
-        question: "What would you like to do in Canada?",
-        answers: ["Visit", "Study", "Work", "Move There"]
+      id: 1,
+      question: t("question1"),
+      answers: [
+        t("question1Answer1"),
+        t("question1Answer2"),
+        t("question1Answer3"),
+        t("question1Answer4"),
+      ],
     },
     {
-        id: 2,
-        question: "What's your overall ability in English?",
-        answers: ["No ability", "Basic", "Moderate", "Advanced"]
+      id: 2,
+      question: t("question2"),
+      answers: [
+        t("question2Answer1"),
+        t("question2Answer2"),
+        t("question2Answer3"),
+        t("question2Answer4"),
+      ],
     },
     {
-        id: 3,
-        question: "Do you have a family member who is a Canadian citizen or permanent resident?",
-        answers: ["Yes", "No"]
+      id: 3,
+      question: t("question3"),
+      answers: [t("question3Answer1"), t("question3Answer2")],
     },
     {
-        id: 4,
-        question: "Do you have at least 1 year or full-time skilled work experience?",
-        answers: ["Yes, I do.", "No, I don't."]
-    }
-]
+      id: 4,
+      question: t("question4"),
+      answers: [t("question4Answer1"), t("question4Answer2")],
+    },
+  ];
+};

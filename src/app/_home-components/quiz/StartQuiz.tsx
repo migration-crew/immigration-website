@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import QuizDialog from "./QuizDialog";
-import { quizData } from "./quizData";
+import { QuizData } from "./quizData";
 
 export const StartQuiz = () => {
   const t = useTranslations("Home");
@@ -40,7 +40,7 @@ export const StartQuiz = () => {
             divClassName="h-[300px] w-[350px] xl:h-[400px] xl:w-[500px]"
           ></ResponsiveImage>
         </CardHeader>
-        <CardFooter className="bg-primary-red flex-1 rounded-b-xl p-4 xl:p-6 flex justify-between xl:justify-center text-primary-white">
+        <CardFooter className="bg-primary-red flex-1 rounded-b-xl p-2 xl:p-6 flex justify-between xl:justify-center text-primary-white">
           <button onClick={handleOpenDialog}>
             <Title className="cursor-pointer">{t("startQuizButton")}</Title>
           </button>
@@ -53,7 +53,7 @@ export const StartQuiz = () => {
         </CardFooter>
       </Card>
       <QuizDialog
-        quiz={quizData}
+        quiz={QuizData()}
         isOpen={isDialogOpen}
         onClose={handleCloseDialog}
       />

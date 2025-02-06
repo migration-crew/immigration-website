@@ -1,24 +1,25 @@
 import { SectionContainer } from "@/components/common/SectionContainer";
 import { Heading } from "@/components/common/text/Heading";
 import { Paragraph } from "@/components/common/text/Paragraph";
+import { useTranslations } from "next-intl";
 
 export const OurStory = () => {
+  const t = useTranslations("AboutUs");
+
   return (
     <SectionContainer className="py-10 xl:py-[100px]">
-      <Heading>Our story</Heading>
-      <Paragraph className="pt-4 pb-3 xl:pb-5">
-        Up Immigration was born out of the desire to simplify immigration
-        processes. Our story is shaped by the aspirations of those we&apos;ve
-        helped. Let us be part of your Canadian journey.
-      </Paragraph>
-      <video
-        controls
-        preload="none"
-        className="rounded-xl w-[398px] h-[225px] xl:w-[1080px] xl:h-[610px]"
-        poster="/ourStory.png"
-      >
-        <source src="/OurStory.mp4" type="video/mp4" />
-      </video>
+      <Heading>{t("section4Title")}</Heading>
+      <Paragraph className="pt-4 pb-3 xl:pb-5">{t("section4P1")}</Paragraph>
+      <div className="rounded-xl w-full h-[225px] xl:w-[1080px] xl:h-[610px] overflow-hidden">
+        <video
+          controls
+          preload="none"
+          poster="/ourStory.png"
+          className="rounded-xl w-full h-full object-cover"
+        >
+          <source src="/OurStory.mp4" type="video/mp4" />
+        </video>
+      </div>
     </SectionContainer>
   );
 };

@@ -5,9 +5,9 @@ import {
   FormLabel,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { useTranslations } from "next-intl";
 import { Control } from "react-hook-form";
 import { FormValues } from "../UpImmigrationForm";
-import { useTranslations } from "next-intl";
 
 interface Props {
   control: Control<FormValues>;
@@ -19,7 +19,7 @@ export function LastNameField({ control }: Props) {
   return (
     <FormField
       control={control}
-      name="lastname"
+      name="lastName"
       render={({ field }) => (
         <FormItem>
           <FormLabel>{t("lastName")}</FormLabel>
