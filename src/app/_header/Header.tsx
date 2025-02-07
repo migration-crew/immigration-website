@@ -1,10 +1,10 @@
+import LanguageSwitcher from "@/components/common/LocaleSwitcher";
+import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import { BookFreeConsultation } from "../../components/common/BookFreeConsultation";
+import HamburgerMenu from "./_components/HamburgerMenu";
 import LogoButton from "./_components/LogoButton";
 import NavigationMenuForDesktop from "./_components/NavigationMenuForDesktop";
-import HamburgerMenu from "./_components/HamburgerMenu";
-import { cn } from "@/lib/utils";
-import LanguageSwitcher from "@/components/common/LocaleSwitcher";
 
 export type HeaderComponent = {
   title: string;
@@ -29,7 +29,7 @@ export default function Header() {
       href: `${urlPrefix}/humanitarian`,
     },
     { title: t("atlanticImmigrationProgram"), href: `${urlPrefix}/atlantic` },
-    { title: t("northenImmigrationProgram"), href: `${urlPrefix}/rnip` },
+    { title: t("northernImmigrationProgram"), href: `${urlPrefix}/rnip` },
   ];
 
   const workComponents: HeaderComponent[] = [
