@@ -1,7 +1,7 @@
 import { ApplicationStepDesktop } from "@/components/common/ApplicationStepDesktop";
 import { ApplicationStepMobile } from "@/components/common/ApplicationStepMobile";
 import { HeaderPicture } from "@/components/common/HeaderPicture";
-import RNIP from "@/public/RNIP.jpg";
+import rnip from "@/public/rnip.jpg";
 import { useTranslations } from "next-intl";
 import { EEPrograms } from "../_components/EEPrograms";
 import { IntoductionRNIP } from "../_components/IntoductionRNIP";
@@ -12,7 +12,7 @@ export default function NorthernImmigrationRNIP() {
   const t2 = useTranslations("IntroductionRNIP");
   return (
     <>
-      <HeaderPicture alt={t2("title")} src={RNIP} title={t2("title")} />
+      <HeaderPicture alt={t2("title")} src={rnip} title={t2("title")} />
 
       <IntoductionRNIP />
 
