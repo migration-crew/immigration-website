@@ -3,7 +3,7 @@ import { Heading } from "@/components/common/text/Heading";
 import { Paragraph } from "@/components/common/text/Paragraph";
 import { SubHeading } from "@/components/common/text/SubHeading";
 import howEEworks from "@/public/howEEworks.jpg";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useTranslations } from "next-intl";
 
 export const IntroductionHumanitarian = () => {

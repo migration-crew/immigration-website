@@ -4,7 +4,7 @@ import { Paragraph } from "@/components/common/text/Paragraph";
 import { SubHeading } from "@/components/common/text/SubHeading";
 import howEEworks from "@/public/howEEworks.jpg";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export const IntoductionRNIP = () => {
   const t = useTranslations("IntroductionRNIP");

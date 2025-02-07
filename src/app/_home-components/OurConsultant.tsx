@@ -5,7 +5,7 @@ import { SubHeading } from "@/components/common/text/SubHeading";
 import CICCLogo from "@/public/CICCLogo.png";
 import Larissa from "@/public/Larissa.png";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export const OurConsultant = () => {
   const t = useTranslations("Home");

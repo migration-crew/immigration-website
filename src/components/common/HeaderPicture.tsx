@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/legacy/image";
 import { Title } from "./text/Title";
 
 type Props = {

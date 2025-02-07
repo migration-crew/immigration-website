@@ -5,7 +5,7 @@ import { Paragraph } from "@/components/common/text/Paragraph";
 import { SubHeading } from "@/components/common/text/SubHeading";
 import EEProgramsImage from "@/public/EEPrograms.jpg";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export const EEPrograms = () => {
   const t = useTranslations("EEPrograms");

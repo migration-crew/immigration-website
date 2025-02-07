@@ -4,7 +4,7 @@ import { setUserLocale } from "@/services/locale";
 import { useLocale, useTranslations } from 'next-intl';
 import { useTransition } from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/LanguageSelect";
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import unitedStates from "@/public/unitedStates.png"
 import spain from "@/public/spain.png"
 import brazil from "@/public/brazil.png"
@@ -26,24 +26,6 @@ export default function LanguageSwitcher({ className }: Props) {
     };
 
     return (
-        <>
-            <select
-                value={locale}
-                onChange={(e) => handleLanguageChange(e.target.value)}
-                className={`w-[90px] p-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:border-transparent transition-colors ${className}`}
-            >
-                <option value="en" className="flex items-center">
-                    EN
-                </option>
-                <option value="es" className="flex items-center">
-                    ES
-                </option>
-                <option value="pt" className="flex items-center">
-                    PT-BR
-                </option>
-            </select>
-        </>
-
         // FIXME: I couldn't use the Select component from Shadcn because the weired margin will appear on the right side of the container
         // <Select value={locale} onValueChange={handleLanguageChange}>
         //     <SelectTrigger className="w-[70px]">
@@ -61,5 +43,22 @@ export default function LanguageSwitcher({ className }: Props) {
         //         </SelectItem>
         //     </SelectContent>
         // </Select>
+        (<>
+            <select
+                value={locale}
+                onChange={(e) => handleLanguageChange(e.target.value)}
+                className={`w-[90px] p-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:border-transparent transition-colors ${className}`}
+            >
+                <option value="en" className="flex items-center">
+                    EN
+                </option>
+                <option value="es" className="flex items-center">
+                    ES
+                </option>
+                <option value="pt" className="flex items-center">
+                    PT-BR
+                </option>
+            </select>
+        </>)
     );
 };

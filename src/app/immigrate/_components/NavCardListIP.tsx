@@ -8,7 +8,7 @@ import RNIP from "@/public/rnip.jpg";
 import selfEmployed from "@/public/selfEmployed.jpg";
 import startUp from "@/public/startUp.png";
 import { useTranslations } from "next-intl";
-import { StaticImageData } from "next/image";
+import { StaticImageData } from "next/legacy/image";
 import { forwardRef } from "react";
 import { NavCardItemIP } from "./NavCardItemIP";
 

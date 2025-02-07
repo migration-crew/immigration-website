@@ -5,7 +5,7 @@ import { SubHeading } from "@/components/common/text/SubHeading";
 import { PNPFAQs } from "@/data/FAQData";
 import PNPrograms from "@/public/Provincial-Nominee-Programs.jpg";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export const PNProgramsComponent = () => {
   const t = useTranslations("ProvincesAndTerritories");

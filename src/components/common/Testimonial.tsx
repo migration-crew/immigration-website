@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import googleReview from "@/public/googleReview.png";
 import { TestimonialsType } from "@/types/TestimonialsType";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { Card } from "../ui/card";
 import { Caption } from "./text/Caption";

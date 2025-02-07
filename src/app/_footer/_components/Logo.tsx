@@ -1,5 +1,5 @@
 import logoWhite from '@/public/logoWhite.png'
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 export default function Logo() {
   return (

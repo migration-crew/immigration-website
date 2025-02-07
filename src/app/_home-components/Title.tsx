@@ -2,7 +2,7 @@ import { BookFreeConsultation } from "@/components/common/BookFreeConsultation";
 import { Hero } from "@/components/common/text/Hero";
 import home from "@/public/home.jpeg";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export const Title = () => {
   const t = useTranslations("Home");

@@ -3,7 +3,7 @@ import { Heading } from "@/components/common/text/Heading";
 import CAPIC from "@/public/CAPICLogo.png";
 import RCIC from "@/public/RCICLogo.png";
 import { Award, BriefcaseBusiness, Heart, User } from "lucide-react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Strength } from "./Strength";
 import { useTranslations } from 'next-intl';
 

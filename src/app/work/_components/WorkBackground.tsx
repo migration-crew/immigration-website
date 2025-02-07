@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import workImage from "../../../public/work.jpeg";
 
 export function WorkBackground() {

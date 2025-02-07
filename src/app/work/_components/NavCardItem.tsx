@@ -3,7 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/UpImmigrationButton";
 import CloseIcon from "@/public/close-icon.svg";
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/legacy/image";
 import Link from "next/link";
 import { ForwardedRef, forwardRef, useState } from "react";
 

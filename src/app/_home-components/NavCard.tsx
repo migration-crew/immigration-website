@@ -1,5 +1,5 @@
 import { Card, CardFooter, CardHeader } from "@/components/ui/card";
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/legacy/image";
 import Link from "next/link";
 
 
