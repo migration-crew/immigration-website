@@ -87,7 +87,7 @@ export const Testimonial = ({ testimonials, className }: Props) => {
             src={googleReview}
             alt="Google Reviews"
             width={150}
-            height={50}
+            height={100}
           />
           <Paragraph className="text-gray-600 py-4">
             {t("googleReviews")}

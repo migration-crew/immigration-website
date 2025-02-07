@@ -64,7 +64,7 @@ export default function TestimonialMobile({ testimonials, className }: Props) {
           src={googleReview}
           alt="Google Reviews"
           width={150}
-          height={50}
+          height={100}
         />
         <h1 className="text-5xl flex items-center text-secondary-blue font-bold">
           5.0
