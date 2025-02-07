@@ -3,8 +3,8 @@ import { Heading } from "@/components/common/text/Heading";
 import { Paragraph } from "@/components/common/text/Paragraph";
 import { SubHeading } from "@/components/common/text/SubHeading";
 import howEEworks from "@/public/howEEworks.jpg";
-import Image from "next/legacy/image";
 import { useTranslations } from "next-intl";
+import Image from "next/legacy/image";
 
 export const IntroductionHumanitarian = () => {
   const t = useTranslations("IntroductionHumanitarian");
@@ -27,9 +27,11 @@ export const IntroductionHumanitarian = () => {
 
         <SectionContainer className="pb-10">
           <Image
-            className="w-full rounded-xl"
+            className="rounded-xl"
             src={howEEworks}
             alt={t("imageAlt")}
+            width={1200}
+            height={800}
           />
         </SectionContainer>
 
