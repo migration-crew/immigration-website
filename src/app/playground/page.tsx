@@ -91,11 +91,11 @@ export default function AboutPage() {
       </SectionContainer>
       <ApplicationStepMobile
         title="Where to start?"
-        steps={Steps}
+        steps={Steps()}
         height="h-[60px]"
       />
       <ApplicationStepMobile
-        steps={EPSteps}
+        steps={EPSteps()}
         title="What is the process?"
         circleSpacing={120}
         height="h-[140px]"

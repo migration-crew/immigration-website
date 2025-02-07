@@ -19,7 +19,7 @@ export const CardsPrograms = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-6">Discover all your options</h2>
         <div className="grid grid-cols-3 gap-6 mb-8">
-          {ImmigrationPrograms.map((program) => (
+          {ImmigrationPrograms().map((program) => (
             <a
               href={`#${program.title}`}
               key={program.title}
@@ -30,7 +30,7 @@ export const CardsPrograms = () => {
           ))}
         </div>
         <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-6">
-          {ImmigrationPrograms.map((program) => (
+          {ImmigrationPrograms().map((program) => (
             <div
               id={program.title}
               key={program.title}
