@@ -18,7 +18,7 @@ export const PNProgramsComponent = () => {
             src={PNPrograms}
             alt={t("headingPNP")}
             width={1200}
-            height={400}
+            height={700}
           />
         </div>
       </SectionContainer>

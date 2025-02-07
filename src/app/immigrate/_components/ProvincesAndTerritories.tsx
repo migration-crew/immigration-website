@@ -15,7 +15,12 @@ export const ProvincesAndTerritories = () => {
       <SectionContainer className="mb-6 py-16">
         <SectionContainer>
           <Heading>{t("heading")}</Heading>
-          <Image src={Provinces} alt={t("heading")} width={1200} height={400} />
+          <Image
+            src={Provinces}
+            alt={t("heading")}
+            width={1200}
+            height={1000}
+          />
         </SectionContainer>
 
         <SectionContainer>
