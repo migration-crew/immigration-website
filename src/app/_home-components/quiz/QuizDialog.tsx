@@ -1,8 +1,5 @@
 "use client";
-import {
-  Dialog,
-  DialogContent,
-} from "@/components/ui/QuizDialog";
+import { Dialog, DialogContent } from "@/components/ui/QuizDialog";
 import { useState } from "react";
 import Quiz from "./Quiz";
 import QuizResult from "./QuizResult";
