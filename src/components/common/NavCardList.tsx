@@ -81,17 +81,19 @@ export const NavCardList = forwardRef<HTMLDivElement, Props>(
         ref={ref}
       >
         {navCardItems.map((item, index) => (
-          <NavCardItem
-            key={item.id}
-            ref={refs[item.ref as keyof typeof refs]}
-            id={item.id}
-            title={t(item.title)}
-            alt={item.alt}
-            description={t(item.description)}
-            image={item.image}
-            isLast={index === navCardItems.length - 1}
-            buttonLink={item.buttonLink}
-          />
+          <div key={item.id}>
+            <NavCardItem
+              key={item.id}
+              ref={refs[item.ref as keyof typeof refs]}
+              id={item.id}
+              title={t(item.title)}
+              alt={item.alt}
+              description={t(item.description)}
+              image={item.image}
+              isLast={index === navCardItems.length - 1}
+              buttonLink={item.buttonLink}
+            />
+          </div>
         ))}
       </div>
     );
