@@ -31,21 +31,24 @@ export const NavCardItemIP = forwardRef<HTMLDivElement, Props>(
     return (
       <Card
         id={id}
-        className={`flex flex-col p-6 rounded-[20px] gap-4 self-stretch shadow-[0px_-8px_10px_-1px_rgba(0,0,0,0.10)] ${
+        className={`flex flex-col p-6 min-h-[376px] rounded-[20px] gap-4 self-stretch shadow-[0px_-8px_10px_-1px_rgba(0,0,0,0.10)] ${
           isLast ? "xl:mb-0" : isExpanded ? "" : "mb-[-51px]"
         } xl:w-[343px]  xl:mb-0`}
         ref={ref}
       >
         <div className="flex flex-col gap-2">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-start">
             <CardHeader className="p-0">
-              <CardTitle className="text-xl font-bold">{title}</CardTitle>
+              <CardTitle className="text-xl font-bold min-h-[56px]">
+                {title}
+              </CardTitle>
             </CardHeader>
+
             <Image
               src={CloseIcon}
               alt="Close icon"
               onClick={toggleExpand}
-              className={`cursor-pointer transform transition-transform duration-300 ease-in-out ${
+              className={`pt-1 cursor-pointer transform transition-transform duration-300 ease-in-out ${
                 isExpanded ? "rotate-180" : ""
               }`}
             />

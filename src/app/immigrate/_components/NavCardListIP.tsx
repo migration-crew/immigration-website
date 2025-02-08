@@ -127,17 +127,19 @@ export const NavCardListIP = forwardRef<HTMLDivElement, Props>(
         ref={ref}
       >
         {NavCardItems().map((item, index) => (
-          <NavCardItemIP
-            key={item.id}
-            ref={refs[item.ref as keyof typeof refs]}
-            id={item.id}
-            title={item.title}
-            alt={item.alt}
-            description={item.description}
-            image={item.image}
-            isLast={index === NavCardItems().length - 1}
-            buttonLink={item.buttonLink}
-          />
+          <div key={item.id}>
+            <NavCardItemIP
+              key={item.id}
+              ref={refs[item.ref as keyof typeof refs]}
+              id={item.id}
+              title={item.title}
+              alt={item.alt}
+              description={item.description}
+              image={item.image}
+              isLast={index === NavCardItems().length - 1}
+              buttonLink={item.buttonLink}
+            />
+          </div>
         ))}
       </div>
     );
