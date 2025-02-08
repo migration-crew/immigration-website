@@ -2,7 +2,7 @@
 import { SectionContainer } from "@/components/common/SectionContainer";
 import { Button } from "@/components/ui/UpImmigrationButton";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { ImmigrationPrograms } from "../content/immigrationPrograms";

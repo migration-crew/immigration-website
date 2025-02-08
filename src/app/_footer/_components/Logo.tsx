@@ -1,18 +1,12 @@
-import logoWhite from '@/public/logoWhite.png'
-import Image from "next/legacy/image";
+import { ResponsiveImage } from "@/components/common/ResponsiveImage";
+import logoWhite from "@/public/logoWhite.png";
 
 export default function Logo() {
   return (
-    <div className="flex-shrink-0 mb-6 md:mb-0 flex items-center justify-center">
-      <Image
-        src={logoWhite}
-        alt="logo image"
-        quality={100}
-        width={200}
-        height={100}
-        priority
-        //   className="w-36 lg:w-56 lg:h-32"
-      />
-    </div>
+    <ResponsiveImage
+      alt="logo image"
+      src={logoWhite}
+      divClassName="flex-shrink-0 mb-6 md:mb-0 flex items-center justify-center w-[200px] h-[100px]"
+    />
   );
 }

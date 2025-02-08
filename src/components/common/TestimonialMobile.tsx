@@ -11,10 +11,10 @@ import { cn } from "@/lib/utils";
 import googleReview from "@/public/googleReview.png";
 import { TestimonialsType } from "@/types/TestimonialsType";
 import { useTranslations } from "next-intl";
-import Image from "next/legacy/image";
 import Link from "next/link";
 import * as React from "react";
 import { Button } from "../ui/UpImmigrationButton";
+import { ResponsiveImage } from "./ResponsiveImage";
 import { SectionContainer } from "./SectionContainer";
 import { Caption } from "./text/Caption";
 import { Heading } from "./text/Heading";
@@ -59,12 +59,10 @@ export default function TestimonialMobile({ testimonials, className }: Props) {
     <SectionContainer className={cn("lg:hidden", className)}>
       <Heading>{t("testimonialsTitle")}</Heading>
       <div className="flex justify-between">
-        <Image
-          className="flex justify-center"
-          src={googleReview}
+        <ResponsiveImage
           alt="Google Reviews"
-          width={150}
-          height={100}
+          src={googleReview}
+          divClassName="w-[150px] h-[85px] "
         />
         <h1 className="text-5xl flex items-center text-secondary-blue font-bold">
           5.0
@@ -77,23 +75,19 @@ export default function TestimonialMobile({ testimonials, className }: Props) {
               <CarouselItem key={index}>
                 <Card className="border-none shadow-testimonials-card rounded-[20px] overflow-hidden">
                   <div className="flex gap-3">
-                    <div className="relative w-[50%] rounded-l-lg">
-                      <Image
-                        src={testimonial.imageMobile}
-                        alt={`${testimonial.name}'s testimonial`}
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-l-lg"
-                      />
-                    </div>
+                    <ResponsiveImage
+                      src={testimonial.imageMobile}
+                      alt={`${testimonial.name}'s testimonial`}
+                      divClassName="w-[50%] rounded-l-lg"
+                    />
+
                     <div className="flex w-[50%] flex-col justify-center py-4 pr-4">
                       <div className="flex justify-between items-center">
                         <HeavySubHeader>{testimonial.name}</HeavySubHeader>
-                        <Image
-                          src={testimonial.countryImage}
+                        <ResponsiveImage
                           alt={testimonial.country}
-                          height={16}
-                          width={22}
+                          src={testimonial.countryImage}
+                          divClassName="h-[16px] w-[22px]"
                         />
                       </div>
                       <Caption>{testimonial.status}</Caption>

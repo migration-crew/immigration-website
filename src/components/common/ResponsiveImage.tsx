@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
-import Image, { StaticImageData } from "next/legacy/image";
-
+import Image, { StaticImageData } from "next/image";
 
 type Props = {
   alt: string;
@@ -45,9 +44,10 @@ export const ResponsiveImage = ({
       <Image
         alt={alt}
         src={src}
-        layout={"fill"}
-        objectFit={"cover"}
-        quality={100}
+        fill
+        style={{ objectFit: "cover" }}
+        sizes="auto"
+        quality={50}
         className={cn(imgClassName)}
       />
       {children}

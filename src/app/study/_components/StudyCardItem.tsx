@@ -1,7 +1,7 @@
 import { Paragraph } from "@/components/common/text/Paragraph";
 import { SubHeading } from "@/components/common/text/SubHeading";
 import { CardHeader } from "@/components/ui/card";
-import Image, { StaticImageData } from "next/legacy/image";
+import Image, { StaticImageData } from "next/image";
 
 interface Props {
   title: string;

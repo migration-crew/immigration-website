@@ -43,8 +43,8 @@ export default function Header() {
   const classNameForMobile = cn("flex lg:hidden");
 
   return (
-    <header className="px-6 py-2 bg-primary-white fixed z-50 top-0 w-full h-[102px]">
-      <div className="flex items-center justify-between">
+    <header className="px-6 py-2 bg-primary-white fixed z-50 top-0 w-full h-[72px]">
+      <div className="flex items-center justify-between h-full">
         <LogoButton />
         {/* For Desktop */}
         <NavigationMenuForDesktop

@@ -1,19 +1,11 @@
-import Image from "next/legacy/image";
+import { ResponsiveImage } from "@/components/common/ResponsiveImage";
 import Link from "next/link";
 import logo from "../../../public/logo.png";
 
 export default function LogoButton() {
   return (
-    <Link href="/">
-      <Image
-        src={logo}
-        alt="logo image"
-        quality={100}
-        width={200}
-        height={100}
-        priority
-        className="w-32 lg:w-32"
-      />
+    <Link href="/" className="h-full">
+      <ResponsiveImage src={logo} alt="logo image" divClassName="w-32 h-full" />
     </Link>
   );
 }
