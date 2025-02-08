@@ -73,7 +73,7 @@ export default function TestimonialMobile({ testimonials, className }: Props) {
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index}>
-                <Card className="border-none shadow-testimonials-card rounded-[20px] overflow-hidden">
+                <Card className="my-1 mx-1 border-none shadow-testimonials-card rounded-[20px] overflow-hidden">
                   <div className="flex gap-3">
                     <ResponsiveImage
                       src={testimonial.imageMobile}
@@ -101,7 +101,7 @@ export default function TestimonialMobile({ testimonials, className }: Props) {
             ))}
           </CarouselContent>
         </Carousel>
-        <div className="flex justify-center gap-2 mt-4">
+        <div className="flex justify-center gap-2 mt-2">
           {Array.from({ length: count }).map((_, index) => (
             <button
               key={index}
