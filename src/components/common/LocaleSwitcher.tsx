@@ -4,7 +4,7 @@ import { setUserLocale } from "@/services/locale";
 import { useLocale } from "next-intl";
 import { useTransition } from "react";
 // import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/LanguageSelect";
-// import Image from "next/legacy/image";
+// import Image from "next/image";
 // import unitedStates from "@/public/unitedStates.png"
 // import spain from "@/public/spain.png"
 // import brazil from "@/public/brazil.png"

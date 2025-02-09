@@ -5,7 +5,7 @@ import { Paragraph } from "@/components/common/text/Paragraph";
 import { SubHeading } from "@/components/common/text/SubHeading";
 import Provinces from "@/public/Provinces-and-Territories.jpg";
 import { useTranslations } from "next-intl";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { PNPPrograms } from "../content/pnpPrograms";
 
 export const ProvincesAndTerritories = () => {

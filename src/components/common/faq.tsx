@@ -45,9 +45,9 @@ const FAQ = ({ data, title, bgColor, className }: Props) => {
         <Accordion type="multiple">
           {data.map((item, index) => (
             <AccordionItem key={item.id} value={item.id}>
-              <AccordionTrigger className="items-start text-start">{`${
-                index + 1
-              }. ${item.question}`}</AccordionTrigger>
+              <AccordionTrigger className="text-start">{`${index + 1}. ${
+                item.question
+              }`}</AccordionTrigger>
               <AccordionContent>{item.answer}</AccordionContent>
             </AccordionItem>
           ))}
