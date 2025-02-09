@@ -28,11 +28,14 @@ export const HeaderPicture = ({ alt, src, title, className }: Props) => {
       <Image
         alt={alt}
         src={src}
-        layout={"fill"}
-        objectFit={"cover"}
+        fill
+        style={{ objectFit: "cover" }}
+        sizes="auto"
+        quality={50}
         priority
         className={cn(className)}
       />
+
       <div className="absolute w-full h-full grid place-content-center bg-secondary-blue-op-20">
         <Title className="text-primary-white">{title}</Title>
       </div>

@@ -28,7 +28,7 @@ export const WhyChooseUs = () => {
         <div className="text-center">
           <div className="pb-7 flex justify-center">
             <ResponsiveImage
-              alt="Languate"
+              alt="Language"
               src={Language}
               divClassName="h-[90px] w-[90px]"
             />

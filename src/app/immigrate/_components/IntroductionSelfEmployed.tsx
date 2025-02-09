@@ -27,9 +27,11 @@ export const IntroductionSelfEmployed = () => {
 
         <SectionContainer className="pb-10">
           <Image
-            className="w-full rounded-xl"
+            className="rounded-xl"
             src={howEEworks}
             alt={t("imageAlt")}
+            width={1200}
+            height={800}
           />
         </SectionContainer>
 

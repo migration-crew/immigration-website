@@ -4,7 +4,7 @@ import expressEntry from "@/public/expressEntry.jpg";
 import familySP from "@/public/familySP.jpg";
 import humanitarian from "@/public/humanitarian.jpg";
 import PNP from "@/public/PNP.png";
-import RNIP from "@/public/rnip.jpg";
+import rnip from "@/public/rnip.jpg";
 import selfEmployed from "@/public/selfEmployed.jpg";
 import startUp from "@/public/startUp.png";
 import { useTranslations } from "next-intl";
@@ -79,7 +79,7 @@ export const ImmigrationPrograms = (): ImmigrationProgramsType[] => {
     {
       title: t("NorthernImmigrationProgram"),
       description: t("NorthernImmigrationDescription"),
-      image: RNIP,
+      image: rnip,
       details: t("NorthernImmigrationDetails"),
       endpoint: "rnip",
     },

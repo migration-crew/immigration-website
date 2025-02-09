@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/BookConsultationButton";
+import { Button } from "@/components/ui/UpImmigrationButton";
 import Link from "next/link";
 
 interface Props {

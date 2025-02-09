@@ -9,7 +9,14 @@ export const Title = () => {
 
   return (
     <section className="relative h-[508px] xl:h-[624px]">
-      <Image alt="home" src={home} layout={"fill"} objectFit={"cover"} />
+      <Image
+        alt="home"
+        src={home}
+        fill
+        style={{ objectFit: "cover" }}
+        sizes="auto"
+        quality={50}
+      />
       <div className="absolute w-full h-full grid place-content-center bg-secondary-blue-op-20">
         <div className="w-[355px] xl:w-[1080px] justify-start">
           <div className="w-[358px] xl:w-[650px]">
