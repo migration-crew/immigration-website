@@ -8,14 +8,14 @@ export async function POST(req: Request) {
     // Log the received data
     console.log("Received form data:", { firstName, lastName, email, message });
 
-    // Check if all required enviroment variabels are set
+    // Check if all required environment variables are set
     if (
       !process.env.EMAIL_SERVER ||
       !process.env.EMAIL_USER ||
       !process.env.EMAIL_PASS ||
       !process.env.RECIPIENT_EMAIL
     ) {
-      console.error("Missing required enviroment variables");
+      console.error("Missing required environment variables");
       return NextResponse.json(
         { error: "Server configurations error" },
         { status: 500 }
@@ -49,7 +49,7 @@ export async function POST(req: Request) {
 
     console.log("Message sent: %s", info.messageId);
     return NextResponse.json(
-      { message: "Email sent successufully" },
+      { message: "Email sent successfully" },
       { status: 200 }
     );
   } catch (error) {

@@ -17,7 +17,7 @@ export const FAQComponent = () => {
         Immigration Frequent Questions
       </h2>
       <div className="space-y-4">
-        {FAQs.map((faq, index) => (
+        {FAQs().map((faq, index) => (
           <div key={index} className="border-b border-gray-200 pb-4">
             <button
               className="flex justify-between items-center w-full text-left"

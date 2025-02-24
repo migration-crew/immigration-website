@@ -4,9 +4,9 @@ import { cn } from "@/lib/utils";
 import googleReview from "@/public/googleReview.png";
 import { TestimonialsType } from "@/types/TestimonialsType";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import Link from "next/link";
 import { Card } from "../ui/card";
+import { ResponsiveImage } from "./ResponsiveImage";
 import { Caption } from "./text/Caption";
 import { Heading } from "./text/Heading";
 import { HeavyBody } from "./text/HeavyBody";
@@ -37,30 +37,22 @@ export const Testimonial = ({ testimonials, className }: Props) => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
             <Card key={testimonial.name}>
-              <div className="relative w-full h-[236px] rounded-t-lg overflow-hidden">
-                <Image
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-t-lg"
-                />
-              </div>
+              <ResponsiveImage
+                alt={testimonial.name}
+                src={testimonial.image}
+                divClassName="w-full h-[236px] rounded-t-lg overflow-hidden"
+              />
+
               <div className="flex flex-col p-4 gap-4">
-                <div className="">
-                  <div className="flex justify-between">
-                    <HeavySubHeader>{testimonial.name}</HeavySubHeader>
-                    <div className="flex items-center">
-                      <Image
-                        src={testimonial.countryImage}
-                        alt={testimonial.country}
-                        width={22}
-                        height={16}
-                      />
-                    </div>
-                  </div>
-                  <Caption>{testimonial.status}</Caption>
+                <div className="flex justify-between items-center">
+                  <HeavySubHeader>{testimonial.name}</HeavySubHeader>
+                  <ResponsiveImage
+                    src={testimonial.countryImage}
+                    alt={testimonial.country}
+                    divClassName="w-[22px] h-[16px]"
+                  />
                 </div>
+                <Caption>{testimonial.status}</Caption>
                 <div className="flex">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <svg
@@ -82,12 +74,10 @@ export const Testimonial = ({ testimonials, className }: Props) => {
           ))}
         </div>
         <div className="flex flex-col items-center pt-4">
-          <Image
-            className="flex justify-center"
-            src={googleReview}
+          <ResponsiveImage
             alt="Google Reviews"
-            width={150}
-            height={50}
+            src={googleReview}
+            divClassName="w-[150px] h-[85px]"
           />
           <Paragraph className="text-gray-600 py-4">
             {t("googleReviews")}

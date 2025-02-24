@@ -13,12 +13,13 @@ export const PNProgramsComponent = () => {
     <>
       <SectionContainer>
         <Heading>{t("headingPNP")}</Heading>
-        <div className="py-8">
+        <div className="my-8 rounded-xl">
           <Image
+            className="rounded-xl"
             src={PNPrograms}
             alt={t("headingPNP")}
             width={1200}
-            height={400}
+            height={700}
           />
         </div>
       </SectionContainer>

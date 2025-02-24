@@ -37,15 +37,15 @@ export const NavCardItem = forwardRef<HTMLDivElement, Props>(
         ref={ref}
       >
         <div className="flex flex-col gap-2">
-          <div className="flex justify-between items-center">
-            <CardHeader className="p-0">
+          <div className="flex justify-between items-start">
+            <CardHeader className="p-0 min-h-[84px]">
               <CardTitle className="text-xl font-bold">{title}</CardTitle>
             </CardHeader>
             <Image
               src={CloseIcon}
               alt="Close icon"
               onClick={toggleExpand}
-              className={`cursor-pointer transform transition-transform duration-300 ease-in-out ${
+              className={`pt-2 cursor-pointer transform transition-transform duration-300 ease-in-out ${
                 isExpanded ? "rotate-180" : ""
               }`}
             />
