@@ -1,7 +1,7 @@
 import { ApplicationStepDesktop } from "@/components/common/ApplicationStepDesktop";
 import { ApplicationStepMobile } from "@/components/common/ApplicationStepMobile";
 import { HeaderPicture } from "@/components/common/HeaderPicture";
-import rnip from "@/public/rnip.jpg";
+import rnip from "@/public/rnipImage.jpg";
 import { useTranslations } from "next-intl";
 import { EEPrograms } from "../_components/EEPrograms";
 import { IntoductionRNIP } from "../_components/IntoductionRNIP";
