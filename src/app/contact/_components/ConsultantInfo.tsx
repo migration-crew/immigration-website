@@ -2,7 +2,7 @@ import { ResponsiveImage } from "@/components/common/ResponsiveImage";
 import { Heading } from "@/components/common/text/Heading";
 import { OtherButton } from "@/components/common/text/OtherButton";
 import { SubHeading } from "@/components/common/text/SubHeading";
-import consultant from "@/public/consultant.png";
+import consultant from "@/public/Consultant.png";
 import { useTranslations } from "next-intl";
 
 export function ConsultantInfo() {
