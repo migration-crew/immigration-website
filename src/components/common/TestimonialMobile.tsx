@@ -56,7 +56,7 @@ export default function TestimonialMobile({ testimonials, className }: Props) {
   }, [api]);
 
   return (
-    <SectionContainer className={cn("lg:hidden", className)}>
+    <SectionContainer className={cn("xl:hidden", className)}>
       <Heading>{t("testimonialsTitle")}</Heading>
       <div className="flex justify-between">
         <ResponsiveImage
