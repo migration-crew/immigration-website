@@ -20,7 +20,7 @@ type Props = {
  */
 export const ApplicationStepDesktop = ({ steps, title }: Props) => {
   return (
-    <SectionContainer className="py-[100px] hidden lg:block">
+    <SectionContainer className="py-[100px] hidden xl:block">
       <Heading>{title}</Heading>
       <div className="relative py-8">
         <div className="absolute mt-[13px] left-0 right-0 h-[2px] w-[908px] bg-secondary-blue mx-auto hidden lg:block" />

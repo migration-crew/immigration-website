@@ -39,8 +39,8 @@ export default function Header() {
     { title: t("otherPermits"), href: "/others" },
   ];
 
-  const classNameForDesktop = cn("hidden lg:flex");
-  const classNameForMobile = cn("flex lg:hidden");
+  const classNameForDesktop = cn("hidden xl:flex");
+  const classNameForMobile = cn("flex xl:hidden");
 
   return (
     <header className="px-6 py-2 bg-primary-white fixed z-50 top-0 w-full h-[72px]">
