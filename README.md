@@ -12,7 +12,7 @@ Welcome to **Up Immigration**! This website is designed to clearly present vario
 
 ## Technologies Used
 
-- **Frontend**: NextJS, TypeScript, Tailwind
+- **Frontend**: NextJS, TypeScript, Tailwind, ShadCN
 - **Other Tools**: ESLint, Prettier, Next-Intl, NodeMailer
 
 ## Try it out!
