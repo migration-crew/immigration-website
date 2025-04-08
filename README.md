@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Up Immigration Consulting
 
-## Getting Started
+Welcome to **Up Immigration**! This website is designed to clearly present various Canadian immigration pathways, such as study permits, work permits, and more. With a clean and accessible interface, users can easily explore their options and understand the steps involved in each immigration process.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices to ensure a smooth browsing experience on any screen size.
+- **Clear and Simple Navigation**: Users can easily explore immigration categories and access information without confusion or clutter.
+- **Success Stories & Testimonials**: Real experiences from individuals who have successfully navigated the immigration process provide inspiration and insight.
+- **Multilingual Support**: Available in English, Spanish, and Portuguese, making the content accessible to a wider audience.
+- **Customized Pathway Quiz**: A simple quiz helps users identify the most suitable immigration pathway based on their background and goals.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: NextJS, TypeScript, Tailwind
+- **Other Tools**: ESLint, Prettier, Next-Intl, NodeMailer
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Try it out!
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To check the website, click on the following link: <a href="https://migration-crew-website.vercel.app/" target="_blank">Up Immigration</a>
